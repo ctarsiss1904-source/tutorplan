@@ -5,8 +5,8 @@
   "outputDirectory": "output",
   "rewrites": [
     {
-      "source": "^/tutor/(?!.*(?:^|/)index\\.html$)(.+[^/])$",
-      "destination": "/tutor/$1/index.html"
+      "source": "/tutor/:path*",
+      "destination": "/tutor/:path*/index.html"
     }
   ],
   "headers": [
