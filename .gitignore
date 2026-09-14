@@ -1,0 +1,18 @@
+.env
+.env.*
+
+# Local Python caches and Vercel project metadata
+__pycache__/
+*.py[cod]
+*.pyc
+.vercel/
+
+# Local source workbook: required for regeneration, never for Vercel static serving.
+# Commit it only to an access-controlled private data repository if explicitly approved.
+과외.xlsx
+
+# Reproducible nationwide candidates and audit exports exceed ordinary GitHub file limits.
+data/generated/nationwide_page_inventory_candidates.json
+review/nationwide_page_inventory_candidates.csv
+review/general_tutor_content_pairwise_similarity.csv
+review/nationwide_page_inventory_structure_audit.csv

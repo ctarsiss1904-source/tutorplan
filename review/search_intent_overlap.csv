@@ -1,0 +1,4 @@
+﻿page_type_a,page_type_b,example_title_a,example_title_b,overlap_risk,recommended_content_difference
+region_stage_subject,region_school_type_subject,강남구 중등 영어과외,강남구 중학교 영어과외,high,학령 단계와 학교 유형의 대상·학교 정보·콘텐츠를 분리
+region_stage_subject,region_school_type_subject,강남구 고등 영어과외,강남구 고등학교 영어과외,high,학령 단계와 특정 학교 유형의 탐색 의도를 분리
+region_exam_subject,region_stage_subject,강남구 내신 영어과외,강남구 고등 내신 영어과외,medium,시험 중심 정보와 고등 학령 단계 맥락을 분리

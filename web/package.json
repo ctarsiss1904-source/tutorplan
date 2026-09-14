@@ -1,0 +1,12 @@
+{
+  "name": "tutorplan-web",
+  "private": true,
+  "scripts": {
+    "validate:data": "node scripts/validate-data.mjs",
+    "dev": "next dev",
+    "build": "npm run validate:data && next build",
+    "start": "next start"
+  },
+  "dependencies": {"next": "15.5.2", "react": "19.1.1", "react-dom": "19.1.1"},
+  "devDependencies": {"typescript": "5.8.3", "@types/node": "22.15.30", "@types/react": "19.1.8", "@types/react-dom": "19.1.6"}
+}

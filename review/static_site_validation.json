@@ -1,0 +1,16 @@
+{
+  "result": {
+    "html_files": 4796,
+    "broken_internal_links": 0,
+    "canonical_errors": 0,
+    "duplicate_canonical": 0,
+    "ready": 1270,
+    "ready_missing_output": 0,
+    "sitemap_general_urls": 1270,
+    "sitemap_mismatch": 0,
+    "sitemap_index_ok": true,
+    "robots_ok": true
+  },
+  "broken": [],
+  "canonical_route_errors": []
+}

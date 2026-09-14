@@ -1,0 +1,62 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "buildCommand": null,
+  "outputDirectory": "output",
+  "rewrites": [
+    {
+      "source": "^/tutor/(?!.*(?:^|/)index\\.html$)(.+[^/])$",
+      "destination": "/tutor/$1/index.html"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "SAMEORIGIN"
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "geolocation=(), microphone=(), camera=()"
+        }
+      ]
+    },
+    {
+      "source": "/robots.txt",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=300, s-maxage=300"
+        }
+      ]
+    },
+    {
+      "source": "/sitemap.xml",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=300, s-maxage=300"
+        }
+      ]
+    },
+    {
+      "source": "/sitemap-general-tutor.xml",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=300, s-maxage=300"
+        }
+      ]
+    }
+  ]
+}

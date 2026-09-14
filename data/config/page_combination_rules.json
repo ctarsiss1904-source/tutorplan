@@ -1,0 +1,40 @@
+{
+  "subjects": ["english", "math", "korean", "science"],
+  "student_stages": ["elementary", "middle", "high"],
+  "school_types": ["elementary_school", "middle_school", "high_school"],
+  "exam_types": ["school_exam", "csat"],
+  "page_type_dimensions": {
+    "region_tutor": {},
+    "region_subject": {"subject": true},
+    "region_stage": {"student_stage": true},
+    "region_stage_subject": {"student_stage": true, "subject": true},
+    "region_school_type": {"school_type": true},
+    "region_school_type_subject": {"school_type": true, "subject": true},
+    "region_exam": {"exam_type": true},
+    "region_exam_subject": {"exam_type": true, "subject": true},
+    "school_subject": {"school_reference": true, "subject": true},
+    "school_exam_subject": {"school_reference": true, "exam_type": "school_exam", "subject": true}
+  },
+  "region_level_page_types": {
+    "sido": ["region_tutor", "region_subject", "region_stage", "region_stage_subject", "region_school_type", "region_school_type_subject", "region_exam", "region_exam_subject"],
+    "sigungu": ["region_tutor", "region_subject", "region_stage", "region_stage_subject", "region_school_type", "region_school_type_subject", "region_exam", "region_exam_subject"],
+    "eupmyeondong": ["region_tutor", "region_subject", "region_stage", "region_stage_subject", "region_school_type", "region_school_type_subject", "region_exam", "region_exam_subject"],
+    "living_area": ["region_tutor", "region_subject", "region_stage", "region_stage_subject"]
+  },
+  "exam_stage_matrix": {
+    "elementary:school_exam": false,
+    "elementary:csat": false,
+    "middle:school_exam": false,
+    "middle:csat": false,
+    "high:school_exam": true,
+    "high:csat": true
+  },
+  "school_type_exam_matrix": {
+    "elementary_school:school_exam": false,
+    "elementary_school:csat": false,
+    "middle_school:school_exam": false,
+    "middle_school:csat": false,
+    "high_school:school_exam": true,
+    "high_school:csat": false
+  }
+}

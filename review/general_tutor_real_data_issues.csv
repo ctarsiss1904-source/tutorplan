@@ -1,0 +1,5 @@
+﻿page_id,region_id,source_sheet,source_row,issue_reason
+candidate:tutor:kr-c81c-c8fc-b3c4-kr-c1a1-c0b0-b3d9:region_tutor,kr-c81c-c8fc-b3c4-kr-c1a1-c0b0-b3d9,제주도,35,SUSPECTED_BAD_SOURCE_ROW
+candidate:tutor:kr-c81c-c8fc-b3c4-kr-c911-c559-b3d9:region_tutor,kr-c81c-c8fc-b3c4-kr-c911-c559-b3d9,제주도,37,SUSPECTED_BAD_SOURCE_ROW
+candidate:tutor:kr-c81c-c8fc-b3c4-kr-c601-cc9c-b3d9:region_tutor,kr-c81c-c8fc-b3c4-kr-c601-cc9c-b3d9,제주도,40,SUSPECTED_BAD_SOURCE_ROW
+candidate:tutor:kr-c81c-c8fc-b3c4-kr-b300-cc9c-b3d9:region_tutor,kr-c81c-c8fc-b3c4-kr-b300-cc9c-b3d9,제주도,44,SUSPECTED_BAD_SOURCE_ROW

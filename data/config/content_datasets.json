@@ -1,0 +1,69 @@
+{
+  "general_tutor": {
+    "source": "과외.xlsx",
+    "page_types": [
+      "region_tutor"
+    ],
+    "status": "available"
+  },
+  "subject_english": {
+    "source": null,
+    "status": "unavailable"
+  },
+  "subject_math": {
+    "source": null,
+    "status": "unavailable"
+  },
+  "subject_korean": {
+    "source": null,
+    "status": "unavailable"
+  },
+  "subject_science": {
+    "source": null,
+    "status": "unavailable"
+  },
+  "stage_elementary": {
+    "source": null,
+    "status": "unavailable"
+  },
+  "stage_middle": {
+    "source": null,
+    "status": "unavailable"
+  },
+  "stage_high": {
+    "source": null,
+    "status": "unavailable"
+  },
+  "stage_subject": {
+    "source": null,
+    "status": "unavailable"
+  },
+  "school_type": {
+    "source": null,
+    "status": "unavailable"
+  },
+  "school_type_subject": {
+    "source": null,
+    "status": "unavailable"
+  },
+  "school_exam_general": {
+    "source": null,
+    "status": "unavailable"
+  },
+  "school_exam_subject": {
+    "source": null,
+    "status": "unavailable"
+  },
+  "csat_general": {
+    "source": null,
+    "status": "unavailable"
+  },
+  "csat_subject": {
+    "source": null,
+    "status": "unavailable"
+  },
+  "school_specific": {
+    "source": null,
+    "status": "unavailable"
+  }
+}

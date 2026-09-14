@@ -1,0 +1,1 @@
+import {ContactCTA} from "@/components/site";export default function Tutoring(){return <article className="article"><h1>과외 학습관리 안내</h1><p>과외는 단순한 진도 확인보다 현재 상태, 실제 행동, 원인, 개선 기준을 함께 살피는 과정입니다.</p><h2>학습 흐름 기록</h2><p>수업 전후의 행동과 변화 기준을 기록하면 다음 회차의 계획을 더 구체적으로 세울 수 있습니다.</p><ContactCTA/></article>}

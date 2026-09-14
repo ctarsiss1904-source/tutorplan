@@ -1,0 +1,51 @@
+﻿page_id,region_id,title,event_centered,fj_reflected,general_tutor_fit,subject_bias,natural_language,ad_like_expression,repeated_skeleton,cta_excessive,observable_measurement,result
+candidate:tutor:kr-b300-ad6c:region_tutor,kr-b300-ad6c,대구과외,True,True,True,False,REVIEW,False,False,False,True,PASS
+candidate:tutor:kr-b300-ad6c-kr-b300-ad6c-bd81-ad6c:region_tutor,kr-b300-ad6c-kr-b300-ad6c-bd81-ad6c,대구북구과외,True,True,True,False,REVIEW,False,False,False,True,PASS
+candidate:tutor:kr-b300-ad6c-kr-b300-ad6c-b0a8-ad6c:region_tutor,kr-b300-ad6c-kr-b300-ad6c-b0a8-ad6c,대구남구과외,True,True,True,False,REVIEW,False,False,False,True,PASS
+candidate:tutor:seoul:region_tutor,seoul,서울과외,True,True,True,False,REVIEW,False,False,False,True,PASS
+candidate:tutor:seoul-gangnam:region_tutor,seoul-gangnam,강남구과외,True,True,True,False,REVIEW,False,False,False,True,PASS
+candidate:tutor:seoul-kr-ac15-b3d9-ad6c:region_tutor,seoul-kr-ac15-b3d9-ad6c,강동구과외,True,True,True,False,REVIEW,False,False,False,True,PASS
+candidate:tutor:kr-b300-ad6c-kr-b2ec-c11c-ad6c:region_tutor,kr-b300-ad6c-kr-b2ec-c11c-ad6c,달서구과외,True,True,True,False,REVIEW,False,False,False,True,PASS
+candidate:tutor:kr-b300-ad6c-kr-b2ec-c131-ad70:region_tutor,kr-b300-ad6c-kr-b2ec-c131-ad70,달성군과외,True,True,True,False,REVIEW,False,False,False,True,PASS
+candidate:tutor:kr-b300-ad6c-kr-b300-ad6c-b3d9-ad6c:region_tutor,kr-b300-ad6c-kr-b300-ad6c-b3d9-ad6c,대구동구과외,True,True,True,False,REVIEW,False,False,False,True,PASS
+candidate:tutor:kr-b300-ad6c-kr-b300-ad6c-c11c-ad6c:region_tutor,kr-b300-ad6c-kr-b300-ad6c-c11c-ad6c,대구서구과외,True,True,True,False,REVIEW,False,False,False,True,PASS
+candidate:tutor:kr-b300-ad6c-kr-c218-c131-ad6c:region_tutor,kr-b300-ad6c-kr-c218-c131-ad6c,수성구과외,True,True,True,False,REVIEW,False,False,False,True,PASS
+candidate:tutor:kr-b300-ad6c-kr-b300-ad6c-c911-ad6c:region_tutor,kr-b300-ad6c-kr-b300-ad6c-c911-ad6c,대구중구과외,True,True,True,False,REVIEW,False,False,False,True,PASS
+candidate:tutor:kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-ac80-b2e8-b3d9:region_tutor,kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-ac80-b2e8-b3d9,검단동과외,True,True,True,False,REVIEW,False,False,False,True,PASS
+candidate:tutor:kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-ace0-c131-b3d9:region_tutor,kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-ace0-c131-b3d9,고성동과외,True,True,True,False,REVIEW,False,False,False,True,PASS
+candidate:tutor:kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-ad6c-c554-b3d9:region_tutor,kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-ad6c-c554-b3d9,대구중구 구암동과외,True,True,True,False,REVIEW,False,False,False,True,PASS
+candidate:tutor:kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-ad6d-c6b0-b3d9:region_tutor,kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-ad6d-c6b0-b3d9,국우동과외,True,True,True,False,REVIEW,False,False,False,True,PASS
+candidate:tutor:kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-b300-d604-b3d9:region_tutor,kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-b300-d604-b3d9,대구중구 대현동과외,True,True,True,False,REVIEW,False,False,False,True,PASS
+candidate:tutor:kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-b300-ad6c-b3d9-cc9c-b3d9:region_tutor,kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-b300-ad6c-b3d9-cc9c-b3d9,대구동천동과외,True,True,True,False,REVIEW,False,False,False,True,PASS
+candidate:tutor:kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-b9e4-cc9c-b3d9:region_tutor,kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-b9e4-cc9c-b3d9,매천동과외,True,True,True,False,REVIEW,False,False,False,True,PASS
+candidate:tutor:kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-bcf5-d604-b3d9:region_tutor,kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-bcf5-d604-b3d9,복현동과외,True,True,True,False,REVIEW,False,False,False,True,PASS
+candidate:tutor:kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-c0b0-aca9-b3d9:region_tutor,kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-c0b0-aca9-b3d9,산격동과외,True,True,True,False,REVIEW,False,False,False,True,PASS
+candidate:tutor:kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-c74d-b0b4-b3d9:region_tutor,kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-c74d-b0b4-b3d9,대구중구 읍내동과외,True,True,True,False,REVIEW,False,False,False,True,PASS
+candidate:tutor:kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-ce60-c131-b3d9:region_tutor,kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-ce60-c131-b3d9,칠성동과외,True,True,True,False,REVIEW,False,False,False,True,PASS
+candidate:tutor:kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-ce68-c0b0-b3d9:region_tutor,kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-ce68-c0b0-b3d9,대구중구 침산동과외,True,True,True,False,REVIEW,False,False,False,True,PASS
+candidate:tutor:kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-d0dc-c804-b3d9:region_tutor,kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-d0dc-c804-b3d9,대구중구 태전동과외,True,True,True,False,REVIEW,False,False,False,True,PASS
+candidate:tutor:kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-b300-ba85-b3d9:region_tutor,kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-b300-ba85-b3d9,대명동과외,True,True,True,False,REVIEW,False,False,False,True,PASS
+candidate:tutor:kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-bd09-b355-b3d9:region_tutor,kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-bd09-b355-b3d9,봉덕동과외,True,True,True,False,REVIEW,False,False,False,True,PASS
+candidate:tutor:kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-c774-cc9c-b3d9:region_tutor,kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-c774-cc9c-b3d9,이천동과외,True,True,True,False,REVIEW,False,False,False,True,PASS
+candidate:tutor:kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-ac10-c0bc-b3d9:region_tutor,kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-ac10-c0bc-b3d9,감삼동과외,True,True,True,False,REVIEW,False,False,False,True,PASS
+candidate:tutor:kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-b300-ace1-b3d9:region_tutor,kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-b300-ace1-b3d9,대구중구 대곡동과외,True,True,True,False,REVIEW,False,False,False,True,PASS
+candidate:tutor:kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-b3c4-c6d0-b3d9:region_tutor,kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-b3c4-c6d0-b3d9,대구중구 도원동과외,True,True,True,False,REVIEW,False,False,False,True,PASS
+candidate:tutor:kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-b450-b958-b3d9:region_tutor,kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-b450-b958-b3d9,두류동과외,True,True,True,False,REVIEW,False,False,False,True,PASS
+candidate:tutor:kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-bcf8-b3d9:region_tutor,kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-bcf8-b3d9,대구중구 본동과외,True,True,True,False,REVIEW,False,False,False,True,PASS
+candidate:tutor:kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-bcf8-b9ac-b3d9:region_tutor,kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-bcf8-b9ac-b3d9,본리동과외,True,True,True,False,REVIEW,False,False,False,True,PASS
+candidate:tutor:kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-c0c1-c778-b3d9:region_tutor,kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-c0c1-c778-b3d9,상인동과외,True,True,True,False,REVIEW,False,False,False,True,PASS
+candidate:tutor:kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-c131-b2f9-b3d9:region_tutor,kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-c131-b2f9-b3d9,성당동과외,True,True,True,False,REVIEW,False,False,False,True,PASS
+candidate:tutor:kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-c1a1-d604-b3d9:region_tutor,kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-c1a1-d604-b3d9,대구중구 송현동과외,True,True,True,False,REVIEW,False,False,False,True,PASS
+candidate:tutor:kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-c2e0-b2f9-b3d9:region_tutor,kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-c2e0-b2f9-b3d9,대구중구 신당동과외,True,True,True,False,REVIEW,False,False,False,True,PASS
+candidate:tutor:kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-c6a9-c0b0-b3d9:region_tutor,kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-c6a9-c0b0-b3d9,대구중구 용산동과외,True,True,True,False,REVIEW,False,False,False,True,PASS
+candidate:tutor:kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-c6d4-c131-b3d9:region_tutor,kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-c6d4-c131-b3d9,대구중구 월성동과외,True,True,True,False,REVIEW,False,False,False,True,PASS
+candidate:tutor:kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-c720-cc9c-b3d9:region_tutor,kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-c720-cc9c-b3d9,대구중구 유천동과외,True,True,True,False,REVIEW,False,False,False,True,PASS
+candidate:tutor:kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-c774-ace1-b3d9:region_tutor,kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-c774-ace1-b3d9,이곡동과외,True,True,True,False,REVIEW,False,False,False,True,PASS
+candidate:tutor:kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-c7a5-ae30-b3d9:region_tutor,kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-c7a5-ae30-b3d9,대구중구 장기동과외,True,True,True,False,REVIEW,False,False,False,True,PASS
+candidate:tutor:kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-c8fd-c804-b3d9:region_tutor,kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-c8fd-c804-b3d9,대구중구 죽전동과외,True,True,True,False,REVIEW,False,False,False,True,PASS
+candidate:tutor:kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-c9c4-cc9c-b3d9:region_tutor,kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-c9c4-cc9c-b3d9,대구중구 진천동과외,True,True,True,False,REVIEW,False,False,False,True,PASS
+candidate:tutor:kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-d654-c6d0-c74d:region_tutor,kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-d654-c6d0-c74d,화원읍과외,True,True,True,False,REVIEW,False,False,False,True,PASS
+candidate:tutor:kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-b2e4-c0ac-c74d:region_tutor,kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-b2e4-c0ac-c74d,다사읍과외,True,True,True,False,REVIEW,False,False,False,True,PASS
+candidate:tutor:kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-ac01-c0b0-b3d9:region_tutor,kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-ac01-c0b0-b3d9,각산동과외,True,True,True,False,REVIEW,False,False,False,True,PASS
+candidate:tutor:kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-ad34-c804-b3d9:region_tutor,kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-ad34-c804-b3d9,괴전동과외,True,True,True,False,REVIEW,False,False,False,True,PASS
+candidate:tutor:kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-b300-ad6c-bd88-b85c-b3d9:region_tutor,kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-b300-ad6c-bd88-b85c-b3d9,대구불로동과외,True,True,True,False,REVIEW,False,False,False,True,PASS

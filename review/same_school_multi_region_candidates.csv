@@ -1,0 +1,3 @@
+﻿normalized_school_name,school_level,reference_count,region_count,sigungu_count,sido_count,classification,confidence,source_region_statuses
+해강고등학교,high_school,34,3,1,1,SAME_SCHOOL_MULTI_REGION_REFERENCE_CANDIDATE,medium,normal
+봉명고등학교,high_school,61,5,1,1,SAME_SCHOOL_MULTI_REGION_REFERENCE_CANDIDATE,medium,normal

@@ -1,0 +1,15 @@
+# Static security and cache baseline for Cloudflare Pages.
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-Frame-Options: SAMEORIGIN
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+
+/robots.txt
+  Cache-Control: public, max-age=300
+
+/sitemap.xml
+  Cache-Control: public, max-age=300
+
+/sitemap-general-tutor.xml
+  Cache-Control: public, max-age=300

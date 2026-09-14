@@ -1,0 +1,11 @@
+﻿page_type,enabled,indexable_default,requires_unique_content,requires_school_data,priority,notes
+region_tutor,True,True,True,False,P1,One source region page may be ready only after title audit.
+region_subject,True,False,True,False,P1,Requires subject-specific content; source variables alone are insufficient.
+region_stage,True,False,True,False,P2,Requires stage-specific content.
+region_stage_subject,True,False,True,False,P2,Requires combined stage and subject content.
+region_exam,True,False,True,False,P2,Requires exam-specific content.
+region_exam_subject,True,False,True,False,P2,Requires exam and subject-specific content.
+region_school_type,True,False,True,False,P3,Requires school-type-specific content and intent review.
+region_school_type_subject,True,False,True,False,P3,Requires school-type and subject-specific content.
+school_subject,False,False,True,True,HOLD,Pending school identity; do not publish.
+school_exam_subject,False,False,True,True,HOLD,Pending school identity; do not publish.

@@ -1,0 +1,4152 @@
+{
+  "version": 1,
+  "records": [
+    {
+      "source_sheet": "서울",
+      "source_row": 28,
+      "candidate_parent": "강남구",
+      "status": "confirmed",
+      "parent_region_id": "seoul-gangnam"
+    },
+    {
+      "source_sheet": "서울",
+      "source_row": 29,
+      "candidate_parent": "강남구",
+      "status": "confirmed",
+      "parent_region_id": "seoul-gangnam"
+    },
+    {
+      "source_sheet": "서울",
+      "source_row": 30,
+      "candidate_parent": "강남구",
+      "status": "confirmed",
+      "parent_region_id": "seoul-gangnam"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 2,
+      "original_keyword": "대전동구 원동",
+      "normalized_region_name": "원동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "동구",
+      "candidate_parent": "동구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "동구"
+      ],
+      "region_id": "kr-b300-c804-kr-c6d0-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-b3d9-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 3,
+      "original_keyword": "대전동구 인동",
+      "normalized_region_name": "인동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "동구",
+      "candidate_parent": "동구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "동구"
+      ],
+      "region_id": "kr-b300-c804-kr-c778-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-b3d9-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 4,
+      "original_keyword": "대전동구 효동",
+      "normalized_region_name": "효동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "동구",
+      "candidate_parent": "동구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "동구"
+      ],
+      "region_id": "kr-b300-c804-kr-d6a8-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-b3d9-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 5,
+      "original_keyword": "대전동구 천동",
+      "normalized_region_name": "천동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "동구",
+      "candidate_parent": "동구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "동구"
+      ],
+      "region_id": "kr-b300-c804-kr-cc9c-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-b3d9-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 6,
+      "original_keyword": "가오동",
+      "normalized_region_name": "가오동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "동구",
+      "candidate_parent": "동구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "동구"
+      ],
+      "region_id": "kr-b300-c804-kr-ac00-c624-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-b3d9-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 7,
+      "original_keyword": "신흥동",
+      "normalized_region_name": "신흥동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "동구",
+      "candidate_parent": "동구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "동구"
+      ],
+      "region_id": "kr-b300-c804-kr-c2e0-d765-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-b3d9-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 8,
+      "original_keyword": "판암동",
+      "normalized_region_name": "판암동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "동구",
+      "candidate_parent": "동구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "동구"
+      ],
+      "region_id": "kr-b300-c804-kr-d310-c554-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-b3d9-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 10,
+      "original_keyword": "용운동",
+      "normalized_region_name": "용운동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "동구",
+      "candidate_parent": "동구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "동구"
+      ],
+      "region_id": "kr-b300-c804-kr-c6a9-c6b4-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-b3d9-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 12,
+      "original_keyword": "자양동",
+      "normalized_region_name": "자양동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "동구",
+      "candidate_parent": "동구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "동구"
+      ],
+      "region_id": "kr-b300-c804-kr-c790-c591-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-b3d9-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 13,
+      "original_keyword": "신안동",
+      "normalized_region_name": "신안동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "동구",
+      "candidate_parent": "동구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "동구"
+      ],
+      "region_id": "kr-b300-c804-kr-c2e0-c548-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-b3d9-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 14,
+      "original_keyword": "소제동",
+      "normalized_region_name": "소제동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "동구",
+      "candidate_parent": "동구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "동구"
+      ],
+      "region_id": "kr-b300-c804-kr-c18c-c81c-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-b3d9-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 15,
+      "original_keyword": "가양동",
+      "normalized_region_name": "가양동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "동구",
+      "candidate_parent": "동구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "동구"
+      ],
+      "region_id": "kr-b300-c804-kr-ac00-c591-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-b3d9-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 16,
+      "original_keyword": "용전동",
+      "normalized_region_name": "용전동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "동구",
+      "candidate_parent": "동구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "동구"
+      ],
+      "region_id": "kr-b300-c804-kr-c6a9-c804-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-b3d9-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 17,
+      "original_keyword": "성남동",
+      "normalized_region_name": "성남동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "동구",
+      "candidate_parent": "동구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "동구"
+      ],
+      "region_id": "kr-b300-c804-kr-c131-b0a8-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-b3d9-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 18,
+      "original_keyword": "홍도동",
+      "normalized_region_name": "홍도동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "동구",
+      "candidate_parent": "동구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "동구"
+      ],
+      "region_id": "kr-b300-c804-kr-d64d-b3c4-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-b3d9-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 19,
+      "original_keyword": "삼성동",
+      "normalized_region_name": "삼성동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "동구",
+      "candidate_parent": "동구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "동구"
+      ],
+      "region_id": "kr-b300-c804-kr-c0bc-c131-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-b3d9-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 20,
+      "original_keyword": "대전동구 정동",
+      "normalized_region_name": "정동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "동구",
+      "candidate_parent": "동구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "동구"
+      ],
+      "region_id": "kr-b300-c804-kr-c815-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-b3d9-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 21,
+      "original_keyword": "대전동구 중동",
+      "normalized_region_name": "중동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "동구",
+      "candidate_parent": "동구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "동구"
+      ],
+      "region_id": "kr-b300-c804-kr-c911-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-b3d9-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 22,
+      "original_keyword": "대전동구 추동",
+      "normalized_region_name": "추동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "동구",
+      "candidate_parent": "동구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "동구"
+      ],
+      "region_id": "kr-b300-c804-kr-cd94-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-b3d9-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 23,
+      "original_keyword": "비룡동",
+      "normalized_region_name": "비룡동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "동구",
+      "candidate_parent": "동구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "동구"
+      ],
+      "region_id": "kr-b300-c804-kr-be44-b8e1-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-b3d9-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 24,
+      "original_keyword": "주산동",
+      "normalized_region_name": "주산동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "동구",
+      "candidate_parent": "동구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "동구"
+      ],
+      "region_id": "kr-b300-c804-kr-c8fc-c0b0-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-b3d9-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 26,
+      "original_keyword": "마산동",
+      "normalized_region_name": "마산동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "동구",
+      "candidate_parent": "동구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "동구"
+      ],
+      "region_id": "kr-b300-c804-kr-b9c8-c0b0-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-b3d9-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 27,
+      "original_keyword": "효평동",
+      "normalized_region_name": "효평동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "동구",
+      "candidate_parent": "동구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "동구"
+      ],
+      "region_id": "kr-b300-c804-kr-d6a8-d3c9-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-b3d9-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 28,
+      "original_keyword": "대전동구 직동",
+      "normalized_region_name": "직동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "동구",
+      "candidate_parent": "동구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "동구"
+      ],
+      "region_id": "kr-b300-c804-kr-c9c1-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-b3d9-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 29,
+      "original_keyword": "세천동",
+      "normalized_region_name": "세천동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "동구",
+      "candidate_parent": "동구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "동구"
+      ],
+      "region_id": "kr-b300-c804-kr-c138-cc9c-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-b3d9-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 30,
+      "original_keyword": "신상동",
+      "normalized_region_name": "신상동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "동구",
+      "candidate_parent": "동구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "동구"
+      ],
+      "region_id": "kr-b300-c804-kr-c2e0-c0c1-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-b3d9-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 31,
+      "original_keyword": "신하동",
+      "normalized_region_name": "신하동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "동구",
+      "candidate_parent": "동구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "동구"
+      ],
+      "region_id": "kr-b300-c804-kr-c2e0-d558-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-b3d9-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 32,
+      "original_keyword": "신촌동",
+      "normalized_region_name": "신촌동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "동구",
+      "candidate_parent": "동구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "동구"
+      ],
+      "region_id": "kr-b300-c804-kr-c2e0-cd0c-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-b3d9-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 33,
+      "original_keyword": "사성동",
+      "normalized_region_name": "사성동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "동구",
+      "candidate_parent": "동구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "동구"
+      ],
+      "region_id": "kr-b300-c804-kr-c0ac-c131-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-b3d9-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 34,
+      "original_keyword": "내탑동",
+      "normalized_region_name": "내탑동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "동구",
+      "candidate_parent": "동구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "동구"
+      ],
+      "region_id": "kr-b300-c804-kr-b0b4-d0d1-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-b3d9-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 36,
+      "original_keyword": "주촌동",
+      "normalized_region_name": "주촌동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "동구",
+      "candidate_parent": "동구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "동구"
+      ],
+      "region_id": "kr-b300-c804-kr-c8fc-cd0c-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-b3d9-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 37,
+      "original_keyword": "낭월동",
+      "normalized_region_name": "낭월동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "동구",
+      "candidate_parent": "동구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "동구"
+      ],
+      "region_id": "kr-b300-c804-kr-b0ad-c6d4-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-b3d9-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 38,
+      "original_keyword": "대별동",
+      "normalized_region_name": "대별동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "동구",
+      "candidate_parent": "동구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "동구"
+      ],
+      "region_id": "kr-b300-c804-kr-b300-bcc4-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-b3d9-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 39,
+      "original_keyword": "이사동",
+      "normalized_region_name": "이사동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "동구",
+      "candidate_parent": "동구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "동구"
+      ],
+      "region_id": "kr-b300-c804-kr-c774-c0ac-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-b3d9-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 40,
+      "original_keyword": "대성동",
+      "normalized_region_name": "대성동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "동구",
+      "candidate_parent": "동구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "동구"
+      ],
+      "region_id": "kr-b300-c804-kr-b300-c131-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-b3d9-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 41,
+      "original_keyword": "은행동",
+      "normalized_region_name": "은행동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "중구",
+      "candidate_parent": "중구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "중구"
+      ],
+      "region_id": "kr-b300-c804-kr-c740-d589-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-c911-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 42,
+      "original_keyword": "선화동",
+      "normalized_region_name": "선화동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "중구",
+      "candidate_parent": "중구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "중구"
+      ],
+      "region_id": "kr-b300-c804-kr-c120-d654-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-c911-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 43,
+      "original_keyword": "대전중구 목동",
+      "normalized_region_name": "목동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "중구",
+      "candidate_parent": "중구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "중구"
+      ],
+      "region_id": "kr-b300-c804-kr-baa9-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-c911-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 44,
+      "original_keyword": "중촌동",
+      "normalized_region_name": "중촌동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "중구",
+      "candidate_parent": "중구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "중구"
+      ],
+      "region_id": "kr-b300-c804-kr-c911-cd0c-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-c911-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 45,
+      "original_keyword": "대흥동",
+      "normalized_region_name": "대흥동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "중구",
+      "candidate_parent": "중구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "중구"
+      ],
+      "region_id": "kr-b300-c804-kr-b300-d765-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-c911-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 46,
+      "original_keyword": "문창동",
+      "normalized_region_name": "문창동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "중구",
+      "candidate_parent": "중구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "중구"
+      ],
+      "region_id": "kr-b300-c804-kr-bb38-cc3d-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-c911-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 47,
+      "original_keyword": "석교동",
+      "normalized_region_name": "석교동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "중구",
+      "candidate_parent": "중구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "중구"
+      ],
+      "region_id": "kr-b300-c804-kr-c11d-ad50-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-c911-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 48,
+      "original_keyword": "대전중구 호동",
+      "normalized_region_name": "호동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "중구",
+      "candidate_parent": "중구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "중구"
+      ],
+      "region_id": "kr-b300-c804-kr-d638-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-c911-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 49,
+      "original_keyword": "옥계동",
+      "normalized_region_name": "옥계동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "중구",
+      "candidate_parent": "중구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "중구"
+      ],
+      "region_id": "kr-b300-c804-kr-c625-acc4-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-c911-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 50,
+      "original_keyword": "대사동",
+      "normalized_region_name": "대사동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "중구",
+      "candidate_parent": "중구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "중구"
+      ],
+      "region_id": "kr-b300-c804-kr-b300-c0ac-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-c911-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 51,
+      "original_keyword": "부사동",
+      "normalized_region_name": "부사동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "중구",
+      "candidate_parent": "중구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "중구"
+      ],
+      "region_id": "kr-b300-c804-kr-bd80-c0ac-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-c911-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 52,
+      "original_keyword": "용두동",
+      "normalized_region_name": "용두동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "중구",
+      "candidate_parent": "중구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "중구"
+      ],
+      "region_id": "kr-b300-c804-kr-c6a9-b450-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-c911-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 53,
+      "original_keyword": "오류동",
+      "normalized_region_name": "오류동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "중구",
+      "candidate_parent": "중구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "중구"
+      ],
+      "region_id": "kr-b300-c804-kr-c624-b958-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-c911-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 54,
+      "original_keyword": "태평동",
+      "normalized_region_name": "태평동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "중구",
+      "candidate_parent": "중구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "중구"
+      ],
+      "region_id": "kr-b300-c804-kr-d0dc-d3c9-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-c911-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 55,
+      "original_keyword": "유천동",
+      "normalized_region_name": "유천동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "중구",
+      "candidate_parent": "중구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "중구"
+      ],
+      "region_id": "kr-b300-c804-kr-c720-cc9c-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-c911-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 56,
+      "original_keyword": "문화동",
+      "normalized_region_name": "문화동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "중구",
+      "candidate_parent": "중구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "중구"
+      ],
+      "region_id": "kr-b300-c804-kr-bb38-d654-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-c911-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 57,
+      "original_keyword": "산성동",
+      "normalized_region_name": "산성동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "중구",
+      "candidate_parent": "중구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "중구"
+      ],
+      "region_id": "kr-b300-c804-kr-c0b0-c131-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-c911-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 58,
+      "original_keyword": "사정동",
+      "normalized_region_name": "사정동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "중구",
+      "candidate_parent": "중구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "중구"
+      ],
+      "region_id": "kr-b300-c804-kr-c0ac-c815-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-c911-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 59,
+      "original_keyword": "안영동",
+      "normalized_region_name": "안영동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "중구",
+      "candidate_parent": "중구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "중구"
+      ],
+      "region_id": "kr-b300-c804-kr-c548-c601-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-c911-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 60,
+      "original_keyword": "무수동",
+      "normalized_region_name": "무수동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "중구",
+      "candidate_parent": "중구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "중구"
+      ],
+      "region_id": "kr-b300-c804-kr-bb34-c218-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-c911-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 61,
+      "original_keyword": "구완동",
+      "normalized_region_name": "구완동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "중구",
+      "candidate_parent": "중구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "중구"
+      ],
+      "region_id": "kr-b300-c804-kr-ad6c-c644-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-c911-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 62,
+      "original_keyword": "침산동",
+      "normalized_region_name": "침산동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "중구",
+      "candidate_parent": "중구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "중구"
+      ],
+      "region_id": "kr-b300-c804-kr-ce68-c0b0-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-c911-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 63,
+      "original_keyword": "목달동",
+      "normalized_region_name": "목달동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "중구",
+      "candidate_parent": "중구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "중구"
+      ],
+      "region_id": "kr-b300-c804-kr-baa9-b2ec-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-c911-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 64,
+      "original_keyword": "정생동",
+      "normalized_region_name": "정생동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "중구",
+      "candidate_parent": "중구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "중구"
+      ],
+      "region_id": "kr-b300-c804-kr-c815-c0dd-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-c911-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 65,
+      "original_keyword": "어남동",
+      "normalized_region_name": "어남동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "중구",
+      "candidate_parent": "중구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "중구"
+      ],
+      "region_id": "kr-b300-c804-kr-c5b4-b0a8-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-c911-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 66,
+      "original_keyword": "대전중구 금동",
+      "normalized_region_name": "금동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "중구",
+      "candidate_parent": "중구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "중구"
+      ],
+      "region_id": "kr-b300-c804-kr-ae08-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-c911-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 67,
+      "original_keyword": "복수동",
+      "normalized_region_name": "복수동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "서구",
+      "candidate_parent": "서구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "서구"
+      ],
+      "region_id": "kr-b300-c804-kr-bcf5-c218-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-c11c-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 68,
+      "original_keyword": "대전서구 변동",
+      "normalized_region_name": "변동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "서구",
+      "candidate_parent": "서구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "서구"
+      ],
+      "region_id": "kr-b300-c804-kr-bcc0-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-c11c-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 69,
+      "original_keyword": "도마동",
+      "normalized_region_name": "도마동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "서구",
+      "candidate_parent": "서구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "서구"
+      ],
+      "region_id": "kr-b300-c804-kr-b3c4-b9c8-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-c11c-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 70,
+      "original_keyword": "정림동",
+      "normalized_region_name": "정림동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "서구",
+      "candidate_parent": "서구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "서구"
+      ],
+      "region_id": "kr-b300-c804-kr-c815-b9bc-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-c11c-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 71,
+      "original_keyword": "용문동",
+      "normalized_region_name": "용문동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "서구",
+      "candidate_parent": "서구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "서구"
+      ],
+      "region_id": "kr-b300-c804-kr-c6a9-bb38-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-c11c-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 72,
+      "original_keyword": "탄방동",
+      "normalized_region_name": "탄방동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "서구",
+      "candidate_parent": "서구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "서구"
+      ],
+      "region_id": "kr-b300-c804-kr-d0c4-bc29-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-c11c-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 73,
+      "original_keyword": "괴정동",
+      "normalized_region_name": "괴정동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "서구",
+      "candidate_parent": "서구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "서구"
+      ],
+      "region_id": "kr-b300-c804-kr-ad34-c815-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-c11c-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 74,
+      "original_keyword": "가장동",
+      "normalized_region_name": "가장동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "서구",
+      "candidate_parent": "서구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "서구"
+      ],
+      "region_id": "kr-b300-c804-kr-ac00-c7a5-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-c11c-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 75,
+      "original_keyword": "대전서구 내동",
+      "normalized_region_name": "내동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "서구",
+      "candidate_parent": "서구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "서구"
+      ],
+      "region_id": "kr-b300-c804-kr-b0b4-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-c11c-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 76,
+      "original_keyword": "갈마동",
+      "normalized_region_name": "갈마동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "서구",
+      "candidate_parent": "서구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "서구"
+      ],
+      "region_id": "kr-b300-c804-kr-ac08-b9c8-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-c11c-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 77,
+      "original_keyword": "둔산동",
+      "normalized_region_name": "둔산동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "서구",
+      "candidate_parent": "서구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "서구"
+      ],
+      "region_id": "kr-b300-c804-kr-b454-c0b0-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-c11c-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 78,
+      "original_keyword": "월평동",
+      "normalized_region_name": "월평동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "서구",
+      "candidate_parent": "서구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "서구"
+      ],
+      "region_id": "kr-b300-c804-kr-c6d4-d3c9-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-c11c-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 79,
+      "original_keyword": "가수원동",
+      "normalized_region_name": "가수원동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "서구",
+      "candidate_parent": "서구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "서구"
+      ],
+      "region_id": "kr-b300-c804-kr-ac00-c218-c6d0-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-c11c-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 80,
+      "original_keyword": "도안동",
+      "normalized_region_name": "도안동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "서구",
+      "candidate_parent": "서구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "서구"
+      ],
+      "region_id": "kr-b300-c804-kr-b3c4-c548-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-c11c-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 81,
+      "original_keyword": "관저동",
+      "normalized_region_name": "관저동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "서구",
+      "candidate_parent": "서구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "서구"
+      ],
+      "region_id": "kr-b300-c804-kr-ad00-c800-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-c11c-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 82,
+      "original_keyword": "흑석동",
+      "normalized_region_name": "흑석동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "서구",
+      "candidate_parent": "서구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "서구"
+      ],
+      "region_id": "kr-b300-c804-kr-d751-c11d-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-c11c-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 83,
+      "original_keyword": "매노동",
+      "normalized_region_name": "매노동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "서구",
+      "candidate_parent": "서구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "서구"
+      ],
+      "region_id": "kr-b300-c804-kr-b9e4-b178-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-c11c-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 84,
+      "original_keyword": "산직동",
+      "normalized_region_name": "산직동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "서구",
+      "candidate_parent": "서구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "서구"
+      ],
+      "region_id": "kr-b300-c804-kr-c0b0-c9c1-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-c11c-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 85,
+      "original_keyword": "장안동",
+      "normalized_region_name": "장안동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "서구",
+      "candidate_parent": "서구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "서구"
+      ],
+      "region_id": "kr-b300-c804-kr-c7a5-c548-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-c11c-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 88,
+      "original_keyword": "우명동",
+      "normalized_region_name": "우명동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "서구",
+      "candidate_parent": "서구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "서구"
+      ],
+      "region_id": "kr-b300-c804-kr-c6b0-ba85-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-c11c-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 89,
+      "original_keyword": "원정동",
+      "normalized_region_name": "원정동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "서구",
+      "candidate_parent": "서구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "서구"
+      ],
+      "region_id": "kr-b300-c804-kr-c6d0-c815-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-c11c-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 90,
+      "original_keyword": "원내동",
+      "normalized_region_name": "원내동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "유성구",
+      "candidate_parent": "유성구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "유성구"
+      ],
+      "region_id": "kr-b300-c804-kr-c6d0-b0b4-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-c720-c131-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 91,
+      "original_keyword": "교촌동",
+      "normalized_region_name": "교촌동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "유성구",
+      "candidate_parent": "유성구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "유성구"
+      ],
+      "region_id": "kr-b300-c804-kr-ad50-cd0c-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-c720-c131-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 92,
+      "original_keyword": "대정동",
+      "normalized_region_name": "대정동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "유성구",
+      "candidate_parent": "유성구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "유성구"
+      ],
+      "region_id": "kr-b300-c804-kr-b300-c815-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-c720-c131-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 94,
+      "original_keyword": "학하동",
+      "normalized_region_name": "학하동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "유성구",
+      "candidate_parent": "유성구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "유성구"
+      ],
+      "region_id": "kr-b300-c804-kr-d559-d558-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-c720-c131-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 95,
+      "original_keyword": "계산동",
+      "normalized_region_name": "계산동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "유성구",
+      "candidate_parent": "유성구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "유성구"
+      ],
+      "region_id": "kr-b300-c804-kr-acc4-c0b0-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-c720-c131-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 96,
+      "original_keyword": "성북동",
+      "normalized_region_name": "성북동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "유성구",
+      "candidate_parent": "유성구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "유성구"
+      ],
+      "region_id": "kr-b300-c804-kr-c131-bd81-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-c720-c131-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 97,
+      "original_keyword": "대전유성구 세동",
+      "normalized_region_name": "세동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "유성구",
+      "candidate_parent": "유성구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "유성구"
+      ],
+      "region_id": "kr-b300-c804-kr-c138-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-c720-c131-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 98,
+      "original_keyword": "송정동",
+      "normalized_region_name": "송정동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "유성구",
+      "candidate_parent": "유성구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "유성구"
+      ],
+      "region_id": "kr-b300-c804-kr-c1a1-c815-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-c720-c131-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 99,
+      "original_keyword": "대전유성구 방동",
+      "normalized_region_name": "방동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "유성구",
+      "candidate_parent": "유성구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "유성구"
+      ],
+      "region_id": "kr-b300-c804-kr-bc29-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-c720-c131-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 100,
+      "original_keyword": "봉명동",
+      "normalized_region_name": "봉명동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "유성구",
+      "candidate_parent": "유성구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "유성구"
+      ],
+      "region_id": "kr-b300-c804-kr-bd09-ba85-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-c720-c131-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 101,
+      "original_keyword": "구암동",
+      "normalized_region_name": "구암동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "유성구",
+      "candidate_parent": "유성구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "유성구"
+      ],
+      "region_id": "kr-b300-c804-kr-ad6c-c554-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-c720-c131-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 102,
+      "original_keyword": "덕명동",
+      "normalized_region_name": "덕명동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "유성구",
+      "candidate_parent": "유성구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "유성구"
+      ],
+      "region_id": "kr-b300-c804-kr-b355-ba85-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-c720-c131-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 103,
+      "original_keyword": "원신흥동",
+      "normalized_region_name": "원신흥동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "유성구",
+      "candidate_parent": "유성구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "유성구"
+      ],
+      "region_id": "kr-b300-c804-kr-c6d0-c2e0-d765-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-c720-c131-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 104,
+      "original_keyword": "상대동",
+      "normalized_region_name": "상대동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "유성구",
+      "candidate_parent": "유성구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "유성구"
+      ],
+      "region_id": "kr-b300-c804-kr-c0c1-b300-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-c720-c131-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 105,
+      "original_keyword": "복용동",
+      "normalized_region_name": "복용동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "유성구",
+      "candidate_parent": "유성구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "유성구"
+      ],
+      "region_id": "kr-b300-c804-kr-bcf5-c6a9-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-c720-c131-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 106,
+      "original_keyword": "장대동",
+      "normalized_region_name": "장대동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "유성구",
+      "candidate_parent": "유성구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "유성구"
+      ],
+      "region_id": "kr-b300-c804-kr-c7a5-b300-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-c720-c131-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 107,
+      "original_keyword": "대전유성구 갑동",
+      "normalized_region_name": "갑동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "유성구",
+      "candidate_parent": "유성구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "유성구"
+      ],
+      "region_id": "kr-b300-c804-kr-ac11-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-c720-c131-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 108,
+      "original_keyword": "노은동",
+      "normalized_region_name": "노은동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "유성구",
+      "candidate_parent": "유성구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "유성구"
+      ],
+      "region_id": "kr-b300-c804-kr-b178-c740-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-c720-c131-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 109,
+      "original_keyword": "지족동",
+      "normalized_region_name": "지족동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "유성구",
+      "candidate_parent": "유성구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "유성구"
+      ],
+      "region_id": "kr-b300-c804-kr-c9c0-c871-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-c720-c131-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 110,
+      "original_keyword": "대전유성구 죽동",
+      "normalized_region_name": "죽동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "유성구",
+      "candidate_parent": "유성구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "유성구"
+      ],
+      "region_id": "kr-b300-c804-kr-c8fd-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-c720-c131-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 111,
+      "original_keyword": "대전유성구 궁동",
+      "normalized_region_name": "궁동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "유성구",
+      "candidate_parent": "유성구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "유성구"
+      ],
+      "region_id": "kr-b300-c804-kr-ad81-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-c720-c131-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 112,
+      "original_keyword": "어은동",
+      "normalized_region_name": "어은동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "유성구",
+      "candidate_parent": "유성구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "유성구"
+      ],
+      "region_id": "kr-b300-c804-kr-c5b4-c740-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-c720-c131-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 113,
+      "original_keyword": "구성동",
+      "normalized_region_name": "구성동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "유성구",
+      "candidate_parent": "유성구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "유성구"
+      ],
+      "region_id": "kr-b300-c804-kr-ad6c-c131-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-c720-c131-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 114,
+      "original_keyword": "신성동",
+      "normalized_region_name": "신성동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "유성구",
+      "candidate_parent": "유성구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "유성구"
+      ],
+      "region_id": "kr-b300-c804-kr-c2e0-c131-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-c720-c131-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 115,
+      "original_keyword": "가정동",
+      "normalized_region_name": "가정동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "유성구",
+      "candidate_parent": "유성구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "유성구"
+      ],
+      "region_id": "kr-b300-c804-kr-ac00-c815-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-c720-c131-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 116,
+      "original_keyword": "도룡동",
+      "normalized_region_name": "도룡동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "유성구",
+      "candidate_parent": "유성구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "유성구"
+      ],
+      "region_id": "kr-b300-c804-kr-b3c4-b8e1-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-c720-c131-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 118,
+      "original_keyword": "덕진동",
+      "normalized_region_name": "덕진동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "유성구",
+      "candidate_parent": "유성구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "유성구"
+      ],
+      "region_id": "kr-b300-c804-kr-b355-c9c4-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-c720-c131-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 119,
+      "original_keyword": "하기동",
+      "normalized_region_name": "하기동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "유성구",
+      "candidate_parent": "유성구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "유성구"
+      ],
+      "region_id": "kr-b300-c804-kr-d558-ae30-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-c720-c131-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 120,
+      "original_keyword": "추목동",
+      "normalized_region_name": "추목동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "유성구",
+      "candidate_parent": "유성구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "유성구"
+      ],
+      "region_id": "kr-b300-c804-kr-cd94-baa9-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-c720-c131-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 121,
+      "original_keyword": "자운동",
+      "normalized_region_name": "자운동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "유성구",
+      "candidate_parent": "유성구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "유성구"
+      ],
+      "region_id": "kr-b300-c804-kr-c790-c6b4-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-c720-c131-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 122,
+      "original_keyword": "신봉동",
+      "normalized_region_name": "신봉동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "유성구",
+      "candidate_parent": "유성구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "유성구"
+      ],
+      "region_id": "kr-b300-c804-kr-c2e0-bd09-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-c720-c131-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 123,
+      "original_keyword": "수남동",
+      "normalized_region_name": "수남동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "유성구",
+      "candidate_parent": "유성구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "유성구"
+      ],
+      "region_id": "kr-b300-c804-kr-c218-b0a8-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-c720-c131-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 124,
+      "original_keyword": "안산동",
+      "normalized_region_name": "안산동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "유성구",
+      "candidate_parent": "유성구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "유성구"
+      ],
+      "region_id": "kr-b300-c804-kr-c548-c0b0-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-c720-c131-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 125,
+      "original_keyword": "외삼동",
+      "normalized_region_name": "외삼동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "유성구",
+      "candidate_parent": "유성구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "유성구"
+      ],
+      "region_id": "kr-b300-c804-kr-c678-c0bc-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-c720-c131-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 126,
+      "original_keyword": "반석동",
+      "normalized_region_name": "반석동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "유성구",
+      "candidate_parent": "유성구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "유성구"
+      ],
+      "region_id": "kr-b300-c804-kr-bc18-c11d-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-c720-c131-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 127,
+      "original_keyword": "문지동",
+      "normalized_region_name": "문지동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "유성구",
+      "candidate_parent": "유성구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "유성구"
+      ],
+      "region_id": "kr-b300-c804-kr-bb38-c9c0-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-c720-c131-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 128,
+      "original_keyword": "전민동",
+      "normalized_region_name": "전민동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "유성구",
+      "candidate_parent": "유성구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "유성구"
+      ],
+      "region_id": "kr-b300-c804-kr-c804-bbfc-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-c720-c131-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 129,
+      "original_keyword": "원촌동",
+      "normalized_region_name": "원촌동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "유성구",
+      "candidate_parent": "유성구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "유성구"
+      ],
+      "region_id": "kr-b300-c804-kr-c6d0-cd0c-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-c720-c131-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 130,
+      "original_keyword": "탑립동",
+      "normalized_region_name": "탑립동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "유성구",
+      "candidate_parent": "유성구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "유성구"
+      ],
+      "region_id": "kr-b300-c804-kr-d0d1-b9bd-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-c720-c131-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 131,
+      "original_keyword": "용산동",
+      "normalized_region_name": "용산동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "유성구",
+      "candidate_parent": "유성구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "유성구"
+      ],
+      "region_id": "kr-b300-c804-kr-c6a9-c0b0-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-c720-c131-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 132,
+      "original_keyword": "봉산동",
+      "normalized_region_name": "봉산동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "유성구",
+      "candidate_parent": "유성구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "유성구"
+      ],
+      "region_id": "kr-b300-c804-kr-bd09-c0b0-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-c720-c131-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 133,
+      "original_keyword": "관평동",
+      "normalized_region_name": "관평동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "유성구",
+      "candidate_parent": "유성구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "유성구"
+      ],
+      "region_id": "kr-b300-c804-kr-ad00-d3c9-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-c720-c131-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 134,
+      "original_keyword": "화암동",
+      "normalized_region_name": "화암동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "유성구",
+      "candidate_parent": "유성구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "유성구"
+      ],
+      "region_id": "kr-b300-c804-kr-d654-c554-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-c720-c131-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 135,
+      "original_keyword": "오정동",
+      "normalized_region_name": "오정동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "대덕구",
+      "candidate_parent": "대덕구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "대덕구"
+      ],
+      "region_id": "kr-b300-c804-kr-c624-c815-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-b300-b355-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 136,
+      "original_keyword": "대화동",
+      "normalized_region_name": "대화동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "대덕구",
+      "candidate_parent": "대덕구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "대덕구"
+      ],
+      "region_id": "kr-b300-c804-kr-b300-d654-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-b300-b355-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 137,
+      "original_keyword": "읍내동",
+      "normalized_region_name": "읍내동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "대덕구",
+      "candidate_parent": "대덕구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "대덕구"
+      ],
+      "region_id": "kr-b300-c804-kr-c74d-b0b4-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-b300-b355-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 138,
+      "original_keyword": "연축동",
+      "normalized_region_name": "연축동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "대덕구",
+      "candidate_parent": "대덕구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "대덕구"
+      ],
+      "region_id": "kr-b300-c804-kr-c5f0-cd95-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-b300-b355-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 139,
+      "original_keyword": "신대동",
+      "normalized_region_name": "신대동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "대덕구",
+      "candidate_parent": "대덕구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "대덕구"
+      ],
+      "region_id": "kr-b300-c804-kr-c2e0-b300-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-b300-b355-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 140,
+      "original_keyword": "대전대덕구 와동",
+      "normalized_region_name": "와동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "대덕구",
+      "candidate_parent": "대덕구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "대덕구"
+      ],
+      "region_id": "kr-b300-c804-kr-c640-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-b300-b355-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 141,
+      "original_keyword": "송촌동",
+      "normalized_region_name": "송촌동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "대덕구",
+      "candidate_parent": "대덕구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "대덕구"
+      ],
+      "region_id": "kr-b300-c804-kr-c1a1-cd0c-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-b300-b355-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 142,
+      "original_keyword": "대전대덕구 법동",
+      "normalized_region_name": "법동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "대덕구",
+      "candidate_parent": "대덕구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "대덕구"
+      ],
+      "region_id": "kr-b300-c804-kr-bc95-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-b300-b355-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 143,
+      "original_keyword": "중리동",
+      "normalized_region_name": "중리동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "대덕구",
+      "candidate_parent": "대덕구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "대덕구"
+      ],
+      "region_id": "kr-b300-c804-kr-c911-b9ac-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-b300-b355-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 144,
+      "original_keyword": "비래동",
+      "normalized_region_name": "비래동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "대덕구",
+      "candidate_parent": "대덕구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "대덕구"
+      ],
+      "region_id": "kr-b300-c804-kr-be44-b798-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-b300-b355-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 145,
+      "original_keyword": "석봉동",
+      "normalized_region_name": "석봉동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "대덕구",
+      "candidate_parent": "대덕구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "대덕구"
+      ],
+      "region_id": "kr-b300-c804-kr-c11d-bd09-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-b300-b355-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 146,
+      "original_keyword": "목상동",
+      "normalized_region_name": "목상동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "대덕구",
+      "candidate_parent": "대덕구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "대덕구"
+      ],
+      "region_id": "kr-b300-c804-kr-baa9-c0c1-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-b300-b355-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 147,
+      "original_keyword": "문평동",
+      "normalized_region_name": "문평동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "대덕구",
+      "candidate_parent": "대덕구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "대덕구"
+      ],
+      "region_id": "kr-b300-c804-kr-bb38-d3c9-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-b300-b355-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 148,
+      "original_keyword": "신일동",
+      "normalized_region_name": "신일동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "대덕구",
+      "candidate_parent": "대덕구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "대덕구"
+      ],
+      "region_id": "kr-b300-c804-kr-c2e0-c77c-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-b300-b355-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 149,
+      "original_keyword": "덕암동",
+      "normalized_region_name": "덕암동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "대덕구",
+      "candidate_parent": "대덕구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "대덕구"
+      ],
+      "region_id": "kr-b300-c804-kr-b355-c554-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-b300-b355-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 150,
+      "original_keyword": "상서동",
+      "normalized_region_name": "상서동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "대덕구",
+      "candidate_parent": "대덕구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "대덕구"
+      ],
+      "region_id": "kr-b300-c804-kr-c0c1-c11c-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-b300-b355-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 153,
+      "original_keyword": "용호동",
+      "normalized_region_name": "용호동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "대덕구",
+      "candidate_parent": "대덕구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "대덕구"
+      ],
+      "region_id": "kr-b300-c804-kr-c6a9-d638-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-b300-b355-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 154,
+      "original_keyword": "이현동",
+      "normalized_region_name": "이현동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "대덕구",
+      "candidate_parent": "대덕구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "대덕구"
+      ],
+      "region_id": "kr-b300-c804-kr-c774-d604-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-b300-b355-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 155,
+      "original_keyword": "갈전동",
+      "normalized_region_name": "갈전동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "대덕구",
+      "candidate_parent": "대덕구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "대덕구"
+      ],
+      "region_id": "kr-b300-c804-kr-ac08-c804-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-b300-b355-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 156,
+      "original_keyword": "부수동",
+      "normalized_region_name": "부수동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "대덕구",
+      "candidate_parent": "대덕구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "대덕구"
+      ],
+      "region_id": "kr-b300-c804-kr-bd80-c218-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-b300-b355-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 157,
+      "original_keyword": "황호동",
+      "normalized_region_name": "황호동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "대덕구",
+      "candidate_parent": "대덕구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "대덕구"
+      ],
+      "region_id": "kr-b300-c804-kr-d669-d638-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-b300-b355-ad6c"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 159,
+      "original_keyword": "미호동",
+      "normalized_region_name": "미호동",
+      "candidate_sido": "대전광역시",
+      "candidate_sigungu": "대덕구",
+      "candidate_parent": "대덕구",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "대덕구"
+      ],
+      "region_id": "kr-b300-c804-kr-bbf8-d638-b3d9",
+      "parent_region_id": "kr-b300-c804-kr-b300-b355-ad6c"
+    },
+    {
+      "source_sheet": "충북",
+      "source_row": 3,
+      "original_keyword": "상당구",
+      "normalized_region_name": "상당구",
+      "candidate_sido": "충청북도",
+      "candidate_sigungu": "청주시",
+      "candidate_parent": "청주시",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "청주시"
+      ],
+      "region_id": "kr-cda9-bd81-kr-c0c1-b2f9-ad6c",
+      "parent_region_id": "kr-cda9-bd81-kr-ccad-c8fc-c2dc"
+    },
+    {
+      "source_sheet": "충북",
+      "source_row": 4,
+      "original_keyword": "서원구",
+      "normalized_region_name": "서원구",
+      "candidate_sido": "충청북도",
+      "candidate_sigungu": "청주시",
+      "candidate_parent": "청주시",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "청주시"
+      ],
+      "region_id": "kr-cda9-bd81-kr-c11c-c6d0-ad6c",
+      "parent_region_id": "kr-cda9-bd81-kr-ccad-c8fc-c2dc"
+    },
+    {
+      "source_sheet": "충북",
+      "source_row": 5,
+      "original_keyword": "흥덕구",
+      "normalized_region_name": "흥덕구",
+      "candidate_sido": "충청북도",
+      "candidate_sigungu": "청주시",
+      "candidate_parent": "청주시",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "청주시"
+      ],
+      "region_id": "kr-cda9-bd81-kr-d765-b355-ad6c",
+      "parent_region_id": "kr-cda9-bd81-kr-ccad-c8fc-c2dc"
+    },
+    {
+      "source_sheet": "충북",
+      "source_row": 6,
+      "original_keyword": "청원구",
+      "normalized_region_name": "청원구",
+      "candidate_sido": "충청북도",
+      "candidate_sigungu": "청주시",
+      "candidate_parent": "청주시",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "청주시"
+      ],
+      "region_id": "kr-cda9-bd81-kr-ccad-c6d0-ad6c",
+      "parent_region_id": "kr-cda9-bd81-kr-ccad-c8fc-c2dc"
+    },
+    {
+      "source_sheet": "전북",
+      "source_row": 3,
+      "original_keyword": "덕진구",
+      "normalized_region_name": "덕진구",
+      "candidate_sido": "전북특별자치도",
+      "candidate_sigungu": "전주시",
+      "candidate_parent": "전주시",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "전주시"
+      ],
+      "region_id": "kr-c804-bd81-kr-b355-c9c4-ad6c",
+      "parent_region_id": "kr-c804-bd81-kr-c804-c8fc-c2dc"
+    },
+    {
+      "source_sheet": "전북",
+      "source_row": 4,
+      "original_keyword": "완산구",
+      "normalized_region_name": "완산구",
+      "candidate_sido": "전북특별자치도",
+      "candidate_sigungu": "전주시",
+      "candidate_parent": "전주시",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "전주시"
+      ],
+      "region_id": "kr-c804-bd81-kr-c644-c0b0-ad6c",
+      "parent_region_id": "kr-c804-bd81-kr-c804-c8fc-c2dc"
+    },
+    {
+      "source_sheet": "경북",
+      "source_row": 2,
+      "original_keyword": "포항시 남구",
+      "normalized_region_name": "남구",
+      "candidate_sido": "경상북도",
+      "candidate_sigungu": "포항시",
+      "candidate_parent": "포항시",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "포항시"
+      ],
+      "region_id": "kr-acbd-bd81-kr-b0a8-ad6c",
+      "parent_region_id": "kr-acbd-bd81-kr-d3ec-d56d-c2dc"
+    },
+    {
+      "source_sheet": "경북",
+      "source_row": 3,
+      "original_keyword": "포항시 북구",
+      "normalized_region_name": "북구",
+      "candidate_sido": "경상북도",
+      "candidate_sigungu": "포항시",
+      "candidate_parent": "포항시",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "포항시"
+      ],
+      "region_id": "kr-acbd-bd81-kr-bd81-ad6c",
+      "parent_region_id": "kr-acbd-bd81-kr-d3ec-d56d-c2dc"
+    },
+    {
+      "source_sheet": "경남",
+      "source_row": 3,
+      "original_keyword": "의창구",
+      "normalized_region_name": "의창구",
+      "candidate_sido": "경상남도",
+      "candidate_sigungu": "창원시",
+      "candidate_parent": "창원시",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "창원시"
+      ],
+      "region_id": "kr-acbd-b0a8-kr-c758-cc3d-ad6c",
+      "parent_region_id": "kr-acbd-b0a8-kr-cc3d-c6d0-c2dc"
+    },
+    {
+      "source_sheet": "경남",
+      "source_row": 4,
+      "original_keyword": "성산구",
+      "normalized_region_name": "성산구",
+      "candidate_sido": "경상남도",
+      "candidate_sigungu": "창원시",
+      "candidate_parent": "창원시",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "창원시"
+      ],
+      "region_id": "kr-acbd-b0a8-kr-c131-c0b0-ad6c",
+      "parent_region_id": "kr-acbd-b0a8-kr-cc3d-c6d0-c2dc"
+    },
+    {
+      "source_sheet": "경남",
+      "source_row": 5,
+      "original_keyword": "마산합포구",
+      "normalized_region_name": "마산합포구",
+      "candidate_sido": "경상남도",
+      "candidate_sigungu": "창원시",
+      "candidate_parent": "창원시",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "창원시"
+      ],
+      "region_id": "kr-acbd-b0a8-kr-b9c8-c0b0-d569-d3ec-ad6c",
+      "parent_region_id": "kr-acbd-b0a8-kr-cc3d-c6d0-c2dc"
+    },
+    {
+      "source_sheet": "경남",
+      "source_row": 6,
+      "original_keyword": "마산회원구",
+      "normalized_region_name": "마산회원구",
+      "candidate_sido": "경상남도",
+      "candidate_sigungu": "창원시",
+      "candidate_parent": "창원시",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "창원시"
+      ],
+      "region_id": "kr-acbd-b0a8-kr-b9c8-c0b0-d68c-c6d0-ad6c",
+      "parent_region_id": "kr-acbd-b0a8-kr-cc3d-c6d0-c2dc"
+    },
+    {
+      "source_sheet": "경남",
+      "source_row": 7,
+      "original_keyword": "진해구",
+      "normalized_region_name": "진해구",
+      "candidate_sido": "경상남도",
+      "candidate_sigungu": "창원시",
+      "candidate_parent": "창원시",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "창원시"
+      ],
+      "region_id": "kr-acbd-b0a8-kr-c9c4-d574-ad6c",
+      "parent_region_id": "kr-acbd-b0a8-kr-cc3d-c6d0-c2dc"
+    },
+    {
+      "source_sheet": "제주도",
+      "source_row": 4,
+      "original_keyword": "한림읍",
+      "normalized_region_name": "한림읍",
+      "candidate_sido": "제주특별자치도",
+      "candidate_sigungu": "제주시",
+      "candidate_parent": "제주시",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "제주시"
+      ],
+      "region_id": "kr-c81c-c8fc-b3c4-kr-d55c-b9bc-c74d",
+      "parent_region_id": "kr-c81c-c8fc-b3c4-kr-c81c-c8fc-c2dc"
+    },
+    {
+      "source_sheet": "제주도",
+      "source_row": 5,
+      "original_keyword": "애월읍",
+      "normalized_region_name": "애월읍",
+      "candidate_sido": "제주특별자치도",
+      "candidate_sigungu": "제주시",
+      "candidate_parent": "제주시",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "제주시"
+      ],
+      "region_id": "kr-c81c-c8fc-b3c4-kr-c560-c6d4-c74d",
+      "parent_region_id": "kr-c81c-c8fc-b3c4-kr-c81c-c8fc-c2dc"
+    },
+    {
+      "source_sheet": "제주도",
+      "source_row": 6,
+      "original_keyword": "구좌읍",
+      "normalized_region_name": "구좌읍",
+      "candidate_sido": "제주특별자치도",
+      "candidate_sigungu": "제주시",
+      "candidate_parent": "제주시",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "제주시"
+      ],
+      "region_id": "kr-c81c-c8fc-b3c4-kr-ad6c-c88c-c74d",
+      "parent_region_id": "kr-c81c-c8fc-b3c4-kr-c81c-c8fc-c2dc"
+    },
+    {
+      "source_sheet": "제주도",
+      "source_row": 7,
+      "original_keyword": "조천읍",
+      "normalized_region_name": "조천읍",
+      "candidate_sido": "제주특별자치도",
+      "candidate_sigungu": "제주시",
+      "candidate_parent": "제주시",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "제주시"
+      ],
+      "region_id": "kr-c81c-c8fc-b3c4-kr-c870-cc9c-c74d",
+      "parent_region_id": "kr-c81c-c8fc-b3c4-kr-c81c-c8fc-c2dc"
+    },
+    {
+      "source_sheet": "제주도",
+      "source_row": 8,
+      "original_keyword": "한경면",
+      "normalized_region_name": "한경면",
+      "candidate_sido": "제주특별자치도",
+      "candidate_sigungu": "제주시",
+      "candidate_parent": "제주시",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "제주시"
+      ],
+      "region_id": "kr-c81c-c8fc-b3c4-kr-d55c-acbd-ba74",
+      "parent_region_id": "kr-c81c-c8fc-b3c4-kr-c81c-c8fc-c2dc"
+    },
+    {
+      "source_sheet": "제주도",
+      "source_row": 9,
+      "original_keyword": "추자면",
+      "normalized_region_name": "추자면",
+      "candidate_sido": "제주특별자치도",
+      "candidate_sigungu": "제주시",
+      "candidate_parent": "제주시",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "제주시"
+      ],
+      "region_id": "kr-c81c-c8fc-b3c4-kr-cd94-c790-ba74",
+      "parent_region_id": "kr-c81c-c8fc-b3c4-kr-c81c-c8fc-c2dc"
+    },
+    {
+      "source_sheet": "제주도",
+      "source_row": 10,
+      "original_keyword": "우도면",
+      "normalized_region_name": "우도면",
+      "candidate_sido": "제주특별자치도",
+      "candidate_sigungu": "제주시",
+      "candidate_parent": "제주시",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "제주시"
+      ],
+      "region_id": "kr-c81c-c8fc-b3c4-kr-c6b0-b3c4-ba74",
+      "parent_region_id": "kr-c81c-c8fc-b3c4-kr-c81c-c8fc-c2dc"
+    },
+    {
+      "source_sheet": "제주도",
+      "source_row": 19,
+      "original_keyword": "건입동",
+      "normalized_region_name": "건입동",
+      "candidate_sido": "제주특별자치도",
+      "candidate_sigungu": "제주시",
+      "candidate_parent": "제주시",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "제주시"
+      ],
+      "region_id": "kr-c81c-c8fc-b3c4-kr-ac74-c785-b3d9",
+      "parent_region_id": "kr-c81c-c8fc-b3c4-kr-c81c-c8fc-c2dc"
+    },
+    {
+      "source_sheet": "제주도",
+      "source_row": 22,
+      "original_keyword": "봉개동",
+      "normalized_region_name": "봉개동",
+      "candidate_sido": "제주특별자치도",
+      "candidate_sigungu": "제주시",
+      "candidate_parent": "제주시",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "제주시"
+      ],
+      "region_id": "kr-c81c-c8fc-b3c4-kr-bd09-ac1c-b3d9",
+      "parent_region_id": "kr-c81c-c8fc-b3c4-kr-c81c-c8fc-c2dc"
+    },
+    {
+      "source_sheet": "제주도",
+      "source_row": 25,
+      "original_keyword": "제주시 연동",
+      "normalized_region_name": "연동",
+      "candidate_sido": "제주특별자치도",
+      "candidate_sigungu": "제주시",
+      "candidate_parent": "제주시",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "제주시"
+      ],
+      "region_id": "kr-c81c-c8fc-b3c4-kr-c5f0-b3d9",
+      "parent_region_id": "kr-c81c-c8fc-b3c4-kr-c81c-c8fc-c2dc"
+    },
+    {
+      "source_sheet": "제주도",
+      "source_row": 26,
+      "original_keyword": "노형동",
+      "normalized_region_name": "노형동",
+      "candidate_sido": "제주특별자치도",
+      "candidate_sigungu": "제주시",
+      "candidate_parent": "제주시",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "제주시"
+      ],
+      "region_id": "kr-c81c-c8fc-b3c4-kr-b178-d615-b3d9",
+      "parent_region_id": "kr-c81c-c8fc-b3c4-kr-c81c-c8fc-c2dc"
+    },
+    {
+      "source_sheet": "제주도",
+      "source_row": 30,
+      "original_keyword": "대정읍",
+      "normalized_region_name": "대정읍",
+      "candidate_sido": "제주특별자치도",
+      "candidate_sigungu": "서귀포시",
+      "candidate_parent": "서귀포시",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "서귀포시"
+      ],
+      "region_id": "kr-c81c-c8fc-b3c4-kr-b300-c815-c74d",
+      "parent_region_id": "kr-c81c-c8fc-b3c4-kr-c11c-adc0-d3ec-c2dc"
+    },
+    {
+      "source_sheet": "제주도",
+      "source_row": 31,
+      "original_keyword": "남원읍",
+      "normalized_region_name": "남원읍",
+      "candidate_sido": "제주특별자치도",
+      "candidate_sigungu": "서귀포시",
+      "candidate_parent": "서귀포시",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "서귀포시"
+      ],
+      "region_id": "kr-c81c-c8fc-b3c4-kr-b0a8-c6d0-c74d",
+      "parent_region_id": "kr-c81c-c8fc-b3c4-kr-c11c-adc0-d3ec-c2dc"
+    },
+    {
+      "source_sheet": "제주도",
+      "source_row": 32,
+      "original_keyword": "성산읍",
+      "normalized_region_name": "성산읍",
+      "candidate_sido": "제주특별자치도",
+      "candidate_sigungu": "서귀포시",
+      "candidate_parent": "서귀포시",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "서귀포시"
+      ],
+      "region_id": "kr-c81c-c8fc-b3c4-kr-c131-c0b0-c74d",
+      "parent_region_id": "kr-c81c-c8fc-b3c4-kr-c11c-adc0-d3ec-c2dc"
+    },
+    {
+      "source_sheet": "제주도",
+      "source_row": 33,
+      "original_keyword": "안덕면",
+      "normalized_region_name": "안덕면",
+      "candidate_sido": "제주특별자치도",
+      "candidate_sigungu": "서귀포시",
+      "candidate_parent": "서귀포시",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "서귀포시"
+      ],
+      "region_id": "kr-c81c-c8fc-b3c4-kr-c548-b355-ba74",
+      "parent_region_id": "kr-c81c-c8fc-b3c4-kr-c11c-adc0-d3ec-c2dc"
+    },
+    {
+      "source_sheet": "제주도",
+      "source_row": 34,
+      "original_keyword": "표선면",
+      "normalized_region_name": "표선면",
+      "candidate_sido": "제주특별자치도",
+      "candidate_sigungu": "서귀포시",
+      "candidate_parent": "서귀포시",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "서귀포시"
+      ],
+      "region_id": "kr-c81c-c8fc-b3c4-kr-d45c-c120-ba74",
+      "parent_region_id": "kr-c81c-c8fc-b3c4-kr-c11c-adc0-d3ec-c2dc"
+    },
+    {
+      "source_sheet": "제주도",
+      "source_row": 41,
+      "original_keyword": "동홍동",
+      "normalized_region_name": "동홍동",
+      "candidate_sido": "제주특별자치도",
+      "candidate_sigungu": "서귀포시",
+      "candidate_parent": "서귀포시",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "서귀포시"
+      ],
+      "region_id": "kr-c81c-c8fc-b3c4-kr-b3d9-d64d-b3d9",
+      "parent_region_id": "kr-c81c-c8fc-b3c4-kr-c11c-adc0-d3ec-c2dc"
+    },
+    {
+      "source_sheet": "제주도",
+      "source_row": 42,
+      "original_keyword": "서홍동",
+      "normalized_region_name": "서홍동",
+      "candidate_sido": "제주특별자치도",
+      "candidate_sigungu": "서귀포시",
+      "candidate_parent": "서귀포시",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "서귀포시"
+      ],
+      "region_id": "kr-c81c-c8fc-b3c4-kr-c11c-d64d-b3d9",
+      "parent_region_id": "kr-c81c-c8fc-b3c4-kr-c11c-adc0-d3ec-c2dc"
+    },
+    {
+      "source_sheet": "제주도",
+      "source_row": 45,
+      "original_keyword": "중문동",
+      "normalized_region_name": "중문동",
+      "candidate_sido": "제주특별자치도",
+      "candidate_sigungu": "서귀포시",
+      "candidate_parent": "서귀포시",
+      "match_method": "official_legal_dong_exact_name_within_source_sheet",
+      "confidence": "high",
+      "reason": "Exactly one active legal-dong parent matched the source-sheet jurisdiction.",
+      "status": "confirmed",
+      "candidate_parents": [
+        "서귀포시"
+      ],
+      "region_id": "kr-c81c-c8fc-b3c4-kr-c911-bb38-b3d9",
+      "parent_region_id": "kr-c81c-c8fc-b3c4-kr-c11c-adc0-d3ec-c2dc"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 9,
+      "candidate_parent": "동구",
+      "parent_level": "sigungu",
+      "parent_region_id": "kr-b300-c804-kr-b3d9-ad6c",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 11,
+      "candidate_parent": "동구",
+      "parent_level": "sigungu",
+      "parent_region_id": "kr-b300-c804-kr-b3d9-ad6c",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 25,
+      "candidate_parent": "동구",
+      "parent_level": "sigungu",
+      "parent_region_id": "kr-b300-c804-kr-b3d9-ad6c",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 35,
+      "candidate_parent": "동구",
+      "parent_level": "sigungu",
+      "parent_region_id": "kr-b300-c804-kr-b3d9-ad6c",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 86,
+      "candidate_parent": "서구",
+      "parent_level": "sigungu",
+      "parent_region_id": "kr-b300-c804-kr-c11c-ad6c",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "대전",
+      "source_row": 117,
+      "candidate_parent": "유성구",
+      "parent_level": "sigungu",
+      "parent_region_id": "kr-b300-c804-kr-c720-c131-ad6c",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "세종",
+      "source_row": 2,
+      "candidate_parent": "세종",
+      "parent_level": "sido",
+      "parent_region_id": "kr-c138-c885",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "세종",
+      "source_row": 3,
+      "candidate_parent": "세종",
+      "parent_level": "sido",
+      "parent_region_id": "kr-c138-c885",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "세종",
+      "source_row": 4,
+      "candidate_parent": "세종",
+      "parent_level": "sido",
+      "parent_region_id": "kr-c138-c885",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "세종",
+      "source_row": 5,
+      "candidate_parent": "세종",
+      "parent_level": "sido",
+      "parent_region_id": "kr-c138-c885",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "세종",
+      "source_row": 6,
+      "candidate_parent": "세종",
+      "parent_level": "sido",
+      "parent_region_id": "kr-c138-c885",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "세종",
+      "source_row": 7,
+      "candidate_parent": "세종",
+      "parent_level": "sido",
+      "parent_region_id": "kr-c138-c885",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "세종",
+      "source_row": 8,
+      "candidate_parent": "세종",
+      "parent_level": "sido",
+      "parent_region_id": "kr-c138-c885",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "세종",
+      "source_row": 9,
+      "candidate_parent": "세종",
+      "parent_level": "sido",
+      "parent_region_id": "kr-c138-c885",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "세종",
+      "source_row": 10,
+      "candidate_parent": "세종",
+      "parent_level": "sido",
+      "parent_region_id": "kr-c138-c885",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "세종",
+      "source_row": 11,
+      "candidate_parent": "세종",
+      "parent_level": "sido",
+      "parent_region_id": "kr-c138-c885",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "세종",
+      "source_row": 12,
+      "candidate_parent": "세종",
+      "parent_level": "sido",
+      "parent_region_id": "kr-c138-c885",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "세종",
+      "source_row": 13,
+      "candidate_parent": "세종",
+      "parent_level": "sido",
+      "parent_region_id": "kr-c138-c885",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "세종",
+      "source_row": 14,
+      "candidate_parent": "세종",
+      "parent_level": "sido",
+      "parent_region_id": "kr-c138-c885",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "세종",
+      "source_row": 15,
+      "candidate_parent": "세종",
+      "parent_level": "sido",
+      "parent_region_id": "kr-c138-c885",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "세종",
+      "source_row": 16,
+      "candidate_parent": "세종",
+      "parent_level": "sido",
+      "parent_region_id": "kr-c138-c885",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "세종",
+      "source_row": 17,
+      "candidate_parent": "세종",
+      "parent_level": "sido",
+      "parent_region_id": "kr-c138-c885",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "세종",
+      "source_row": 18,
+      "candidate_parent": "세종",
+      "parent_level": "sido",
+      "parent_region_id": "kr-c138-c885",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "세종",
+      "source_row": 19,
+      "candidate_parent": "세종",
+      "parent_level": "sido",
+      "parent_region_id": "kr-c138-c885",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "세종",
+      "source_row": 20,
+      "candidate_parent": "세종",
+      "parent_level": "sido",
+      "parent_region_id": "kr-c138-c885",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "세종",
+      "source_row": 21,
+      "candidate_parent": "세종",
+      "parent_level": "sido",
+      "parent_region_id": "kr-c138-c885",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "세종",
+      "source_row": 22,
+      "candidate_parent": "세종",
+      "parent_level": "sido",
+      "parent_region_id": "kr-c138-c885",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "세종",
+      "source_row": 23,
+      "candidate_parent": "세종",
+      "parent_level": "sido",
+      "parent_region_id": "kr-c138-c885",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "세종",
+      "source_row": 24,
+      "candidate_parent": "세종",
+      "parent_level": "sido",
+      "parent_region_id": "kr-c138-c885",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "세종",
+      "source_row": 25,
+      "candidate_parent": "세종",
+      "parent_level": "sido",
+      "parent_region_id": "kr-c138-c885",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "세종",
+      "source_row": 26,
+      "candidate_parent": "세종",
+      "parent_level": "sido",
+      "parent_region_id": "kr-c138-c885",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "세종",
+      "source_row": 27,
+      "candidate_parent": "세종",
+      "parent_level": "sido",
+      "parent_region_id": "kr-c138-c885",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "세종",
+      "source_row": 28,
+      "candidate_parent": "세종",
+      "parent_level": "sido",
+      "parent_region_id": "kr-c138-c885",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "세종",
+      "source_row": 29,
+      "candidate_parent": "세종",
+      "parent_level": "sido",
+      "parent_region_id": "kr-c138-c885",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "세종",
+      "source_row": 30,
+      "candidate_parent": "세종",
+      "parent_level": "sido",
+      "parent_region_id": "kr-c138-c885",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "충북",
+      "source_row": 2,
+      "candidate_parent": "충북",
+      "parent_level": "sido",
+      "parent_region_id": "kr-cda9-bd81",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "충북",
+      "source_row": 7,
+      "candidate_parent": "충북",
+      "parent_level": "sido",
+      "parent_region_id": "kr-cda9-bd81",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "충북",
+      "source_row": 8,
+      "candidate_parent": "충북",
+      "parent_level": "sido",
+      "parent_region_id": "kr-cda9-bd81",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "충북",
+      "source_row": 9,
+      "candidate_parent": "충북",
+      "parent_level": "sido",
+      "parent_region_id": "kr-cda9-bd81",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "충북",
+      "source_row": 10,
+      "candidate_parent": "충북",
+      "parent_level": "sido",
+      "parent_region_id": "kr-cda9-bd81",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "충북",
+      "source_row": 11,
+      "candidate_parent": "충북",
+      "parent_level": "sido",
+      "parent_region_id": "kr-cda9-bd81",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "충북",
+      "source_row": 12,
+      "candidate_parent": "충북",
+      "parent_level": "sido",
+      "parent_region_id": "kr-cda9-bd81",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "충북",
+      "source_row": 13,
+      "candidate_parent": "충북",
+      "parent_level": "sido",
+      "parent_region_id": "kr-cda9-bd81",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "충북",
+      "source_row": 14,
+      "candidate_parent": "충북",
+      "parent_level": "sido",
+      "parent_region_id": "kr-cda9-bd81",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "충북",
+      "source_row": 15,
+      "candidate_parent": "충북",
+      "parent_level": "sido",
+      "parent_region_id": "kr-cda9-bd81",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "충남",
+      "source_row": 2,
+      "candidate_parent": "충남",
+      "parent_level": "sido",
+      "parent_region_id": "kr-cda9-b0a8",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "충남",
+      "source_row": 3,
+      "candidate_parent": "충남",
+      "parent_level": "sido",
+      "parent_region_id": "kr-cda9-b0a8",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "충남",
+      "source_row": 4,
+      "candidate_parent": "충남",
+      "parent_level": "sido",
+      "parent_region_id": "kr-cda9-b0a8",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "충남",
+      "source_row": 5,
+      "candidate_parent": "충남",
+      "parent_level": "sido",
+      "parent_region_id": "kr-cda9-b0a8",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "충남",
+      "source_row": 6,
+      "candidate_parent": "충남",
+      "parent_level": "sido",
+      "parent_region_id": "kr-cda9-b0a8",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "충남",
+      "source_row": 7,
+      "candidate_parent": "충남",
+      "parent_level": "sido",
+      "parent_region_id": "kr-cda9-b0a8",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "충남",
+      "source_row": 8,
+      "candidate_parent": "충남",
+      "parent_level": "sido",
+      "parent_region_id": "kr-cda9-b0a8",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "충남",
+      "source_row": 9,
+      "candidate_parent": "충남",
+      "parent_level": "sido",
+      "parent_region_id": "kr-cda9-b0a8",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "충남",
+      "source_row": 10,
+      "candidate_parent": "충남",
+      "parent_level": "sido",
+      "parent_region_id": "kr-cda9-b0a8",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "충남",
+      "source_row": 11,
+      "candidate_parent": "충남",
+      "parent_level": "sido",
+      "parent_region_id": "kr-cda9-b0a8",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "충남",
+      "source_row": 12,
+      "candidate_parent": "충남",
+      "parent_level": "sido",
+      "parent_region_id": "kr-cda9-b0a8",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "충남",
+      "source_row": 13,
+      "candidate_parent": "충남",
+      "parent_level": "sido",
+      "parent_region_id": "kr-cda9-b0a8",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "충남",
+      "source_row": 14,
+      "candidate_parent": "충남",
+      "parent_level": "sido",
+      "parent_region_id": "kr-cda9-b0a8",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "충남",
+      "source_row": 15,
+      "candidate_parent": "충남",
+      "parent_level": "sido",
+      "parent_region_id": "kr-cda9-b0a8",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "충남",
+      "source_row": 16,
+      "candidate_parent": "충남",
+      "parent_level": "sido",
+      "parent_region_id": "kr-cda9-b0a8",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "전북",
+      "source_row": 2,
+      "candidate_parent": "전북",
+      "parent_level": "sido",
+      "parent_region_id": "kr-c804-bd81",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "전북",
+      "source_row": 5,
+      "candidate_parent": "전북",
+      "parent_level": "sido",
+      "parent_region_id": "kr-c804-bd81",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "전북",
+      "source_row": 6,
+      "candidate_parent": "전북",
+      "parent_level": "sido",
+      "parent_region_id": "kr-c804-bd81",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "전북",
+      "source_row": 7,
+      "candidate_parent": "전북",
+      "parent_level": "sido",
+      "parent_region_id": "kr-c804-bd81",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "전북",
+      "source_row": 8,
+      "candidate_parent": "전북",
+      "parent_level": "sido",
+      "parent_region_id": "kr-c804-bd81",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "전북",
+      "source_row": 9,
+      "candidate_parent": "전북",
+      "parent_level": "sido",
+      "parent_region_id": "kr-c804-bd81",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "전북",
+      "source_row": 10,
+      "candidate_parent": "전북",
+      "parent_level": "sido",
+      "parent_region_id": "kr-c804-bd81",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "전북",
+      "source_row": 11,
+      "candidate_parent": "전북",
+      "parent_level": "sido",
+      "parent_region_id": "kr-c804-bd81",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "전북",
+      "source_row": 12,
+      "candidate_parent": "전북",
+      "parent_level": "sido",
+      "parent_region_id": "kr-c804-bd81",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "전북",
+      "source_row": 13,
+      "candidate_parent": "전북",
+      "parent_level": "sido",
+      "parent_region_id": "kr-c804-bd81",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "전북",
+      "source_row": 14,
+      "candidate_parent": "전북",
+      "parent_level": "sido",
+      "parent_region_id": "kr-c804-bd81",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "전북",
+      "source_row": 15,
+      "candidate_parent": "전북",
+      "parent_level": "sido",
+      "parent_region_id": "kr-c804-bd81",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "전북",
+      "source_row": 16,
+      "candidate_parent": "전북",
+      "parent_level": "sido",
+      "parent_region_id": "kr-c804-bd81",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "전북",
+      "source_row": 17,
+      "candidate_parent": "전북",
+      "parent_level": "sido",
+      "parent_region_id": "kr-c804-bd81",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "경북",
+      "source_row": 4,
+      "candidate_parent": "경북",
+      "parent_level": "sido",
+      "parent_region_id": "kr-acbd-bd81",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "경북",
+      "source_row": 5,
+      "candidate_parent": "경북",
+      "parent_level": "sido",
+      "parent_region_id": "kr-acbd-bd81",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "경북",
+      "source_row": 6,
+      "candidate_parent": "경북",
+      "parent_level": "sido",
+      "parent_region_id": "kr-acbd-bd81",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "경북",
+      "source_row": 7,
+      "candidate_parent": "경북",
+      "parent_level": "sido",
+      "parent_region_id": "kr-acbd-bd81",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "경북",
+      "source_row": 8,
+      "candidate_parent": "경북",
+      "parent_level": "sido",
+      "parent_region_id": "kr-acbd-bd81",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "경북",
+      "source_row": 9,
+      "candidate_parent": "경북",
+      "parent_level": "sido",
+      "parent_region_id": "kr-acbd-bd81",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "경북",
+      "source_row": 10,
+      "candidate_parent": "경북",
+      "parent_level": "sido",
+      "parent_region_id": "kr-acbd-bd81",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "경북",
+      "source_row": 11,
+      "candidate_parent": "경북",
+      "parent_level": "sido",
+      "parent_region_id": "kr-acbd-bd81",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "경북",
+      "source_row": 12,
+      "candidate_parent": "경북",
+      "parent_level": "sido",
+      "parent_region_id": "kr-acbd-bd81",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "경북",
+      "source_row": 13,
+      "candidate_parent": "경북",
+      "parent_level": "sido",
+      "parent_region_id": "kr-acbd-bd81",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "경북",
+      "source_row": 14,
+      "candidate_parent": "경북",
+      "parent_level": "sido",
+      "parent_region_id": "kr-acbd-bd81",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "경북",
+      "source_row": 15,
+      "candidate_parent": "경북",
+      "parent_level": "sido",
+      "parent_region_id": "kr-acbd-bd81",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "경북",
+      "source_row": 16,
+      "candidate_parent": "경북",
+      "parent_level": "sido",
+      "parent_region_id": "kr-acbd-bd81",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "경북",
+      "source_row": 17,
+      "candidate_parent": "경북",
+      "parent_level": "sido",
+      "parent_region_id": "kr-acbd-bd81",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "경북",
+      "source_row": 18,
+      "candidate_parent": "경북",
+      "parent_level": "sido",
+      "parent_region_id": "kr-acbd-bd81",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "경북",
+      "source_row": 19,
+      "candidate_parent": "경북",
+      "parent_level": "sido",
+      "parent_region_id": "kr-acbd-bd81",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "경북",
+      "source_row": 20,
+      "candidate_parent": "경북",
+      "parent_level": "sido",
+      "parent_region_id": "kr-acbd-bd81",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "경북",
+      "source_row": 21,
+      "candidate_parent": "경북",
+      "parent_level": "sido",
+      "parent_region_id": "kr-acbd-bd81",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "경북",
+      "source_row": 22,
+      "candidate_parent": "경북",
+      "parent_level": "sido",
+      "parent_region_id": "kr-acbd-bd81",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "경북",
+      "source_row": 23,
+      "candidate_parent": "경북",
+      "parent_level": "sido",
+      "parent_region_id": "kr-acbd-bd81",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "경북",
+      "source_row": 24,
+      "candidate_parent": "경북",
+      "parent_level": "sido",
+      "parent_region_id": "kr-acbd-bd81",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "경남",
+      "source_row": 2,
+      "candidate_parent": "경남",
+      "parent_level": "sido",
+      "parent_region_id": "kr-acbd-b0a8",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "경남",
+      "source_row": 8,
+      "candidate_parent": "경남",
+      "parent_level": "sido",
+      "parent_region_id": "kr-acbd-b0a8",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "경남",
+      "source_row": 9,
+      "candidate_parent": "경남",
+      "parent_level": "sido",
+      "parent_region_id": "kr-acbd-b0a8",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "경남",
+      "source_row": 10,
+      "candidate_parent": "경남",
+      "parent_level": "sido",
+      "parent_region_id": "kr-acbd-b0a8",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "경남",
+      "source_row": 11,
+      "candidate_parent": "경남",
+      "parent_level": "sido",
+      "parent_region_id": "kr-acbd-b0a8",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "경남",
+      "source_row": 12,
+      "candidate_parent": "경남",
+      "parent_level": "sido",
+      "parent_region_id": "kr-acbd-b0a8",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "경남",
+      "source_row": 13,
+      "candidate_parent": "경남",
+      "parent_level": "sido",
+      "parent_region_id": "kr-acbd-b0a8",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "경남",
+      "source_row": 14,
+      "candidate_parent": "경남",
+      "parent_level": "sido",
+      "parent_region_id": "kr-acbd-b0a8",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "경남",
+      "source_row": 15,
+      "candidate_parent": "경남",
+      "parent_level": "sido",
+      "parent_region_id": "kr-acbd-b0a8",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "경남",
+      "source_row": 16,
+      "candidate_parent": "경남",
+      "parent_level": "sido",
+      "parent_region_id": "kr-acbd-b0a8",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "경남",
+      "source_row": 17,
+      "candidate_parent": "경남",
+      "parent_level": "sido",
+      "parent_region_id": "kr-acbd-b0a8",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "경남",
+      "source_row": 18,
+      "candidate_parent": "경남",
+      "parent_level": "sido",
+      "parent_region_id": "kr-acbd-b0a8",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "경남",
+      "source_row": 19,
+      "candidate_parent": "경남",
+      "parent_level": "sido",
+      "parent_region_id": "kr-acbd-b0a8",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "경남",
+      "source_row": 20,
+      "candidate_parent": "경남",
+      "parent_level": "sido",
+      "parent_region_id": "kr-acbd-b0a8",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "경남",
+      "source_row": 21,
+      "candidate_parent": "경남",
+      "parent_level": "sido",
+      "parent_region_id": "kr-acbd-b0a8",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "경남",
+      "source_row": 22,
+      "candidate_parent": "경남",
+      "parent_level": "sido",
+      "parent_region_id": "kr-acbd-b0a8",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "경남",
+      "source_row": 23,
+      "candidate_parent": "경남",
+      "parent_level": "sido",
+      "parent_region_id": "kr-acbd-b0a8",
+      "status": "confirmed"
+    },
+    {
+      "source_sheet": "경남",
+      "source_row": 24,
+      "candidate_parent": "경남",
+      "parent_level": "sido",
+      "parent_region_id": "kr-acbd-b0a8",
+      "status": "confirmed"
+    }
+  ]
+}

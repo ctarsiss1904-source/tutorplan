@@ -1,0 +1,4 @@
+import fs from 'node:fs';import path from 'node:path';
+const root=path.resolve(process.cwd(),'..');const read=f=>JSON.parse(fs.readFileSync(path.join(root,f),'utf8'));
+const deploy=read('data/generated/general_tutor_deploy_inventory.json').filter(x=>x.deploy_ready);const content=read('data/generated/general_tutor_content.json');const by=new Map(content.map(x=>[x.page_id,x]));const urls=deploy.map(x=>x.canonical_url);const routes=urls.map(x=>x.replace('https://tutorplan.co.kr',''));
+if(deploy.length!==1270)throw new Error(`Expected 1270 deploy-ready pages; got ${deploy.length}`);if(new Set(urls).size!==urls.length||new Set(routes).size!==routes.length)throw new Error('Canonical or route collision');for(const x of deploy){if(!by.has(x.page_id)||!by.get(x.page_id).html_content)throw new Error(`Missing content: ${x.page_id}`)}console.log(`Validated ${deploy.length} general_tutor pages.`);

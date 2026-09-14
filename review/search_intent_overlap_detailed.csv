@@ -1,0 +1,7 @@
+﻿example_a,example_b,page_type_a,page_type_b,recommendation,content_policy,reason
+중등과외,중학교과외,region_stage,region_school_type,keep_both,requires_distinct_content,학령 단계 탐색과 학교 유형 탐색을 구분
+중등 영어과외,중학교 영어과외,region_stage_subject,region_school_type_subject,keep_both,requires_distinct_content,학령 단계별 학습과 학교 유형별 맥락을 구분
+고등과외,고등학교과외,region_stage,region_school_type,keep_both,requires_distinct_content,고등 학령 단계와 고등학교 유형을 구분
+고등 영어과외,고등학교 영어과외,region_stage_subject,region_school_type_subject,keep_both,requires_distinct_content,고등 영어의 학령·학교 유형 의도를 구분
+내신 영어과외,고등 내신 영어과외,region_exam_subject,future_stage_exam_subject,exclude_one,requires_distinct_content,현재 inventory에는 stage+exam page type이 없어 후자 생성 금지
+수능 영어과외,고등 수능 영어과외,region_exam_subject,future_stage_exam_subject,exclude_one,requires_distinct_content,현재 inventory에는 stage+exam page type이 없어 후자 생성 금지
