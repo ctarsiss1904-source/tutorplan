@@ -197,9 +197,9 @@ def set_stage(stage):
 def main():
  set_stage('LOAD_SCOPE')
  scope=allowed_scope(); set_stage('LOAD_INVENTORY')
- pages=json.loads(PAGES.read_text(encoding='utf8')); regions={r['region_id']:r for r in json.loads(REGIONS.read_text(encoding='utf8'))}; region_name_counts=Counter(r['display_name'] for r in regions.values())
+ pages=json.loads(PAGES.read_text(encoding='utf8')); regions={r['region_id']:r for r in json.loads(REGIONS.read_text(encoding='utf8'))}; region_name_sidos=defaultdict(set); [region_name_sidos[r['display_name']].add(r.get('sido') or '') for r in regions.values()]
  def related_region_anchor(target):
-  region=regions[target['region_id']]; name=region['display_name']; prefix=(region.get('sido') or '') if region_name_counts[name]>1 else ''; return prefix+name+'과외'
+  region=regions[target['region_id']]; name=region['display_name']; sido=region.get('sido') or ''; prefix=sido if len(region_name_sidos[name])>1 and sido and sido not in name else ''; return prefix+name+'과외'
  inventory={p['page_id']:p for p in pages}
  if len(inventory)!=len(pages): raise RuntimeError('Duplicate page_id in nationwide page inventory')
  set_stage('VALIDATE_READY_HOLD')
