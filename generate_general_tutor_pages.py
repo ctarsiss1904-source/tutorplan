@@ -239,7 +239,7 @@ def main():
    rel.extend([x for x in children.get(parent['page_id'],[]) if x['page_id']!=p['page_id']][:4])
   seen=set(); rel=[x for x in rel if not (x['page_id'] in seen or seen.add(x['page_id']))][:10]
   crumb_html=' / '.join(f'<a href="{html.escape(url)}">{html.escape(name)}</a>' if url else html.escape(name) for name,url in crumbs)
-  links=''.join(f'<li><a href="{html.escape(x["route"])}">{html.escape(x["title"])}</a></li>' for x in rel)
+  links=''.join(f'<li><a href="{html.escape(x["route"])}">{html.escape(x["seo_region_label"]+"과외")}</a></li>' for x in rel)
   desc=f'{h1}의 현재 학습 상태와 실제 행동, 원인, 개선 기준을 바탕으로 학습 흐름을 정리합니다.'
   doc=f'<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>{html.escape(h1)}</title><meta name="description" content="{html.escape(desc)}"><link rel="canonical" href="{html.escape(canonical)}"><meta name="robots" content="index,follow"></head><body><nav aria-label="breadcrumb">{crumb_html}</nav><main><h1>{html.escape(h1)}</h1>{html_body}<h2>관련 지역 과외</h2><ul>{links}</ul></main><footer>Tutorplan</footer></body></html>'
   out.parent.mkdir(parents=True,exist_ok=True); out.write_text(doc,encoding='utf8')
