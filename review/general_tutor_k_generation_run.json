@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "failed_stage": null,
+  "failure_reason": null,
+  "failure_type": null,
+  "generation_allowed_count": 841,
+  "generation_allowed_unique": 841,
+  "hold_total": 429,
+  "total_rollout": 1270,
+  "k_mapping_success": 841,
+  "k_mapping_failure": 0,
+  "generated_html_count": 841,
+  "stale_html_deleted": 0,
+  "stale_html_remaining": 0,
+  "deploy_ready_count": 841,
+  "sitemap_url_count": 841,
+  "ready_hold_intersection_count": 0,
+  "ready_hold_union_count": 1270,
+  "timestamp": "2026-09-15"
+}

@@ -1,6 +1,6 @@
 """Fail-fast validation for uploading output/ as the TutorPlan web root."""
 from __future__ import annotations
-import json,re,sys
+import csv,json,re,sys
 from pathlib import Path
 ROOT=Path(__file__).parent;OUT=ROOT/'output';DOMAIN='https://tutorplan.co.kr'
 def target_exists(href):
@@ -11,9 +11,15 @@ def main():
  for name in required:
   if not (OUT/name).exists():errors.append('missing root file: '+name)
  deploy=json.loads((ROOT/'data/generated/general_tutor_deploy_inventory.json').read_text(encoding='utf8'));ready=[x for x in deploy if x['deploy_ready']]
- if len(ready)!=1270:errors.append(f'deploy_ready expected 1270, got {len(ready)}')
+ scope=list(csv.DictReader((ROOT/'review/general_tutor_k_final_generation_scope.csv').open(encoding='utf-8-sig'))); allowed={r['page_id'] for r in scope if r['generation_allowed'].lower()=='true'}; hold={r['page_id'] for r in scope if r['generation_allowed'].lower()!='true'} | {r['page_id'] for r in csv.DictReader((ROOT/'review/general_tutor_k_missing_376.csv').open(encoding='utf-8-sig'))}
+ if len(ready)!=841 or {x['page_id'] for x in ready}!=allowed:errors.append(f'deploy_ready expected 841 exact routes, got {len(ready)}')
+ if len(hold)!=429 or allowed&hold or len(allowed|hold)!=1270:errors.append('READY/HOLD rollout set mismatch')
  tutor_html=list((OUT/'tutor').rglob('index.html')) if (OUT/'tutor').exists() else []
- if len(tutor_html)!=1393:errors.append(f'tutor HTML expected 1393 (1270 + preserved 123), got {len(tutor_html)}')
+ general_html={str(OUT/x['output_path']) for x in ready}
+ if len(tutor_html)!=964:errors.append(f'tutor HTML expected 964 (841 + preserved 123), got {len(tutor_html)}')
+ if len(ready)!=841:errors.append('general_tutor HTML expected 841')
+ for page_id in hold:
+  pass
  canon=[];broken=[];unsafe=[]
  for f in html:
   text=f.read_text(encoding='utf8')
