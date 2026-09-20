@@ -245,7 +245,9 @@ def validate(regions: list[Region], schools: list[dict], relations: list[dict], 
         check("missing_region_parent", missing, region.region_id, "error" if region.region_id in sample_region_ids else "warning")
         if region.parent_region_id in by_region:
             parent = by_region[region.parent_region_id]
-            check("cross_sido_parent", parent.sido != region.sido, region.region_id)
+            root_to_sido = (parent.region_level == "country" and parent.parent_region_id is None
+                            and parent.sido is None and region.region_level == "sido")
+            check("cross_sido_parent", not root_to_sido and parent.sido != region.sido, region.region_id)
             seen, cursor = set(), region
             while cursor.parent_region_id and cursor.parent_region_id in by_region:
                 check("parent_loop", cursor.region_id in seen, region.region_id)

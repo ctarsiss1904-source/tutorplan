@@ -1,9 +1,10 @@
 """Build non-content static site shell and region directories from Python inventories."""
 from __future__ import annotations
-import json,re
+import json,re,sys
 from collections import defaultdict
 from pathlib import Path
 from jinja2 import Environment, BaseLoader, select_autoescape
+from navigation_parent import Navigation, REVIEW_GROUP
 
 ROOT=Path(__file__).parent; OUT=ROOT/'output'; DOMAIN='https://tutorplan.co.kr'
 env=Environment(loader=BaseLoader(),autoescape=select_autoescape(['html']))
@@ -12,6 +13,7 @@ def render(body,**ctx): return env.from_string('{% extends base %}{% block body 
 def write(route,text):
  p=OUT/route.strip('/')/'index.html' if route!='/' else OUT/'index.html';p.parent.mkdir(parents=True,exist_ok=True);p.write_text(text,encoding='utf8')
 def main():
+ navigation=Navigation(ROOT)
  deploy=json.loads((ROOT/'data/generated/general_tutor_deploy_inventory.json').read_text(encoding='utf8'));ready=[x for x in deploy if x['deploy_ready']]
  regions=json.loads((ROOT/'data/generated/regions.json').read_text(encoding='utf8'));byid={r['region_id']:r for r in regions};children=defaultdict(list)
  for r in regions:
@@ -24,17 +26,32 @@ def main():
  root_nodes=[r for r in regions if r['region_level']=='sido'];cards=[]
  for r in sorted(root_nodes,key=lambda x:x['display_name']):
   link='/regions/'+r['region_id']+'/';t=tutor.get(r['region_id']);name=r['display_name'];cards.append(f'<article class="card"><h2><a href="{link}">{name}</a></h2>'+ (f'<p><a href="{t["canonical_url"].replace(DOMAIN,"")}">{name}과외 보기</a></p>' if t else '<p>현재 준비 중인 지역입니다.</p>')+'</article>')
- write('/regions/',render('<h1>지역별 과외 찾기</h1><p>콘텐츠 준비가 완료된 지역만 과외 상세 페이지로 연결합니다.</p><div class="grid">'+''.join(cards)+'</div>',title='지역별 과외 찾기',description='시도, 시군구, 읍면동과 생활권별 현재 공개 가능한 과외 페이지를 찾습니다.',canonical=DOMAIN+'/regions/'))
+ write('/regions/',render('<h1>지역별 과외 찾기</h1><p>콘텐츠 준비가 완료된 지역만 과외 상세 페이지로 연결합니다.</p>'+navigation.directory_body(REVIEW_GROUP),title='지역별 과외 찾기',description='시도, 시군구, 읍면동과 생활권별 현재 공개 가능한 과외 페이지를 찾습니다.',canonical=DOMAIN+'/regions/'))
  directory_count=0
  for r in regions:
   route='/regions/'+r['region_id']+'/'; parent=byid.get(r.get('parent_region_id')); child=sorted(children.get(r['region_id'],[]),key=lambda x:x['display_name']);t=tutor.get(r['region_id'])
   crumbs='<a href="/">홈</a><span>›</span><a href="/regions/">지역 찾기</a>'+(f'<span>›</span><a href="/regions/{parent["region_id"]}/">{parent["display_name"]}</a>' if parent and parent['region_level']!='country' else '')+f'<span>›</span>{r["display_name"]}'
   target=f'<p><a href="{t["canonical_url"].replace(DOMAIN,"")}">{r["display_name"]}과외 보기</a></p>' if t else '<p>이 지역의 과외 상세 페이지는 현재 콘텐츠 준비 중입니다.</p>'
   listing=''.join(f'<li><a href="/regions/{c["region_id"]}/">{c["display_name"]}</a>'+ (f' · <a href="{tutor[c["region_id"]]["canonical_url"].replace(DOMAIN,"")}">과외</a>' if c['region_id'] in tutor else '')+'</li>' for c in child)
-  body=f'<nav class="crumb">{crumbs}</nav><article class="card"><h1>{r["display_name"]} 지역 탐색</h1>{target}<h2>하위 지역</h2><ul>{listing or "<li>하위 지역 정보가 없습니다.</li>"}</ul></article>'
+  body=f'<nav class="crumb">{crumbs}</nav><article class="card"><h1>{r["display_name"]} 지역 탐색</h1>{navigation.directory_body(r["region_id"])}</article>'
   write(route,render(body,title=r['display_name']+' 지역 찾기',description=r['display_name']+' 지역의 현재 공개 가능한 과외 페이지를 탐색합니다.',canonical=DOMAIN+route));directory_count+=1
  notfound='''<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="robots" content="noindex"><title>페이지를 찾을 수 없습니다 | TutorPlan</title></head><body><h1>페이지를 찾을 수 없습니다</h1><p>준비되지 않았거나 존재하지 않는 주소입니다.</p><a href="/">홈으로 돌아가기</a></body></html>''';(OUT/'404.html').write_text(notfound,encoding='utf8')
  sitemap='<?xml version="1.0" encoding="UTF-8"?>\n<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n  <sitemap><loc>'+DOMAIN+'/sitemap-general-tutor.xml</loc></sitemap>\n</sitemapindex>\n';(OUT/'sitemap.xml').write_text(sitemap,encoding='utf8')
  (OUT/'robots.txt').write_text('User-agent: *\nAllow: /\nSitemap: '+DOMAIN+'/sitemap.xml\n',encoding='utf8')
  print(json.dumps({'ready':len(ready),'directories':directory_count,'common':6},ensure_ascii=False))
-if __name__=='__main__':main()
+def refresh_directory_navigation(navigation=None, write=True):
+ navigation=navigation or Navigation(ROOT); pending=[]
+ for rid in [REVIEW_GROUP,*navigation.regions]:
+  path=OUT/navigation.directory(rid).strip('/')/'index.html'
+  old=path.read_text(encoding='utf8')
+  pattern=r'(<main class="wrap"><h1>.*?</h1>)(.*?)(</main>)' if rid==REVIEW_GROUP else r'(<article class="card"><h1>.*?</h1>)(.*?)(</article>)'
+  if len(re.findall(pattern,old,re.S))!=1: raise RuntimeError('Directory navigation boundary mismatch: '+str(path))
+  new=re.sub(pattern,lambda m:m[1]+navigation.directory_body(rid)+m[3],old,flags=re.S)
+  if new!=old: pending.append((path,new))
+ if not write: return pending
+ for path,text in pending: path.write_text(text,encoding='utf8')
+ print(json.dumps({'directory_html_updated':len(pending)},ensure_ascii=False))
+
+if __name__=='__main__':
+ if sys.argv[1:]==['--navigation-only']: refresh_directory_navigation()
+ else: main()

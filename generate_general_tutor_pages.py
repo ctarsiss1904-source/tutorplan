@@ -5,6 +5,7 @@ from collections import Counter, defaultdict
 from datetime import date
 from pathlib import Path
 from openpyxl import load_workbook
+from navigation_parent import Navigation, refresh_related
 
 ROOT=Path(__file__).parent; GEN=ROOT/'data/generated'; REVIEW=ROOT/'review'; OUT=ROOT/'output'; DOMAIN='https://tutorplan.co.kr'
 PAGES=GEN/'nationwide_page_inventory_candidates.json'; REGIONS=GEN/'regions.json'; SOURCE=ROOT/'과외.xlsx'
@@ -214,10 +215,7 @@ def main():
  k_content=k_sources(ready)
  set_stage('VALIDATE_K')
  hold_ids=hold_scope(inventory,scope)
- byid={p['page_id']:p for p in ready}; children=defaultdict(list)
- for p in ready:
-  if p.get('parent_page_id') in byid: children[p['parent_page_id']].append(p)
- def linkable(p): return p['page_id'] in byid
+ navigation=Navigation(ROOT)
  content=[]; deploy=[]; headings=defaultdict(list); openings=defaultdict(list); endings=defaultdict(list)
  set_stage('GENERATE_READY_HTML')
  for i,p in enumerate(ready):
@@ -233,15 +231,8 @@ def main():
    target=next((x for x in ready if x['region_id']==ancestor['region_id']),None)
    crumbs.append((ancestor['display_name'],target['route'] if target else None))
   crumbs.append((h1,None))
-  rel=[]
-  parent=byid.get(p.get('parent_page_id'))
-  if parent: rel.append(parent)
-  rel.extend(sorted(children.get(p['page_id'],[]),key=lambda x:x['title'])[:6])
-  if parent:
-   rel.extend([x for x in children.get(parent['page_id'],[]) if x['page_id']!=p['page_id']][:4])
-  seen=set(); rel=[x for x in rel if not (x['page_id'] in seen or seen.add(x['page_id']))][:10]
   crumb_html=' / '.join(f'<a href="{html.escape(url)}">{html.escape(name)}</a>' if url else html.escape(name) for name,url in crumbs)
-  links=''.join(f'<li><a href="{html.escape(x["route"])}">{html.escape(related_region_anchor(x))}</a></li>' for x in rel)
+  links=navigation.related_html(p['page_id'])
   desc=f'{h1}의 현재 학습 상태와 실제 행동, 원인, 개선 기준을 바탕으로 학습 흐름을 정리합니다.'
   doc=f'<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>{html.escape(h1)}</title><meta name="description" content="{html.escape(desc)}"><link rel="canonical" href="{html.escape(canonical)}"><meta name="robots" content="index,follow"></head><body><nav aria-label="breadcrumb">{crumb_html}</nav><main><h1>{html.escape(h1)}</h1>{html_body}<h2>관련 지역 과외</h2><ul>{links}</ul></main><footer>Tutorplan</footer></body></html>'
   out.parent.mkdir(parents=True,exist_ok=True); out.write_text(doc,encoding='utf8')
@@ -277,6 +268,9 @@ def main():
  if not robots.exists(): robots.write_text('User-agent: *\nAllow: /\nSitemap: '+DOMAIN+'/sitemap-general-tutor.xml\n',encoding='utf8')
  print(json.dumps({'candidate':len(ready),'generated':len(deploy),'deploy_ready':len(final),'similarity_hold':len(bad)},ensure_ascii=False))
 if __name__=='__main__':
+ if sys.argv[1:]==['--navigation-only']:
+  print(json.dumps({'navigation_html_updated':refresh_related()},ensure_ascii=False))
+  sys.exit(0)
  try:
   main()
   set_stage('COMPLETE')
