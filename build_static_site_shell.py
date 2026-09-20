@@ -12,6 +12,23 @@ BASE='''<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="v
 def render(body,**ctx): return env.from_string('{% extends base %}{% block body %}'+body+'{% endblock %}').render(base=env.from_string(BASE),**ctx)
 def write(route,text):
  p=OUT/route.strip('/')/'index.html' if route!='/' else OUT/'index.html';p.parent.mkdir(parents=True,exist_ok=True);p.write_text(text,encoding='utf8')
+def home_body(regions):
+ ORDER=('서울','부산','대구','인천','광주','대전','울산','세종','경기도','강원도','충북','충남','전북','전남','경북','경남','제주도')
+ sidos={r['display_name']:r for r in regions if r['region_level']=='sido'}
+ if set(sidos)!=set(ORDER): raise ValueError('Homepage requires the existing 17 sido directories')
+ links=[]
+ for name in ORDER:
+  route='/regions/'+sidos[name]['region_id']+'/'
+  if not (OUT/route.strip('/')/'index.html').is_file(): raise ValueError('Missing homepage directory: '+route)
+  links.append('<a class="card" href="'+route+'">'+name+'</a>')
+ home='''<section class="hero"><h1>지역의 학습 흐름을 살피는 과외</h1><p>현재 콘텐츠 준비가 완료된 지역별 일반 과외 페이지를 탐색할 수 있습니다.</p><a href="/regions/">지역별 과외 찾기</a></section><section><h2>안내</h2><div class="grid"><div class="card"><h3>지역별 탐색</h3><p>시도부터 생활권까지 현재 공개 가능한 지역을 확인합니다.</p><a href="/regions/">지역 찾기</a></div><div class="card"><h3>학습관리</h3><p>현재 상태와 실제 행동을 바탕으로 학습 흐름을 정리합니다.</p><a href="/tutoring/">학습관리 안내</a></div></div></section>'''
+ section='<section aria-labelledby="home-regions-heading"><h2 id="home-regions-heading">지역별 과외 찾기</h2><div class="grid">'+''.join(links)+'</div><p><a href="/regions/">전체 지역 보기</a></p></section>'
+ return home.replace('<section><h2>안내</h2>',section+'<section><h2>안내</h2>',1)
+
+def refresh_home():
+ regions=json.loads((ROOT/'data/generated/regions.json').read_text(encoding='utf8'))
+ write('/',render(home_body(regions),title='TutorPlan',description='지역별 학습관리와 과외 정보를 안내합니다.',canonical=DOMAIN+'/'))
+
 def main():
  navigation=Navigation(ROOT)
  deploy=json.loads((ROOT/'data/generated/general_tutor_deploy_inventory.json').read_text(encoding='utf8'));ready=[x for x in deploy if x['deploy_ready']]
@@ -19,7 +36,7 @@ def main():
  for r in regions:
   if r.get('parent_region_id') in byid:children[r['parent_region_id']].append(r)
  tutor={x['region_id']:x for x in ready}
- home='''<section class="hero"><h1>지역의 학습 흐름을 살피는 과외</h1><p>현재 콘텐츠 준비가 완료된 지역별 일반 과외 페이지를 탐색할 수 있습니다.</p><a href="/regions/">지역별 과외 찾기</a></section><section><h2>안내</h2><div class="grid"><div class="card"><h3>지역별 탐색</h3><p>시도부터 생활권까지 현재 공개 가능한 지역을 확인합니다.</p><a href="/regions/">지역 찾기</a></div><div class="card"><h3>학습관리</h3><p>현재 상태와 실제 행동을 바탕으로 학습 흐름을 정리합니다.</p><a href="/tutoring/">학습관리 안내</a></div></div></section>'''
+ home=home_body(regions)
  write('/',render(home,title='TutorPlan',description='지역별 학습관리와 과외 정보를 안내합니다.',canonical=DOMAIN+'/'))
  common={'/tutoring/':('과외·학습관리 안내','현재 상태, 실제 행동, 원인, 개선 기준을 함께 살피는 과외 학습관리 안내입니다.','<article class="card"><h1>과외·학습관리 안내</h1><p>과외는 단순한 진도 확인보다 현재 학습 흐름을 이해하고 다음 행동을 정하는 과정입니다.</p><h2>학습 흐름 기록</h2><p>수업 전후의 행동과 변화 기준을 기록하면 다음 회차의 계획을 구체화할 수 있습니다.</p></article>'),'/contact/':('문의','TutorPlan 문의 안내입니다.','<article class="card"><h1>문의</h1><p>현재 학습 상황과 확인하고 싶은 변화를 정리한 뒤 문의해 주세요.</p><p>연락 채널과 운영 정보는 실제 서비스 운영 시 확정하여 안내합니다.</p></article>'),'/privacy/':('개인정보처리방침','TutorPlan 개인정보처리방침 안내입니다.','<article class="card"><h1>개인정보처리방침</h1><p>TODO: 실제 서비스 운영 주체, 수집 항목, 보관 기간 및 문의처 확정 후 게시합니다.</p></article>'),'/terms/':('이용약관','TutorPlan 이용약관 안내입니다.','<article class="card"><h1>이용약관</h1><p>TODO: 실제 서비스 운영 정책과 사업자 정보 확정 후 게시합니다.</p></article>')}
  for route,(title,desc,body) in common.items():write(route,render(body,title=title,description=desc,canonical=DOMAIN+route))
@@ -53,5 +70,6 @@ def refresh_directory_navigation(navigation=None, write=True):
  print(json.dumps({'directory_html_updated':len(pending)},ensure_ascii=False))
 
 if __name__=='__main__':
- if sys.argv[1:]==['--navigation-only']: refresh_directory_navigation()
+ if sys.argv[1:]==['--home-only']: refresh_home()
+ elif sys.argv[1:]==['--navigation-only']: refresh_directory_navigation()
  else: main()
