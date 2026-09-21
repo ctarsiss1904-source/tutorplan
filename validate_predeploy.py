@@ -11,13 +11,13 @@ def main():
  for name in required:
   if not (OUT/name).exists():errors.append('missing root file: '+name)
  deploy=json.loads((ROOT/'data/generated/general_tutor_deploy_inventory.json').read_text(encoding='utf8'));ready=[x for x in deploy if x['deploy_ready']]
- scope=list(csv.DictReader((ROOT/'review/general_tutor_k_final_generation_scope.csv').open(encoding='utf-8-sig'))); allowed={r['page_id'] for r in scope if r['generation_allowed'].lower()=='true'}; hold={r['page_id'] for r in scope if r['generation_allowed'].lower()!='true'} | {r['page_id'] for r in csv.DictReader((ROOT/'review/general_tutor_k_missing_376.csv').open(encoding='utf-8-sig'))}
- if len(ready)!=841 or {x['page_id'] for x in ready}!=allowed:errors.append(f'deploy_ready expected 841 exact routes, got {len(ready)}')
- if len(hold)!=429 or allowed&hold or len(allowed|hold)!=1270:errors.append('READY/HOLD rollout set mismatch')
+ scope=list(csv.DictReader((ROOT/'review/general_tutor_k_proposed_final_scope_1945.csv').open(encoding='utf-8-sig'))); allowed={r['page_id'] for r in scope if r['generation_allowed'].lower()=='true'}; hold={r['page_id'] for r in scope if r['generation_allowed'].lower()!='true'}; inventory=json.loads((ROOT/'data/generated/nationwide_page_inventory_candidates.json').read_text(encoding='utf8')); inventory={x['page_id']:x for x in inventory if x.get('page_type')=='region_tutor'}; missing=set(inventory)-{r['page_id'] for r in scope};
+ if len(ready)!=len(allowed) or {x['page_id'] for x in ready}!=allowed:errors.append(f'deploy_ready expected {len(allowed)} exact routes, got {len(ready)}')
+ if len(hold)!=len(scope)-len(allowed) or allowed&hold or len(allowed|hold)!=len(scope):errors.append('READY/HOLD rollout set mismatch')
  tutor_html=list((OUT/'tutor').rglob('index.html')) if (OUT/'tutor').exists() else []
  general_html={str(OUT/x['output_path']) for x in ready}
- if len(tutor_html)!=964:errors.append(f'tutor HTML expected 964 (841 + preserved 123), got {len(tutor_html)}')
- if len(ready)!=841:errors.append('general_tutor HTML expected 841')
+ if len(tutor_html)!=len(ready)+123:errors.append(f'tutor HTML expected {len(ready)+123} (READY + preserved 123), got {len(tutor_html)}')
+ if len(ready)!=len(allowed):errors.append(f'general_tutor HTML expected {len(allowed)}')
  for page_id in hold:
   pass
  canon=[];broken=[];unsafe=[]
@@ -40,7 +40,7 @@ def main():
  robots=(OUT/'robots.txt').read_text(encoding='utf8'); index=(OUT/'sitemap.xml').read_text(encoding='utf8')
  if DOMAIN+'/sitemap.xml' not in robots:errors.append('robots sitemap mismatch')
  if DOMAIN+'/sitemap-general-tutor.xml' not in index:errors.append('sitemap index mismatch')
- report={'status':'PASS' if not errors else 'FAIL','html_total':len(html),'general_tutor_html':len(tutor_html)-123,'region_directory_html':len(list((OUT/'regions').rglob('index.html'))),'localhost_strings':sum(x[1]=='localhost' for x in unsafe),'file_strings':sum(x[1]=='file://' for x in unsafe),'windows_paths':sum('프로젝트' in x[1] for x in unsafe),'canonical_errors':sum(1 for e in errors if e.startswith('invalid canonical')),'duplicate_route':0,'broken_internal_links':len(broken),'sitemap_urls':len(locs),'sitemap_missing_target':len(missing),'robots_ok':DOMAIN+'/sitemap.xml' in robots,'not_found_ok':(OUT/'404.html').exists()}
+ report={'status':'PASS' if not errors else 'FAIL','html_total':len(html),'general_tutor_html':len(ready),'region_directory_html':len(list((OUT/'regions').rglob('index.html'))),'localhost_strings':sum(x[1]=='localhost' for x in unsafe),'file_strings':sum(x[1]=='file://' for x in unsafe),'windows_paths':sum('프로젝트' in x[1] for x in unsafe),'canonical_errors':sum(1 for e in errors if e.startswith('invalid canonical')),'duplicate_route':0,'broken_internal_links':len(broken),'sitemap_urls':len(locs),'sitemap_missing_target':len(missing),'robots_ok':DOMAIN+'/sitemap.xml' in robots,'not_found_ok':(OUT/'404.html').exists()}
  print(json.dumps(report,ensure_ascii=False));
  if errors:print('\n'.join(errors),file=sys.stderr);sys.exit(1)
 if __name__=='__main__':main()

@@ -10,7 +10,7 @@ from navigation_parent import Navigation, refresh_related
 ROOT=Path(__file__).parent; GEN=ROOT/'data/generated'; REVIEW=ROOT/'review'; OUT=ROOT/'output'; DOMAIN='https://tutorplan.co.kr'
 PAGES=GEN/'nationwide_page_inventory_candidates.json'; REGIONS=GEN/'regions.json'; SOURCE=ROOT/'과외.xlsx'
 CURRENT_STAGE='LOAD_SCOPE'
-FINAL_SCOPE=REVIEW/'general_tutor_k_final_generation_scope.csv'; K_MISSING=REVIEW/'general_tutor_k_missing_376.csv'; RUN_REPORT=REVIEW/'general_tutor_k_generation_run.json'; MANIFEST=REVIEW/'general_tutor_k_generation_manifest.csv'
+FINAL_SCOPE=REVIEW/'general_tutor_k_proposed_final_scope_1945.csv'; RUN_REPORT=REVIEW/'general_tutor_k_generation_run.json'; MANIFEST=REVIEW/'general_tutor_k_generation_manifest.csv'
 
 def dump(path,value): path.parent.mkdir(parents=True,exist_ok=True); path.write_text(json.dumps(value,ensure_ascii=False,indent=2),encoding='utf8')
 def csvout(name,rows,fields):
@@ -25,12 +25,11 @@ def sources():
  wb.close(); return out
 def allowed_scope():
  with FINAL_SCOPE.open(newline='',encoding='utf-8-sig') as f: rows=list(csv.DictReader(f))
- required={'page_id','sheet','row','final_readiness','generation_allowed'}
+ required={'page_id','source_sheet','source_row','scope_status','generation_allowed'}
  if not rows or not required.issubset(rows[0]): raise RuntimeError(f'Invalid final generation scope: {FINAL_SCOPE}')
  allowed=[r for r in rows if clean(r['generation_allowed']).lower()=='true']; ids=[r['page_id'] for r in allowed]
  if len(ids)!=len(set(ids)): raise RuntimeError('Duplicate generation_allowed page_id in final generation scope')
- if len(ids)!=841: raise RuntimeError(f'Expected 841 generation_allowed page_ids, got {len(ids)}')
- if any(r['final_readiness'] not in {'READY_AS_IS','READY_REMOVE_DUPLICATE_H1'} for r in allowed): raise RuntimeError('Generation scope contains a non-ready allowed page')
+ if any(r['scope_status'] not in {'READY_AS_IS','READY_REMOVE_DUPLICATE_H1'} for r in allowed): raise RuntimeError('Generation scope contains a non-ready allowed page')
  return {r['page_id']:r for r in allowed}
 def k_sources(pages):
  wb=load_workbook(SOURCE,read_only=True,data_only=True); content={}
@@ -53,11 +52,11 @@ def render_k_content(k_html, readiness, page_id):
  return k_html[:first_h1.start()]+k_html[first_h1.end():]
 def k_text(k_html): return ' '.join(html.unescape(re.sub(r'<[^>]+>',' ',k_html)).split())
 def hold_scope(inventory, ready_ids):
- with K_MISSING.open(newline='',encoding='utf-8-sig') as f: missing=list(csv.DictReader(f))
  with FINAL_SCOPE.open(newline='',encoding='utf-8-sig') as f: scoped=list(csv.DictReader(f))
- hold_ids=[r['page_id'] for r in missing]+[r['page_id'] for r in scoped if clean(r['generation_allowed']).lower()!='true']
- if len(hold_ids)!=429 or len(hold_ids)!=len(set(hold_ids)): raise RuntimeError(f'Expected 429 unique HOLD page_ids, got {len(hold_ids)}')
- if set(hold_ids)&set(ready_ids) or len(set(hold_ids)|set(ready_ids))!=1270: raise RuntimeError('READY/HOLD set validation failed')
+ hold_ids=[r['page_id'] for r in scoped if clean(r['generation_allowed']).lower()!='true']
+ if len(hold_ids)!=len(set(hold_ids)): raise RuntimeError('Duplicate HOLD page_id in proposed scope')
+ scope_ids={r['page_id'] for r in scoped}
+ if set(hold_ids)&set(ready_ids) or set(hold_ids)|set(ready_ids) != scope_ids: raise RuntimeError('READY/HOLD proposed scope validation failed')
  if any(page_id not in inventory for page_id in hold_ids): raise RuntimeError('HOLD page_id missing from inventory')
  return hold_ids
 def safe_remove_hold_html(inventory, hold_ids):
@@ -209,8 +208,8 @@ def main():
  ready=[]
  for page_id,scope_row in scope.items():
   p=inventory[page_id]
-  if str(p.get('content_source_sheet'))!=scope_row['sheet'] or str(p.get('content_source_row'))!=scope_row['row']: raise RuntimeError('Scope and inventory source mismatch: '+page_id)
-  p=dict(p); p['final_readiness']=scope_row['final_readiness']; ready.append(p)
+  if str(p.get('content_source_sheet'))!=scope_row['source_sheet'] or str(p.get('content_source_row'))!=scope_row['source_row']: raise RuntimeError('Scope and inventory source mismatch: '+page_id)
+  p=dict(p); p['final_readiness']=scope_row['scope_status']; ready.append(p)
  set_stage('LOAD_EXCEL_K')
  k_content=k_sources(ready)
  set_stage('VALIDATE_K')

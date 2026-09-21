@@ -52,7 +52,7 @@ def validate(nav=None, prospective=None):
     ready_routes = {p['route'].rstrip('/'): pid for pid, p in nav.pages.items()}
     isolated_route = nav.pages[ISOLATED]['route']
     fragments = 0
-    scope = {s['page_id']: s for s in __import__('navigation_parent').csv_rows(nav.root / 'review/general_tutor_k_final_generation_scope.csv')}
+    scope = {s['page_id']: s for s in __import__('navigation_parent').csv_rows(nav.root / 'review/general_tutor_k_proposed_final_scope_1945.csv')}
     from generate_general_tutor_pages import render_k_content
     for path in nav.out.rglob('*.html'):
         text = prospective.get(path)
@@ -87,7 +87,7 @@ def validate(nav=None, prospective=None):
             fragment = re.search(r'<main><h1>.*?</h1>(.*?)<h2>관련 지역 과외</h2>', text, re.S)
             p = nav.pages[pid]
             raw = str(nav.source[(p['content_source_sheet'], int(p['content_source_row']))][10]).strip()
-            expected = render_k_content(raw, scope[pid]['final_readiness'], pid)
+            expected = render_k_content(raw, scope[pid]['scope_status'], pid)
             if not fragment or fragment[1] != expected:
                 errors['k_fragment'] += 1
             fragments += 1
@@ -165,7 +165,7 @@ def validate(nav=None, prospective=None):
     summary.update(status='PASS' if not errors else 'FAIL', errors=dict(errors), related_anchors=nav_counts['related'], directory_anchors=nav_counts['directory'],
                    k_fragments_checked=fragments, evidence=dict(evidence), regions=regions, related_inbound0=zero_counts(related_inbound),
                    directory_inbound0=zero_counts(directory_inbound), combined_inbound0=zero_counts(related_inbound+directory_inbound),
-                   ready=841, normal_ready=840, normal_reachable=840-len(unreachable-{ISOLATED}), unreachable=sorted(unreachable),
+                   ready=len(ready_routes), normal_ready=len(ready_routes)-1, normal_reachable=(len(ready_routes)-1)-len(unreachable-{ISOLATED}), unreachable=sorted(unreachable),
                    isolated_inbound=isolated_inbound, conflicts=len(nav.conflicts))
     return summary
 

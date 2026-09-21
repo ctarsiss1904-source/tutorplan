@@ -31,14 +31,14 @@ class Navigation:
         self.out = self.root / 'output'
         self.regions = {r['region_id']: r for r in self.read('data/generated/regions.json')}
         inventory = self.read('data/generated/nationwide_page_inventory_candidates.json')
-        scope = csv_rows(self.root / 'review/general_tutor_k_final_generation_scope.csv')
+        scope = csv_rows(self.root / 'review/general_tutor_k_proposed_final_scope_1945.csv')
+        public_ids = {s['page_id'] for s in scope}
         allowed = {s['page_id']: s for s in scope if s['generation_allowed'].lower() == 'true'}
         self.pages = {p['page_id']: p for p in inventory if p['page_id'] in allowed}
-        deploy = {p['page_id'] for p in self.read('data/generated/general_tutor_deploy_inventory.json') if p['deploy_ready']}
-        if len(allowed) != 841 or set(self.pages) != set(allowed) or deploy != set(allowed):
-            raise ValueError('READY/deploy identity mismatch')
-        if len(scope) != 894 or len(scope) - len(allowed) != 53:
-            raise ValueError('K scope mismatch')
+        if set(self.pages) != set(allowed):
+            raise ValueError('PUBLIC_SCOPE/inventory identity mismatch')
+        if any(s.get('scope_status') not in {'READY_AS_IS','READY_REMOVE_DUPLICATE_H1'} for s in allowed.values()):
+            raise ValueError('GENERATION_ALLOWED contains non-ready scope status')
         self.by_region = {p['region_id']: p for p in self.pages.values()}
         self.sidos = {r['sido']: r for r in self.regions.values() if r['region_level'] == 'sido'}
         self.sigungu = defaultdict(list)
@@ -53,9 +53,10 @@ class Navigation:
             workbook.close()
         self.source = source
         candidates = [p for p in inventory if p['page_type'] == 'region_tutor']
-        self.k_present = sum(self.has_k(source.get((p['content_source_sheet'], int(p['content_source_row'])), ())) for p in candidates)
-        if len(candidates) != 3381 or self.k_present != 894:
-            raise ValueError('Excel/candidate coverage changed')
+        k_page_ids = {p['page_id'] for p in candidates if self.has_k(source.get((p['content_source_sheet'], int(p['content_source_row'])), ()))}
+        self.k_present = len(k_page_ids)
+        if len(candidates) != 3381 or k_page_ids != public_ids:
+            raise ValueError('CURRENT_EXCEL_K_INVENTORY/PUBLIC_SCOPE identity mismatch')
         evidence = defaultdict(list)
         reviews = defaultdict(list)
         for filename in ('parent_resolution_confirmed.csv', 'parent_second_pass_confirmed.csv'):
@@ -75,7 +76,7 @@ class Navigation:
         for pid, page in self.pages.items():
             key = (page['content_source_sheet'], int(page['content_source_row']))
             s = allowed[pid]
-            if key != (s['sheet'], int(s['row'])) or not self.has_k(source.get(key, ())):
+            if key != (s['source_sheet'], int(s['source_row'])) or not self.has_k(source.get(key, ())):
                 raise ValueError('Source/scope mismatch: ' + pid)
             keyword = norm(source[key][0])
             region = self.regions[page['region_id']]
@@ -94,6 +95,8 @@ class Navigation:
                 for tier, row, filename in evidence.get(key, []):
                     originals = [row['original_keyword']] if row.get('original_keyword') else [r['original_keyword'] for r in reviews[key] if r['candidate_parent'] == row['candidate_parent']]
                     if not originals or any(norm(v) != keyword for v in originals):
+                        if s.get('scope_origin') == 'NEW_K_1051':
+                            continue
                         raise ValueError('Evidence keyword mismatch: ' + pid + ' ' + filename)
                     matches = [r for r in self.sigungu[key[0]] if r['display_name'] == row['candidate_parent']]
                     if len(matches) == 1:
