@@ -1,0 +1,2631 @@
+{
+  "version": 1,
+  "scope": "서울 region navigation hierarchy only",
+  "entries": [
+    {
+      "region_id": "seoul-gangnam",
+      "parent_region_id": "seoul",
+      "region_name": "강남구",
+      "parent_name": "서울",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-ac15-b3d9-ad6c",
+      "parent_region_id": "seoul",
+      "region_name": "강동구",
+      "parent_name": "서울",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-ac15-bd81-ad6c",
+      "parent_region_id": "seoul",
+      "region_name": "강북구",
+      "parent_name": "서울",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-ac15-c11c-ad6c",
+      "parent_region_id": "seoul",
+      "region_name": "강서구",
+      "parent_name": "서울",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-ad00-c545-ad6c",
+      "parent_region_id": "seoul",
+      "region_name": "관악구",
+      "parent_name": "서울",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-ad11-c9c4-ad6c",
+      "parent_region_id": "seoul",
+      "region_name": "광진구",
+      "parent_name": "서울",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-ad6c-b85c-ad6c",
+      "parent_region_id": "seoul",
+      "region_name": "구로구",
+      "parent_name": "서울",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-ae08-cc9c-ad6c",
+      "parent_region_id": "seoul",
+      "region_name": "금천구",
+      "parent_name": "서울",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-b178-c6d0-ad6c",
+      "parent_region_id": "seoul",
+      "region_name": "노원구",
+      "parent_name": "서울",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-b3c4-bd09-ad6c",
+      "parent_region_id": "seoul",
+      "region_name": "도봉구",
+      "parent_name": "서울",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-b3d9-b300-bb38-ad6c",
+      "parent_region_id": "seoul",
+      "region_name": "동대문구",
+      "parent_name": "서울",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-b3d9-c791-ad6c",
+      "parent_region_id": "seoul",
+      "region_name": "동작구",
+      "parent_name": "서울",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-b9c8-d3ec-ad6c",
+      "parent_region_id": "seoul",
+      "region_name": "마포구",
+      "parent_name": "서울",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c11c-b300-bb38-ad6c",
+      "parent_region_id": "seoul",
+      "region_name": "서대문구",
+      "parent_name": "서울",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c11c-cd08-ad6c",
+      "parent_region_id": "seoul",
+      "region_name": "서초구",
+      "parent_name": "서울",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c131-b3d9-ad6c",
+      "parent_region_id": "seoul",
+      "region_name": "성동구",
+      "parent_name": "서울",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c131-bd81-ad6c",
+      "parent_region_id": "seoul",
+      "region_name": "성북구",
+      "parent_name": "서울",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c1a1-d30c-ad6c",
+      "parent_region_id": "seoul",
+      "region_name": "송파구",
+      "parent_name": "서울",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c591-cc9c-ad6c",
+      "parent_region_id": "seoul",
+      "region_name": "양천구",
+      "parent_name": "서울",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c601-b4f1-d3ec-ad6c",
+      "parent_region_id": "seoul",
+      "region_name": "영등포구",
+      "parent_name": "서울",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c6a9-c0b0-ad6c",
+      "parent_region_id": "seoul",
+      "region_name": "용산구",
+      "parent_name": "서울",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c740-d3c9-ad6c",
+      "parent_region_id": "seoul",
+      "region_name": "은평구",
+      "parent_name": "서울",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c885-b85c-ad6c",
+      "parent_region_id": "seoul",
+      "region_name": "종로구",
+      "parent_name": "서울",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c11c-c6b8-c911-ad6c",
+      "parent_region_id": "seoul",
+      "region_name": "서울중구",
+      "parent_name": "서울",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c",
+      "parent_region_id": "seoul",
+      "region_name": "중랑구",
+      "parent_name": "서울",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-gangnam-kr-ac1c-d3ec-b3d9",
+      "parent_region_id": "seoul-gangnam",
+      "region_name": "개포동",
+      "parent_name": "강남구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-gangnam-kr-b17c-d604-b3d9",
+      "parent_region_id": "seoul-gangnam",
+      "region_name": "논현동",
+      "parent_name": "강남구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-gangnam-daechi",
+      "parent_region_id": "seoul-gangnam",
+      "region_name": "대치동",
+      "parent_name": "강남구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-b3c4-ace1-b3d9",
+      "parent_region_id": "seoul-gangnam",
+      "region_name": "도곡동",
+      "parent_name": "강남구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c0bc-c131-b3d9",
+      "parent_region_id": "seoul-gangnam",
+      "region_name": "삼성동",
+      "parent_name": "강남구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c138-ace1-b3d9",
+      "parent_region_id": "seoul-gangnam",
+      "region_name": "세곡동",
+      "parent_name": "강남구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c218-c11c-b3d9",
+      "parent_region_id": "seoul-gangnam",
+      "region_name": "수서동",
+      "parent_name": "강남구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c2e0-c0ac-b3d9",
+      "parent_region_id": "seoul-gangnam",
+      "region_name": "신사동",
+      "parent_name": "강남구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c555-ad6c-c815-b3d9",
+      "parent_region_id": "seoul-gangnam",
+      "region_name": "압구정동",
+      "parent_name": "강남구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c5ed-c0bc-b3d9",
+      "parent_region_id": "seoul-gangnam",
+      "region_name": "역삼동",
+      "parent_name": "강남구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c728-d604-b3d9",
+      "parent_region_id": "seoul-gangnam",
+      "region_name": "율현동",
+      "parent_name": "강남구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c77c-c6d0-b3d9",
+      "parent_region_id": "seoul-gangnam",
+      "region_name": "일원동",
+      "parent_name": "강남구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c790-ace1-b3d9",
+      "parent_region_id": "seoul-gangnam",
+      "region_name": "자곡동",
+      "parent_name": "강남구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-ccad-b2f4-b3d9",
+      "parent_region_id": "seoul-gangnam",
+      "region_name": "청담동",
+      "parent_name": "강남구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-ac15-c77c-b3d9",
+      "parent_region_id": "seoul-kr-ac15-b3d9-ad6c",
+      "region_name": "강일동",
+      "parent_name": "강동구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-ace0-b355-b3d9",
+      "parent_region_id": "seoul-kr-ac15-b3d9-ad6c",
+      "region_name": "고덕동",
+      "parent_name": "강동구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-ae38-b3d9",
+      "parent_region_id": "seoul-kr-ac15-b3d9-ad6c",
+      "region_name": "길동",
+      "parent_name": "강동구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-b454-cd0c-b3d9",
+      "parent_region_id": "seoul-kr-ac15-b3d9-ad6c",
+      "region_name": "둔촌동",
+      "parent_name": "강동구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-ba85-c77c-b3d9",
+      "parent_region_id": "seoul-kr-ac15-b3d9-ad6c",
+      "region_name": "명일동",
+      "parent_name": "강동구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c0c1-c77c-b3d9",
+      "parent_region_id": "seoul-kr-ac15-b3d9-ad6c",
+      "region_name": "상일동",
+      "parent_name": "강동구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c131-b0b4-b3d9",
+      "parent_region_id": "seoul-kr-ac15-b3d9-ad6c",
+      "region_name": "성내동",
+      "parent_name": "강동구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c554-c0ac-b3d9",
+      "parent_region_id": "seoul-kr-ac15-b3d9-ad6c",
+      "region_name": "암사동",
+      "parent_name": "강동구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-cc9c-d638-b3d9",
+      "parent_region_id": "seoul-kr-ac15-b3d9-ad6c",
+      "region_name": "천호동",
+      "parent_name": "강동구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-bbf8-c544-b3d9",
+      "parent_region_id": "seoul-kr-ac15-bd81-ad6c",
+      "region_name": "미아동",
+      "parent_name": "강북구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-bc88-b3d9",
+      "parent_region_id": "seoul-kr-ac15-bd81-ad6c",
+      "region_name": "번동",
+      "parent_name": "강북구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c218-c720-b3d9",
+      "parent_region_id": "seoul-kr-ac15-bd81-ad6c",
+      "region_name": "수유동",
+      "parent_name": "강북구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c6b0-c774-b3d9",
+      "parent_region_id": "seoul-kr-ac15-bd81-ad6c",
+      "region_name": "우이동",
+      "parent_name": "강북구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-ac00-c591-b3d9",
+      "parent_region_id": "seoul-kr-ac15-c11c-ad6c",
+      "region_name": "가양동",
+      "parent_name": "강서구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-ac1c-d654-b3d9",
+      "parent_region_id": "seoul-kr-ac15-c11c-ad6c",
+      "region_name": "개화동",
+      "parent_name": "강서구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-acf5-d56d-b3d9",
+      "parent_region_id": "seoul-kr-ac15-c11c-ad6c",
+      "region_name": "공항동",
+      "parent_name": "강서구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-acfc-d574-b3d9",
+      "parent_region_id": "seoul-kr-ac15-c11c-ad6c",
+      "region_name": "과해동",
+      "parent_name": "강서구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-b0b4-bc1c-c0b0-b3d9",
+      "parent_region_id": "seoul-kr-ac15-c11c-ad6c",
+      "region_name": "내발산동",
+      "parent_name": "강서구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-b4f1-cd0c-b3d9",
+      "parent_region_id": "seoul-kr-ac15-c11c-ad6c",
+      "region_name": "등촌동",
+      "parent_name": "강서구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-b9c8-ace1-b3d9",
+      "parent_region_id": "seoul-kr-ac15-c11c-ad6c",
+      "region_name": "마곡동",
+      "parent_name": "강서구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-bc29-d654-b3d9",
+      "parent_region_id": "seoul-kr-ac15-c11c-ad6c",
+      "region_name": "방화동",
+      "parent_name": "강서구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c5fc-cc3d-b3d9",
+      "parent_region_id": "seoul-kr-ac15-c11c-ad6c",
+      "region_name": "염창동",
+      "parent_name": "강서구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c624-ace1-b3d9",
+      "parent_region_id": "seoul-kr-ac15-c11c-ad6c",
+      "region_name": "오곡동",
+      "parent_name": "강서구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c624-c1e0-b3d9",
+      "parent_region_id": "seoul-kr-ac15-c11c-ad6c",
+      "region_name": "오쇠동",
+      "parent_name": "강서구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c678-bc1c-c0b0-b3d9",
+      "parent_region_id": "seoul-kr-ac15-c11c-ad6c",
+      "region_name": "외발산동",
+      "parent_name": "강서구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-d654-ace1-b3d9",
+      "parent_region_id": "seoul-kr-ac15-c11c-ad6c",
+      "region_name": "화곡동",
+      "parent_name": "강서구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-b0a8-d604-b3d9",
+      "parent_region_id": "seoul-kr-ad00-c545-ad6c",
+      "region_name": "남현동",
+      "parent_name": "관악구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-bd09-cc9c-b3d9",
+      "parent_region_id": "seoul-kr-ad00-c545-ad6c",
+      "region_name": "봉천동",
+      "parent_name": "관악구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c2e0-b9bc-b3d9",
+      "parent_region_id": "seoul-kr-ad00-c545-ad6c",
+      "region_name": "신림동",
+      "parent_name": "관악구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-ad11-c7a5-b3d9",
+      "parent_region_id": "seoul-kr-ad11-c9c4-ad6c",
+      "region_name": "광장동",
+      "parent_name": "광진구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-ad6c-c758-b3d9",
+      "parent_region_id": "seoul-kr-ad11-c9c4-ad6c",
+      "region_name": "구의동",
+      "parent_name": "광진구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-ad70-c790-b3d9",
+      "parent_region_id": "seoul-kr-ad11-c9c4-ad6c",
+      "region_name": "군자동",
+      "parent_name": "광진구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-b2a5-b3d9",
+      "parent_region_id": "seoul-kr-ad11-c9c4-ad6c",
+      "region_name": "능동",
+      "parent_name": "광진구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c790-c591-b3d9",
+      "parent_region_id": "seoul-kr-ad11-c9c4-ad6c",
+      "region_name": "자양동",
+      "parent_name": "광진구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c911-ace1-b3d9",
+      "parent_region_id": "seoul-kr-ad11-c9c4-ad6c",
+      "region_name": "중곡동",
+      "parent_name": "광진구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-d654-c591-b3d9",
+      "parent_region_id": "seoul-kr-ad11-c9c4-ad6c",
+      "region_name": "화양동",
+      "parent_name": "광진구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-ac00-b9ac-bd09-b3d9",
+      "parent_region_id": "seoul-kr-ad6c-b85c-ad6c",
+      "region_name": "가리봉동",
+      "parent_name": "구로구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-ac1c-bd09-b3d9",
+      "parent_region_id": "seoul-kr-ad6c-b85c-ad6c",
+      "region_name": "개봉동",
+      "parent_name": "구로구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-ace0-cc99-b3d9",
+      "parent_region_id": "seoul-kr-ad6c-b85c-ad6c",
+      "region_name": "고척동",
+      "parent_name": "구로구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-ad6c-b85c-b3d9",
+      "parent_region_id": "seoul-kr-ad6c-b85c-ad6c",
+      "region_name": "구로동",
+      "parent_name": "구로구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-ad81-b3d9",
+      "parent_region_id": "seoul-kr-ad6c-b85c-ad6c",
+      "region_name": "궁동",
+      "parent_name": "구로구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c2e0-b3c4-b9bc-b3d9",
+      "parent_region_id": "seoul-kr-ad6c-b85c-ad6c",
+      "region_name": "신도림동",
+      "parent_name": "구로구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c624-b958-b3d9",
+      "parent_region_id": "seoul-kr-ad6c-b85c-ad6c",
+      "region_name": "오류동",
+      "parent_name": "구로구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c628-c218-b3d9",
+      "parent_region_id": "seoul-kr-ad6c-b85c-ad6c",
+      "region_name": "온수동",
+      "parent_name": "구로구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-cc9c-c655-b3d9",
+      "parent_region_id": "seoul-kr-ad6c-b85c-ad6c",
+      "region_name": "천왕동",
+      "parent_name": "구로구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-d56d-b3d9",
+      "parent_region_id": "seoul-kr-ad6c-b85c-ad6c",
+      "region_name": "항동",
+      "parent_name": "구로구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-ac00-c0b0-b3d9",
+      "parent_region_id": "seoul-kr-ae08-cc9c-ad6c",
+      "region_name": "가산동",
+      "parent_name": "금천구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-b3c5-c0b0-b3d9",
+      "parent_region_id": "seoul-kr-ae08-cc9c-ad6c",
+      "region_name": "독산동",
+      "parent_name": "금천구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c2dc-d765-b3d9",
+      "parent_region_id": "seoul-kr-ae08-cc9c-ad6c",
+      "region_name": "시흥동",
+      "parent_name": "금천구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-acf5-b989-b3d9",
+      "parent_region_id": "seoul-kr-b178-c6d0-ad6c",
+      "region_name": "공릉동",
+      "parent_name": "노원구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c0c1-acc4-b3d9",
+      "parent_region_id": "seoul-kr-b178-c6d0-ad6c",
+      "region_name": "상계동",
+      "parent_name": "노원구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c6d4-acc4-b3d9",
+      "parent_region_id": "seoul-kr-b178-c6d0-ad6c",
+      "region_name": "월계동",
+      "parent_name": "노원구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c911-acc4-b3d9",
+      "parent_region_id": "seoul-kr-b178-c6d0-ad6c",
+      "region_name": "중계동",
+      "parent_name": "노원구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-d558-acc4-b3d9",
+      "parent_region_id": "seoul-kr-b178-c6d0-ad6c",
+      "region_name": "하계동",
+      "parent_name": "노원구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-b3c4-bd09-b3d9",
+      "parent_region_id": "seoul-kr-b3c4-bd09-ad6c",
+      "region_name": "도봉동",
+      "parent_name": "도봉구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-bc29-d559-b3d9",
+      "parent_region_id": "seoul-kr-b3c4-bd09-ad6c",
+      "region_name": "방학동",
+      "parent_name": "도봉구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c30d-bb38-b3d9",
+      "parent_region_id": "seoul-kr-b3c4-bd09-ad6c",
+      "region_name": "쌍문동",
+      "parent_name": "도봉구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-cc3d-b3d9",
+      "parent_region_id": "seoul-kr-b3c4-bd09-ad6c",
+      "region_name": "창동",
+      "parent_name": "도봉구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-b2f5-c2ed-b9ac-b3d9",
+      "parent_region_id": "seoul-kr-b3d9-b300-bb38-ad6c",
+      "region_name": "답십리동",
+      "parent_name": "동대문구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c2e0-c124-b3d9",
+      "parent_region_id": "seoul-kr-b3d9-b300-bb38-ad6c",
+      "region_name": "신설동",
+      "parent_name": "동대문구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c6a9-b450-b3d9",
+      "parent_region_id": "seoul-kr-b3d9-b300-bb38-ad6c",
+      "region_name": "용두동",
+      "parent_name": "동대문구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c774-bb38-b3d9",
+      "parent_region_id": "seoul-kr-b3d9-b300-bb38-ad6c",
+      "region_name": "이문동",
+      "parent_name": "동대문구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c7a5-c548-b3d9",
+      "parent_region_id": "seoul-kr-b3d9-b300-bb38-ad6c",
+      "region_name": "장안동",
+      "parent_name": "동대문구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c804-b18d-b3d9",
+      "parent_region_id": "seoul-kr-b3d9-b300-bb38-ad6c",
+      "region_name": "전농동",
+      "parent_name": "동대문구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c81c-ae30-b3d9",
+      "parent_region_id": "seoul-kr-b3d9-b300-bb38-ad6c",
+      "region_name": "제기동",
+      "parent_name": "동대문구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-ccad-b7c9-b9ac-b3d9",
+      "parent_region_id": "seoul-kr-b3d9-b300-bb38-ad6c",
+      "region_name": "청량리동",
+      "parent_name": "동대문구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-d68c-ae30-b3d9",
+      "parent_region_id": "seoul-kr-b3d9-b300-bb38-ad6c",
+      "region_name": "회기동",
+      "parent_name": "동대문구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-d718-acbd-b3d9",
+      "parent_region_id": "seoul-kr-b3d9-c791-ad6c",
+      "region_name": "휘경동",
+      "parent_name": "동작구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-b178-b7c9-c9c4-b3d9",
+      "parent_region_id": "seoul-kr-b3d9-c791-ad6c",
+      "region_name": "노량진동",
+      "parent_name": "동작구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-b300-bc29-b3d9",
+      "parent_region_id": "seoul-kr-b3d9-c791-ad6c",
+      "region_name": "대방동",
+      "parent_name": "동작구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-b3d9-c791-b3d9",
+      "parent_region_id": "seoul-kr-b3d9-c791-ad6c",
+      "region_name": "동작동",
+      "parent_name": "동작구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-bcf8-b3d9",
+      "parent_region_id": "seoul-kr-b3d9-c791-ad6c",
+      "region_name": "본동",
+      "parent_name": "동작구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c0ac-b2f9-b3d9",
+      "parent_region_id": "seoul-kr-b3d9-c791-ad6c",
+      "region_name": "사당동",
+      "parent_name": "동작구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c0c1-b3c4-b3d9",
+      "parent_region_id": "seoul-kr-b3d9-c791-ad6c",
+      "region_name": "상도동",
+      "parent_name": "동작구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c2e0-b300-bc29-b3d9",
+      "parent_region_id": "seoul-kr-b3d9-c791-ad6c",
+      "region_name": "신대방동",
+      "parent_name": "동작구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-d751-c11d-b3d9",
+      "parent_region_id": "seoul-kr-b3d9-c791-ad6c",
+      "region_name": "흑석동",
+      "parent_name": "동작구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-acf5-b355-b3d9",
+      "parent_region_id": "seoul-kr-b3d9-c791-ad6c",
+      "region_name": "공덕동",
+      "parent_name": "동작구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-ad6c-c218-b3d9",
+      "parent_region_id": "seoul-kr-b9c8-d3ec-ad6c",
+      "region_name": "구수동",
+      "parent_name": "마포구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-b178-ace0-c0b0-b3d9",
+      "parent_region_id": "seoul-kr-b9c8-d3ec-ad6c",
+      "region_name": "노고산동",
+      "parent_name": "마포구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-b2f9-c778-b3d9",
+      "parent_region_id": "seoul-kr-b9c8-d3ec-ad6c",
+      "region_name": "당인동",
+      "parent_name": "마포구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-b300-d765-b3d9",
+      "parent_region_id": "seoul-kr-b9c8-d3ec-ad6c",
+      "region_name": "대흥동",
+      "parent_name": "마포구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-b3c4-d654-b3d9",
+      "parent_region_id": "seoul-kr-b9c8-d3ec-ad6c",
+      "region_name": "도화동",
+      "parent_name": "마포구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-b3d9-ad50-b3d9",
+      "parent_region_id": "seoul-kr-b9c8-d3ec-ad6c",
+      "region_name": "동교동",
+      "parent_name": "마포구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-b9c8-d3ec-b3d9",
+      "parent_region_id": "seoul-kr-b9c8-d3ec-ad6c",
+      "region_name": "마포동",
+      "parent_name": "마포구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-b9dd-c6d0-b3d9",
+      "parent_region_id": "seoul-kr-b9c8-d3ec-ad6c",
+      "region_name": "망원동",
+      "parent_name": "마포구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c0c1-c218-b3d9",
+      "parent_region_id": "seoul-kr-b9c8-d3ec-ad6c",
+      "region_name": "상수동",
+      "parent_name": "마포구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c0c1-c554-b3d9",
+      "parent_region_id": "seoul-kr-b9c8-d3ec-ad6c",
+      "region_name": "상암동",
+      "parent_name": "마포구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c11c-ad50-b3d9",
+      "parent_region_id": "seoul-kr-b9c8-d3ec-ad6c",
+      "region_name": "서교동",
+      "parent_name": "마포구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c131-c0b0-b3d9",
+      "parent_region_id": "seoul-kr-b9c8-d3ec-ad6c",
+      "region_name": "성산동",
+      "parent_name": "마포구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c2e0-acf5-b355-b3d9",
+      "parent_region_id": "seoul-kr-b9c8-d3ec-ad6c",
+      "region_name": "신공덕동",
+      "parent_name": "마포구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c2e0-c218-b3d9",
+      "parent_region_id": "seoul-kr-b9c8-d3ec-ad6c",
+      "region_name": "신수동",
+      "parent_name": "마포구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c544-d604-b3d9",
+      "parent_region_id": "seoul-kr-b9c8-d3ec-ad6c",
+      "region_name": "아현동",
+      "parent_name": "마포구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c5f0-b0a8-b3d9",
+      "parent_region_id": "seoul-kr-b9c8-d3ec-ad6c",
+      "region_name": "연남동",
+      "parent_name": "마포구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c5fc-b9ac-b3d9",
+      "parent_region_id": "seoul-kr-b9c8-d3ec-ad6c",
+      "region_name": "염리동",
+      "parent_name": "마포구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c6a9-ac15-b3d9",
+      "parent_region_id": "seoul-kr-b9c8-d3ec-ad6c",
+      "region_name": "용강동",
+      "parent_name": "마포구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c911-b3d9",
+      "parent_region_id": "seoul-kr-b9c8-d3ec-ad6c",
+      "region_name": "중동",
+      "parent_name": "마포구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-cc3d-c804-b3d9",
+      "parent_region_id": "seoul-kr-b9c8-d3ec-ad6c",
+      "region_name": "창전동",
+      "parent_name": "마포구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-d1a0-c815-b3d9",
+      "parent_region_id": "seoul-kr-b9c8-d3ec-ad6c",
+      "region_name": "토정동",
+      "parent_name": "마포구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-d569-c815-b3d9",
+      "parent_region_id": "seoul-kr-b9c8-d3ec-ad6c",
+      "region_name": "합정동",
+      "parent_name": "마포구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-d604-c11d-b3d9",
+      "parent_region_id": "seoul-kr-b9c8-d3ec-ad6c",
+      "region_name": "현석동",
+      "parent_name": "마포구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-b0a8-ac00-c88c-b3d9",
+      "parent_region_id": "seoul-kr-b9c8-d3ec-ad6c",
+      "region_name": "남가좌동",
+      "parent_name": "마포구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-b0c9-cc9c-b3d9",
+      "parent_region_id": "seoul-kr-b9c8-d3ec-ad6c",
+      "region_name": "냉천동",
+      "parent_name": "마포구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-b300-c2e0-b3d9",
+      "parent_region_id": "seoul-kr-c11c-b300-bb38-ad6c",
+      "region_name": "대신동",
+      "parent_name": "서대문구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-b300-d604-b3d9",
+      "parent_region_id": "seoul-kr-c11c-b300-bb38-ad6c",
+      "region_name": "대현동",
+      "parent_name": "서대문구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-bbf8-adfc-b3d9",
+      "parent_region_id": "seoul-kr-c11c-b300-bb38-ad6c",
+      "region_name": "미근동",
+      "parent_name": "서대문구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-bd09-c6d0-b3d9",
+      "parent_region_id": "seoul-kr-c11c-b300-bb38-ad6c",
+      "region_name": "봉원동",
+      "parent_name": "서대문구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-bd81-ac00-c88c-b3d9",
+      "parent_region_id": "seoul-kr-c11c-b300-bb38-ad6c",
+      "region_name": "북가좌동",
+      "parent_name": "서대문구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-bd81-c544-d604-b3d9",
+      "parent_region_id": "seoul-kr-c11c-b300-bb38-ad6c",
+      "region_name": "북아현동",
+      "parent_name": "서대문구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c2e0-cd0c-b3d9",
+      "parent_region_id": "seoul-kr-c11c-b300-bb38-ad6c",
+      "region_name": "신촌동",
+      "parent_name": "서대문구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c5f0-d76c-b3d9",
+      "parent_region_id": "seoul-kr-c11c-b300-bb38-ad6c",
+      "region_name": "연희동",
+      "parent_name": "서대문구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c601-cc9c-b3d9",
+      "parent_region_id": "seoul-kr-c11c-b300-bb38-ad6c",
+      "region_name": "영천동",
+      "parent_name": "서대문구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c625-cc9c-b3d9",
+      "parent_region_id": "seoul-kr-c11c-b300-bb38-ad6c",
+      "region_name": "옥천동",
+      "parent_name": "서대문구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-cc3d-cc9c-b3d9",
+      "parent_region_id": "seoul-kr-c11c-b300-bb38-ad6c",
+      "region_name": "창천동",
+      "parent_name": "서대문구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-cc9c-c5f0-b3d9",
+      "parent_region_id": "seoul-kr-c11c-b300-bb38-ad6c",
+      "region_name": "천연동",
+      "parent_name": "서대문구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-cda9-c815-b85c-b3d9",
+      "parent_region_id": "seoul-kr-c11c-b300-bb38-ad6c",
+      "region_name": "충정로동",
+      "parent_name": "서대문구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-d569-b3d9",
+      "parent_region_id": "seoul-kr-c11c-b300-bb38-ad6c",
+      "region_name": "합동",
+      "parent_name": "서대문구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-d604-c800-b3d9",
+      "parent_region_id": "seoul-kr-c11c-b300-bb38-ad6c",
+      "region_name": "현저동",
+      "parent_name": "서대문구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-d64d-c740-b3d9",
+      "parent_region_id": "seoul-kr-c11c-b300-bb38-ad6c",
+      "region_name": "홍은동",
+      "parent_name": "서대문구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-d64d-c81c-b3d9",
+      "parent_region_id": "seoul-kr-c11c-b300-bb38-ad6c",
+      "region_name": "홍제동",
+      "parent_name": "서대문구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-b0b4-ace1-b3d9",
+      "parent_region_id": "seoul-kr-c11c-cd08-ad6c",
+      "region_name": "내곡동",
+      "parent_name": "서초구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-bc18-d3ec-b3d9",
+      "parent_region_id": "seoul-kr-c11c-cd08-ad6c",
+      "region_name": "반포동",
+      "parent_name": "서초구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-bc29-bc30-b3d9",
+      "parent_region_id": "seoul-kr-c11c-cd08-ad6c",
+      "region_name": "방배동",
+      "parent_name": "서초구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c11c-cd08-b3d9",
+      "parent_region_id": "seoul-kr-c11c-cd08-ad6c",
+      "region_name": "서초동",
+      "parent_name": "서초구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c2e0-c6d0-b3d9",
+      "parent_region_id": "seoul-kr-c11c-cd08-ad6c",
+      "region_name": "신원동",
+      "parent_name": "서초구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c591-c7ac-b3d9",
+      "parent_region_id": "seoul-kr-c11c-cd08-ad6c",
+      "region_name": "양재동",
+      "parent_name": "서초구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c5fc-ace1-b3d9",
+      "parent_region_id": "seoul-kr-c11c-cd08-ad6c",
+      "region_name": "염곡동",
+      "parent_name": "서초구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c6b0-ba74-b3d9",
+      "parent_region_id": "seoul-kr-c11c-cd08-ad6c",
+      "region_name": "우면동",
+      "parent_name": "서초구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c6d0-c9c0-b3d9",
+      "parent_region_id": "seoul-kr-c11c-cd08-ad6c",
+      "region_name": "원지동",
+      "parent_name": "서초구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c7a0-c6d0-b3d9",
+      "parent_region_id": "seoul-kr-c11c-cd08-ad6c",
+      "region_name": "잠원동",
+      "parent_name": "서초구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-ae08-d638-b3d9",
+      "parent_region_id": "seoul-kr-c131-b3d9-ad6c",
+      "region_name": "금호동",
+      "parent_name": "성동구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-b3c4-c120-b3d9",
+      "parent_region_id": "seoul-kr-c131-b3d9-ad6c",
+      "region_name": "도선동",
+      "parent_name": "성동구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-b9c8-c7a5-b3d9",
+      "parent_region_id": "seoul-kr-c131-b3d9-ad6c",
+      "region_name": "마장동",
+      "parent_name": "성동구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c0ac-adfc-b3d9",
+      "parent_region_id": "seoul-kr-c131-b3d9-ad6c",
+      "region_name": "사근동",
+      "parent_name": "성동구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c0c1-c655-c2ed-b9ac-b3d9",
+      "parent_region_id": "seoul-kr-c131-b3d9-ad6c",
+      "region_name": "상왕십리동",
+      "parent_name": "성동구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c131-c218-b3d9",
+      "parent_region_id": "seoul-kr-c131-b3d9-ad6c",
+      "region_name": "성수동",
+      "parent_name": "성동구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c1a1-c815-b3d9",
+      "parent_region_id": "seoul-kr-c131-b3d9-ad6c",
+      "region_name": "송정동",
+      "parent_name": "성동구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c625-c218-b3d9",
+      "parent_region_id": "seoul-kr-c131-b3d9-ad6c",
+      "region_name": "옥수동",
+      "parent_name": "성동구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c6a9-b2f5-b3d9",
+      "parent_region_id": "seoul-kr-c131-b3d9-ad6c",
+      "region_name": "용답동",
+      "parent_name": "성동구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c751-bd09-b3d9",
+      "parent_region_id": "seoul-kr-c131-b3d9-ad6c",
+      "region_name": "응봉동",
+      "parent_name": "성동구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-d558-c655-c2ed-b9ac-b3d9",
+      "parent_region_id": "seoul-kr-c131-b3d9-ad6c",
+      "region_name": "하왕십리동",
+      "parent_name": "성동구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-d589-b2f9-b3d9",
+      "parent_region_id": "seoul-kr-c131-b3d9-ad6c",
+      "region_name": "행당동",
+      "parent_name": "성동구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-d64d-c775-b3d9",
+      "parent_region_id": "seoul-kr-c131-b3d9-ad6c",
+      "region_name": "홍익동",
+      "parent_name": "성동구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-ae38-c74c-b3d9",
+      "parent_region_id": "seoul-kr-c131-b3d9-ad6c",
+      "region_name": "길음동",
+      "parent_name": "성동구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-b3c8-c554-b3d9",
+      "parent_region_id": "seoul-kr-c131-bd81-ad6c",
+      "region_name": "돈암동",
+      "parent_name": "성북구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-b3d9-c120-b3d9",
+      "parent_region_id": "seoul-kr-c131-bd81-ad6c",
+      "region_name": "동선동",
+      "parent_name": "성북구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-bcf4-bb38-b3d9",
+      "parent_region_id": "seoul-kr-c131-bd81-ad6c",
+      "region_name": "보문동",
+      "parent_name": "성북구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c0bc-c120-b3d9",
+      "parent_region_id": "seoul-kr-c131-bd81-ad6c",
+      "region_name": "삼선동",
+      "parent_name": "성북구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c0c1-c6d4-ace1-b3d9",
+      "parent_region_id": "seoul-kr-c131-bd81-ad6c",
+      "region_name": "상월곡동",
+      "parent_name": "성북구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c11d-ad00-b3d9",
+      "parent_region_id": "seoul-kr-c131-bd81-ad6c",
+      "region_name": "석관동",
+      "parent_name": "성북구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c131-bd81-b3d9",
+      "parent_region_id": "seoul-kr-c131-bd81-ad6c",
+      "region_name": "성북동",
+      "parent_name": "성북구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c548-c554-b3d9",
+      "parent_region_id": "seoul-kr-c131-bd81-ad6c",
+      "region_name": "안암동",
+      "parent_name": "성북구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c7a5-c704-b3d9",
+      "parent_region_id": "seoul-kr-c131-bd81-ad6c",
+      "region_name": "장위동",
+      "parent_name": "성북구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c815-b989-b3d9",
+      "parent_region_id": "seoul-kr-c131-bd81-ad6c",
+      "region_name": "정릉동",
+      "parent_name": "성북구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c885-c554-b3d9",
+      "parent_region_id": "seoul-kr-c131-bd81-ad6c",
+      "region_name": "종암동",
+      "parent_name": "성북구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-d558-c6d4-ace1-b3d9",
+      "parent_region_id": "seoul-kr-c131-bd81-ad6c",
+      "region_name": "하월곡동",
+      "parent_name": "성북구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-ac00-b77d-b3d9",
+      "parent_region_id": "seoul-kr-c131-bd81-ad6c",
+      "region_name": "가락동",
+      "parent_name": "성북구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-ac70-c5ec-b3d9",
+      "parent_region_id": "seoul-kr-c1a1-d30c-ad6c",
+      "region_name": "거여동",
+      "parent_name": "송파구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-b9c8-cc9c-b3d9",
+      "parent_region_id": "seoul-kr-c1a1-d30c-ad6c",
+      "region_name": "마천동",
+      "parent_name": "송파구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-bb38-c815-b3d9",
+      "parent_region_id": "seoul-kr-c1a1-d30c-ad6c",
+      "region_name": "문정동",
+      "parent_name": "송파구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-bc29-c774-b3d9",
+      "parent_region_id": "seoul-kr-c1a1-d30c-ad6c",
+      "region_name": "방이동",
+      "parent_name": "송파구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c0bc-c804-b3d9",
+      "parent_region_id": "seoul-kr-c1a1-d30c-ad6c",
+      "region_name": "삼전동",
+      "parent_name": "송파구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c11d-cd0c-b3d9",
+      "parent_region_id": "seoul-kr-c1a1-d30c-ad6c",
+      "region_name": "석촌동",
+      "parent_name": "송파구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c1a1-d30c-b3d9",
+      "parent_region_id": "seoul-kr-c1a1-d30c-ad6c",
+      "region_name": "송파동",
+      "parent_name": "송파구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c2e0-cc9c-b3d9",
+      "parent_region_id": "seoul-kr-c1a1-d30c-ad6c",
+      "region_name": "신천동",
+      "parent_name": "송파구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c624-ae08-b3d9",
+      "parent_region_id": "seoul-kr-c1a1-d30c-ad6c",
+      "region_name": "오금동",
+      "parent_name": "송파구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c7a0-c2e4-b3d9",
+      "parent_region_id": "seoul-kr-c1a1-d30c-ad6c",
+      "region_name": "잠실동",
+      "parent_name": "송파구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c7a5-c9c0-b3d9",
+      "parent_region_id": "seoul-kr-c1a1-d30c-ad6c",
+      "region_name": "장지동",
+      "parent_name": "송파구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-d48d-b0a9-b3d9",
+      "parent_region_id": "seoul-kr-c1a1-d30c-ad6c",
+      "region_name": "풍납동",
+      "parent_name": "송파구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c704-b840-b3d9",
+      "parent_region_id": "seoul-kr-c1a1-d30c-ad6c",
+      "region_name": "위례동",
+      "parent_name": "송파구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-baa9-b3d9",
+      "parent_region_id": "seoul-kr-c591-cc9c-ad6c",
+      "region_name": "목동",
+      "parent_name": "양천구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c2e0-c6d4-b3d9",
+      "parent_region_id": "seoul-kr-c591-cc9c-ad6c",
+      "region_name": "신월동",
+      "parent_name": "양천구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c2e0-c815-b3d9",
+      "parent_region_id": "seoul-kr-c591-cc9c-ad6c",
+      "region_name": "신정동",
+      "parent_name": "양천구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-b2f9-c0b0-b3d9",
+      "parent_region_id": "seoul-kr-c601-b4f1-d3ec-ad6c",
+      "region_name": "당산동",
+      "parent_name": "영등포구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-b300-b9bc-b3d9",
+      "parent_region_id": "seoul-kr-c601-b4f1-d3ec-ad6c",
+      "region_name": "대림동",
+      "parent_name": "영등포구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-b3c4-b9bc-b3d9",
+      "parent_region_id": "seoul-kr-c601-b4f1-d3ec-ad6c",
+      "region_name": "도림동",
+      "parent_name": "영등포구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-bb38-b798-b3d9",
+      "parent_region_id": "seoul-kr-c601-b4f1-d3ec-ad6c",
+      "region_name": "문래동",
+      "parent_name": "영등포구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c2e0-ae38-b3d9",
+      "parent_region_id": "seoul-kr-c601-b4f1-d3ec-ad6c",
+      "region_name": "신길동",
+      "parent_name": "영등포구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c591-d3c9-b3d9",
+      "parent_region_id": "seoul-kr-c601-b4f1-d3ec-ad6c",
+      "region_name": "양평동",
+      "parent_name": "영등포구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c5ec-c758-b3c4-b3d9",
+      "parent_region_id": "seoul-kr-c601-b4f1-d3ec-ad6c",
+      "region_name": "여의도동",
+      "parent_name": "영등포구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c601-b4f1-d3ec-b3d9",
+      "parent_region_id": "seoul-kr-c601-b4f1-d3ec-ad6c",
+      "region_name": "영등포동",
+      "parent_name": "영등포구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-ac08-c6d4-b3d9",
+      "parent_region_id": "seoul-kr-c6a9-c0b0-ad6c",
+      "region_name": "갈월동",
+      "parent_name": "용산구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-b0a8-c601-b3d9",
+      "parent_region_id": "seoul-kr-c6a9-c0b0-ad6c",
+      "region_name": "남영동",
+      "parent_name": "용산구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-b3c4-c6d0-b3d9",
+      "parent_region_id": "seoul-kr-c6a9-c0b0-ad6c",
+      "region_name": "도원동",
+      "parent_name": "용산구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-b3d9-be59-ace0-b3d9",
+      "parent_region_id": "seoul-kr-c6a9-c0b0-ad6c",
+      "region_name": "동빙고동",
+      "parent_name": "용산구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-b3d9-c790-b3d9",
+      "parent_region_id": "seoul-kr-c6a9-c0b0-ad6c",
+      "region_name": "동자동",
+      "parent_name": "용산구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-bb38-bc30-b3d9",
+      "parent_region_id": "seoul-kr-c6a9-c0b0-ad6c",
+      "region_name": "문배동",
+      "parent_name": "용산구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-bcf4-ad11-b3d9",
+      "parent_region_id": "seoul-kr-c6a9-c0b0-ad6c",
+      "region_name": "보광동",
+      "parent_name": "용산구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c0b0-cc9c-b3d9",
+      "parent_region_id": "seoul-kr-c6a9-c0b0-ad6c",
+      "region_name": "산천동",
+      "parent_name": "용산구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c11c-acc4-b3d9",
+      "parent_region_id": "seoul-kr-c6a9-c0b0-ad6c",
+      "region_name": "서계동",
+      "parent_name": "용산구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c11c-be59-ace0-b3d9",
+      "parent_region_id": "seoul-kr-c6a9-c0b0-ad6c",
+      "region_name": "서빙고동",
+      "parent_name": "용산구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c2e0-acc4-b3d9",
+      "parent_region_id": "seoul-kr-c6a9-c0b0-ad6c",
+      "region_name": "신계동",
+      "parent_name": "용산구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c2e0-cc3d-b3d9",
+      "parent_region_id": "seoul-kr-c6a9-c0b0-ad6c",
+      "region_name": "신창동",
+      "parent_name": "용산구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c6a9-bb38-b3d9",
+      "parent_region_id": "seoul-kr-c6a9-c0b0-ad6c",
+      "region_name": "용문동",
+      "parent_name": "용산구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c6a9-c0b0-b3d9",
+      "parent_region_id": "seoul-kr-c6a9-c0b0-ad6c",
+      "region_name": "용산동",
+      "parent_name": "용산구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c6d0-d6a8-b85c-b3d9",
+      "parent_region_id": "seoul-kr-c6a9-c0b0-ad6c",
+      "region_name": "원효로동",
+      "parent_name": "용산구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c774-cd0c-b3d9",
+      "parent_region_id": "seoul-kr-c6a9-c0b0-ad6c",
+      "region_name": "이촌동",
+      "parent_name": "용산구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c774-d0dc-c6d0-b3d9",
+      "parent_region_id": "seoul-kr-c6a9-c0b0-ad6c",
+      "region_name": "이태원동",
+      "parent_name": "용산구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c8fc-c131-b3d9",
+      "parent_region_id": "seoul-kr-c6a9-c0b0-ad6c",
+      "region_name": "주성동",
+      "parent_name": "용산구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-ccad-c554-b3d9",
+      "parent_region_id": "seoul-kr-c6a9-c0b0-ad6c",
+      "region_name": "청암동",
+      "parent_name": "용산구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-ccad-d30c-b3d9",
+      "parent_region_id": "seoul-kr-c6a9-c0b0-ad6c",
+      "region_name": "청파동",
+      "parent_name": "용산구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-d55c-ac15-b85c-b3d9",
+      "parent_region_id": "seoul-kr-c6a9-c0b0-ad6c",
+      "region_name": "한강로동",
+      "parent_name": "용산구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-d55c-b0a8-b3d9",
+      "parent_region_id": "seoul-kr-c6a9-c0b0-ad6c",
+      "region_name": "한남동",
+      "parent_name": "용산구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-d6a8-cc3d-b3d9",
+      "parent_region_id": "seoul-kr-c6a9-c0b0-ad6c",
+      "region_name": "효창동",
+      "parent_name": "용산구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-d6c4-c554-b3d9",
+      "parent_region_id": "seoul-kr-c6a9-c0b0-ad6c",
+      "region_name": "후암동",
+      "parent_name": "용산구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-ac08-d604-b3d9",
+      "parent_region_id": "seoul-kr-c6a9-c0b0-ad6c",
+      "region_name": "갈현동",
+      "parent_name": "용산구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-ad6c-c0b0-b3d9",
+      "parent_region_id": "seoul-kr-c740-d3c9-ad6c",
+      "region_name": "구산동",
+      "parent_name": "은평구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-b179-bc88-b3d9",
+      "parent_region_id": "seoul-kr-c740-d3c9-ad6c",
+      "region_name": "녹번동",
+      "parent_name": "은평구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-b300-c870-b3d9",
+      "parent_region_id": "seoul-kr-c740-d3c9-ad6c",
+      "region_name": "대조동",
+      "parent_name": "은평구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-bd88-ad11-b3d9",
+      "parent_region_id": "seoul-kr-c740-d3c9-ad6c",
+      "region_name": "불광동",
+      "parent_name": "은평구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c218-c0c9-b3d9",
+      "parent_region_id": "seoul-kr-c740-d3c9-ad6c",
+      "region_name": "수색동",
+      "parent_name": "은평구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c5ed-cd0c-b3d9",
+      "parent_region_id": "seoul-kr-c740-d3c9-ad6c",
+      "region_name": "역촌동",
+      "parent_name": "은평구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c751-c554-b3d9",
+      "parent_region_id": "seoul-kr-c740-d3c9-ad6c",
+      "region_name": "응암동",
+      "parent_name": "은평구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c99d-c0b0-b3d9",
+      "parent_region_id": "seoul-kr-c740-d3c9-ad6c",
+      "region_name": "증산동",
+      "parent_name": "은평구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c9c4-ad00-b3d9",
+      "parent_region_id": "seoul-kr-c740-d3c9-ad6c",
+      "region_name": "진관동",
+      "parent_name": "은평구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-ac00-d68c-b3d9",
+      "parent_region_id": "seoul-kr-c740-d3c9-ad6c",
+      "region_name": "가회동",
+      "parent_name": "은평구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-acac-c9c0-b3d9",
+      "parent_region_id": "seoul-kr-c740-d3c9-ad6c",
+      "region_name": "견지동",
+      "parent_name": "은평구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-acbd-c6b4-b3d9",
+      "parent_region_id": "seoul-kr-c740-d3c9-ad6c",
+      "region_name": "경운동",
+      "parent_name": "은평구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-acc4-b3d9",
+      "parent_region_id": "seoul-kr-c885-b85c-ad6c",
+      "region_name": "계동",
+      "parent_name": "종로구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-acf5-d3c9-b3d9",
+      "parent_region_id": "seoul-kr-c885-b85c-ad6c",
+      "region_name": "공평동",
+      "parent_name": "종로구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-ad00-c218-b3d9",
+      "parent_region_id": "seoul-kr-c885-b85c-ad6c",
+      "region_name": "관수동",
+      "parent_name": "종로구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-ad00-cca0-b3d9",
+      "parent_region_id": "seoul-kr-c885-b85c-ad6c",
+      "region_name": "관철동",
+      "parent_name": "종로구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-ad00-d6c8-b3d9",
+      "parent_region_id": "seoul-kr-c885-b85c-ad6c",
+      "region_name": "관훈동",
+      "parent_name": "종로구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-ad50-b0a8-b3d9",
+      "parent_region_id": "seoul-kr-c885-b85c-ad6c",
+      "region_name": "교남동",
+      "parent_name": "종로구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-ad50-bd81-b3d9",
+      "parent_region_id": "seoul-kr-c885-b85c-ad6c",
+      "region_name": "교북동",
+      "parent_name": "종로구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-ad6c-ae30-b3d9",
+      "parent_region_id": "seoul-kr-c885-b85c-ad6c",
+      "region_name": "구기동",
+      "parent_name": "종로구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-ad81-c815-b3d9",
+      "parent_region_id": "seoul-kr-c885-b85c-ad6c",
+      "region_name": "궁정동",
+      "parent_name": "종로구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-ad8c-b18d-b3d9",
+      "parent_region_id": "seoul-kr-c885-b85c-ad6c",
+      "region_name": "권농동",
+      "parent_name": "종로구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-b099-c6d0-b3d9",
+      "parent_region_id": "seoul-kr-c885-b85c-ad6c",
+      "region_name": "낙원동",
+      "parent_name": "종로구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-b0b4-c218-b3d9",
+      "parent_region_id": "seoul-kr-c885-b85c-ad6c",
+      "region_name": "내수동",
+      "parent_name": "종로구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-b0b4-c790-b3d9",
+      "parent_region_id": "seoul-kr-c885-b85c-ad6c",
+      "region_name": "내자동",
+      "parent_name": "종로구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-b204-c0c1-b3d9",
+      "parent_region_id": "seoul-kr-c885-b85c-ad6c",
+      "region_name": "누상동",
+      "parent_name": "종로구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-b204-d558-b3d9",
+      "parent_region_id": "seoul-kr-c885-b85c-ad6c",
+      "region_name": "누하동",
+      "parent_name": "종로구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-b2f9-c8fc-b3d9",
+      "parent_region_id": "seoul-kr-c885-b85c-ad6c",
+      "region_name": "당주동",
+      "parent_name": "종로구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-b3c4-b834-b3d9",
+      "parent_region_id": "seoul-kr-c885-b85c-ad6c",
+      "region_name": "도렴동",
+      "parent_name": "종로구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-b3c8-c758-b3d9",
+      "parent_region_id": "seoul-kr-c885-b85c-ad6c",
+      "region_name": "돈의동",
+      "parent_name": "종로구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-b3d9-c22d-b3d9",
+      "parent_region_id": "seoul-kr-c885-b85c-ad6c",
+      "region_name": "동숭동",
+      "parent_name": "종로구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-ba85-b95c-b3d9",
+      "parent_region_id": "seoul-kr-c885-b85c-ad6c",
+      "region_name": "명륜동",
+      "parent_name": "종로구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-bb34-c545-b3d9",
+      "parent_region_id": "seoul-kr-c885-b85c-ad6c",
+      "region_name": "무악동",
+      "parent_name": "종로구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-bb18-b3d9",
+      "parent_region_id": "seoul-kr-c885-b85c-ad6c",
+      "region_name": "묘동",
+      "parent_name": "종로구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-bd09-c775-b3d9",
+      "parent_region_id": "seoul-kr-c885-b85c-ad6c",
+      "region_name": "봉익동",
+      "parent_name": "종로구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-bd80-c554-b3d9",
+      "parent_region_id": "seoul-kr-c885-b85c-ad6c",
+      "region_name": "부암동",
+      "parent_name": "종로구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c0ac-ac04-b3d9",
+      "parent_region_id": "seoul-kr-c885-b85c-ad6c",
+      "region_name": "사간동",
+      "parent_name": "종로구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c0ac-c9c1-b3d9",
+      "parent_region_id": "seoul-kr-c885-b85c-ad6c",
+      "region_name": "사직동",
+      "parent_name": "종로구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c0bc-ccad-b3d9",
+      "parent_region_id": "seoul-kr-c885-b85c-ad6c",
+      "region_name": "삼청동",
+      "parent_name": "종로구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c11c-b9b0-b3d9",
+      "parent_region_id": "seoul-kr-c885-b85c-ad6c",
+      "region_name": "서린동",
+      "parent_name": "종로구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c138-c885-b85c",
+      "parent_region_id": "seoul-kr-c885-b85c-ad6c",
+      "region_name": "세종로",
+      "parent_name": "종로구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c18c-aca9-b3d9",
+      "parent_region_id": "seoul-kr-c885-b85c-ad6c",
+      "region_name": "소격동",
+      "parent_name": "종로구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c1a1-c6d4-b3d9",
+      "parent_region_id": "seoul-kr-c885-b85c-ad6c",
+      "region_name": "송월동",
+      "parent_name": "종로구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c218-c1a1-b3d9",
+      "parent_region_id": "seoul-kr-c885-b85c-ad6c",
+      "region_name": "수송동",
+      "parent_name": "종로구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c22d-c778-b3d9",
+      "parent_region_id": "seoul-kr-c885-b85c-ad6c",
+      "region_name": "숭인동",
+      "parent_name": "종로구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c2e0-bb38-b85c-b3d9",
+      "parent_region_id": "seoul-kr-c885-b85c-ad6c",
+      "region_name": "신문로동",
+      "parent_name": "종로구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c2e0-c601-b3d9",
+      "parent_region_id": "seoul-kr-c885-b85c-ad6c",
+      "region_name": "신영동",
+      "parent_name": "종로구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c548-ad6d-b3d9",
+      "parent_region_id": "seoul-kr-c885-b85c-ad6c",
+      "region_name": "안국동",
+      "parent_name": "종로구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c5f0-ac74-b3d9",
+      "parent_region_id": "seoul-kr-c885-b85c-ad6c",
+      "region_name": "연건동",
+      "parent_name": "종로구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c5f0-c9c0-b3d9",
+      "parent_region_id": "seoul-kr-c885-b85c-ad6c",
+      "region_name": "연지동",
+      "parent_name": "종로구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c608-c9c0-b3d9",
+      "parent_region_id": "seoul-kr-c885-b85c-ad6c",
+      "region_name": "예지동",
+      "parent_name": "종로구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c625-c778-b3d9",
+      "parent_region_id": "seoul-kr-c885-b85c-ad6c",
+      "region_name": "옥인동",
+      "parent_name": "종로구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c640-b8e1-b3d9",
+      "parent_region_id": "seoul-kr-c885-b85c-ad6c",
+      "region_name": "와룡동",
+      "parent_name": "종로구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c6b4-b2c8-b3d9",
+      "parent_region_id": "seoul-kr-c885-b85c-ad6c",
+      "region_name": "운니동",
+      "parent_name": "종로구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c6d0-b0a8-b3d9",
+      "parent_region_id": "seoul-kr-c885-b85c-ad6c",
+      "region_name": "원남동",
+      "parent_name": "종로구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c6d0-c11c-b3d9",
+      "parent_region_id": "seoul-kr-c885-b85c-ad6c",
+      "region_name": "원서동",
+      "parent_name": "종로구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c774-d654-b3d9",
+      "parent_region_id": "seoul-kr-c885-b85c-ad6c",
+      "region_name": "이화동",
+      "parent_name": "종로구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c775-c120-b3d9",
+      "parent_region_id": "seoul-kr-c885-b85c-ad6c",
+      "region_name": "익선동",
+      "parent_name": "종로구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c778-c0ac-b3d9",
+      "parent_region_id": "seoul-kr-c885-b85c-ad6c",
+      "region_name": "인사동",
+      "parent_name": "종로구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c778-c758-b3d9",
+      "parent_region_id": "seoul-kr-c885-b85c-ad6c",
+      "region_name": "인의동",
+      "parent_name": "종로구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c7a5-c0ac-b3d9",
+      "parent_region_id": "seoul-kr-c885-b85c-ad6c",
+      "region_name": "장사동",
+      "parent_name": "종로구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c7ac-b3d9",
+      "parent_region_id": "seoul-kr-c885-b85c-ad6c",
+      "region_name": "재동",
+      "parent_name": "종로구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c801-c120-b3d9",
+      "parent_region_id": "seoul-kr-c885-b85c-ad6c",
+      "region_name": "적선동",
+      "parent_name": "종로구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c885-b85c-b3d9",
+      "parent_region_id": "seoul-kr-c885-b85c-ad6c",
+      "region_name": "종로동",
+      "parent_name": "종로구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c911-d559-b3d9",
+      "parent_region_id": "seoul-kr-c885-b85c-ad6c",
+      "region_name": "중학동",
+      "parent_name": "종로구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-cc3d-c131-b3d9",
+      "parent_region_id": "seoul-kr-c885-b85c-ad6c",
+      "region_name": "창성동",
+      "parent_name": "종로구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-cc3d-c2e0-b3d9",
+      "parent_region_id": "seoul-kr-c885-b85c-ad6c",
+      "region_name": "창신동",
+      "parent_name": "종로구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-ccad-c6b4-b3d9",
+      "parent_region_id": "seoul-kr-c885-b85c-ad6c",
+      "region_name": "청운동",
+      "parent_name": "종로구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-ccad-c9c4-b3d9",
+      "parent_region_id": "seoul-kr-c885-b85c-ad6c",
+      "region_name": "청진동",
+      "parent_name": "종로구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-ccb4-bd80-b3d9",
+      "parent_region_id": "seoul-kr-c885-b85c-ad6c",
+      "region_name": "체부동",
+      "parent_name": "종로구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-cda9-c2e0-b3d9",
+      "parent_region_id": "seoul-kr-c885-b85c-ad6c",
+      "region_name": "충신동",
+      "parent_name": "종로구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-d1b5-c758-b3d9",
+      "parent_region_id": "seoul-kr-c885-b85c-ad6c",
+      "region_name": "통의동",
+      "parent_name": "종로구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-d1b5-c778-b3d9",
+      "parent_region_id": "seoul-kr-c885-b85c-ad6c",
+      "region_name": "통인동",
+      "parent_name": "종로구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-d314-d310-b3d9",
+      "parent_region_id": "seoul-kr-c885-b85c-ad6c",
+      "region_name": "팔판동",
+      "parent_name": "종로구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-d3c9-b3d9",
+      "parent_region_id": "seoul-kr-c885-b85c-ad6c",
+      "region_name": "평동",
+      "parent_name": "종로구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-d3c9-cc3d-b3d9",
+      "parent_region_id": "seoul-kr-c885-b85c-ad6c",
+      "region_name": "평창동",
+      "parent_name": "종로구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-d544-c6b4-b3d9",
+      "parent_region_id": "seoul-kr-c885-b85c-ad6c",
+      "region_name": "필운동",
+      "parent_name": "종로구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-d589-cd0c-b3d9",
+      "parent_region_id": "seoul-kr-c885-b85c-ad6c",
+      "region_name": "행촌동",
+      "parent_name": "종로구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-d61c-d654-b3d9",
+      "parent_region_id": "seoul-kr-c885-b85c-ad6c",
+      "region_name": "혜화동",
+      "parent_name": "종로구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-d64d-c9c0-b3d9",
+      "parent_region_id": "seoul-kr-c885-b85c-ad6c",
+      "region_name": "홍지동",
+      "parent_name": "종로구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-d64d-d30c-b3d9",
+      "parent_region_id": "seoul-kr-c885-b85c-ad6c",
+      "region_name": "홍파동",
+      "parent_name": "종로구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-d654-b3d9",
+      "parent_region_id": "seoul-kr-c885-b85c-ad6c",
+      "region_name": "화동",
+      "parent_name": "종로구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-d6a8-c790-b3d9",
+      "parent_region_id": "seoul-kr-c885-b85c-ad6c",
+      "region_name": "효자동",
+      "parent_name": "종로구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-d6a8-c81c-b3d9",
+      "parent_region_id": "seoul-kr-c885-b85c-ad6c",
+      "region_name": "효제동",
+      "parent_name": "종로구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-d6c8-c815-b3d9",
+      "parent_region_id": "seoul-kr-c885-b85c-ad6c",
+      "region_name": "훈정동",
+      "parent_name": "종로구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-ad11-d76c-b3d9",
+      "parent_region_id": "seoul-kr-c11c-c6b8-c911-ad6c",
+      "region_name": "광희동",
+      "parent_name": "서울중구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-b0a8-b300-bb38-b85c-b3d9",
+      "parent_region_id": "seoul-kr-c11c-c6b8-c911-ad6c",
+      "region_name": "남대문로동",
+      "parent_name": "서울중구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-b0a8-c0b0-b3d9",
+      "parent_region_id": "seoul-kr-c11c-c6b8-c911-ad6c",
+      "region_name": "남산동",
+      "parent_name": "서울중구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-b0a8-cc3d-b3d9",
+      "parent_region_id": "seoul-kr-c11c-c6b8-c911-ad6c",
+      "region_name": "남창동",
+      "parent_name": "서울중구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-b2e4-b3d9",
+      "parent_region_id": "seoul-kr-c11c-c6b8-c911-ad6c",
+      "region_name": "다동",
+      "parent_name": "서울중구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-b9cc-b9ac-b3d9",
+      "parent_region_id": "seoul-kr-c11c-c6b8-c911-ad6c",
+      "region_name": "만리동",
+      "parent_name": "서울중구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-ba85-b3d9",
+      "parent_region_id": "seoul-kr-c11c-c6b8-c911-ad6c",
+      "region_name": "명동",
+      "parent_name": "서울중구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-bb34-ad50-b3d9",
+      "parent_region_id": "seoul-kr-c11c-c6b8-c911-ad6c",
+      "region_name": "무교동",
+      "parent_name": "서울중구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-bb35-c815-b3d9",
+      "parent_region_id": "seoul-kr-c11c-c6b8-c911-ad6c",
+      "region_name": "묵정동",
+      "parent_name": "서울중구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-bc29-c0b0-b3d9",
+      "parent_region_id": "seoul-kr-c11c-c6b8-c911-ad6c",
+      "region_name": "방산동",
+      "parent_name": "서울중구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-bd09-b798-b3d9",
+      "parent_region_id": "seoul-kr-c11c-c6b8-c911-ad6c",
+      "region_name": "봉래동",
+      "parent_name": "서울중구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-bd81-cc3d-b3d9",
+      "parent_region_id": "seoul-kr-c11c-c6b8-c911-ad6c",
+      "region_name": "북창동",
+      "parent_name": "서울중구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c0b0-b9bc-b3d9",
+      "parent_region_id": "seoul-kr-c11c-c6b8-c911-ad6c",
+      "region_name": "산림동",
+      "parent_name": "서울중구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c11c-c18c-bb38-b3d9",
+      "parent_region_id": "seoul-kr-c11c-c6b8-c911-ad6c",
+      "region_name": "서소문동",
+      "parent_name": "서울중구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c18c-acf5-b3d9",
+      "parent_region_id": "seoul-kr-c11c-c6b8-c911-ad6c",
+      "region_name": "소공동",
+      "parent_name": "서울중구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c218-d45c-b3d9",
+      "parent_region_id": "seoul-kr-c11c-c6b8-c911-ad6c",
+      "region_name": "수표동",
+      "parent_name": "서울중구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c218-d558-b3d9",
+      "parent_region_id": "seoul-kr-c11c-c6b8-c911-ad6c",
+      "region_name": "수하동",
+      "parent_name": "서울중구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c21c-d654-b3d9",
+      "parent_region_id": "seoul-kr-c11c-c6b8-c911-ad6c",
+      "region_name": "순화동",
+      "parent_name": "서울중구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c2e0-b2f9-b3d9",
+      "parent_region_id": "seoul-kr-c11c-c6b8-c911-ad6c",
+      "region_name": "신당동",
+      "parent_name": "서울중구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c30d-b9bc-b3d9",
+      "parent_region_id": "seoul-kr-c11c-c6b8-c911-ad6c",
+      "region_name": "쌍림동",
+      "parent_name": "서울중구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c608-ad00-b3d9",
+      "parent_region_id": "seoul-kr-c11c-c6b8-c911-ad6c",
+      "region_name": "예관동",
+      "parent_name": "서울중구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c608-c7a5-b3d9",
+      "parent_region_id": "seoul-kr-c11c-c6b8-c911-ad6c",
+      "region_name": "예장동",
+      "parent_name": "서울중구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c624-c7a5-b3d9",
+      "parent_region_id": "seoul-kr-c11c-c6b8-c911-ad6c",
+      "region_name": "오장동",
+      "parent_name": "서울중구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c744-c9c0-b85c-b3d9",
+      "parent_region_id": "seoul-kr-c11c-c6b8-c911-ad6c",
+      "region_name": "을지로동",
+      "parent_name": "서울중구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c758-c8fc-b85c-b3d9",
+      "parent_region_id": "seoul-kr-c11c-c6b8-c911-ad6c",
+      "region_name": "의주로동",
+      "parent_name": "서울중구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c778-d604-b3d9",
+      "parent_region_id": "seoul-kr-c11c-c6b8-c911-ad6c",
+      "region_name": "인현동",
+      "parent_name": "서울중구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c785-c815-b3d9",
+      "parent_region_id": "seoul-kr-c11c-c6b8-c911-ad6c",
+      "region_name": "입정동",
+      "parent_name": "서울중구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c7a5-ad50-b3d9",
+      "parent_region_id": "seoul-kr-c11c-c6b8-c911-ad6c",
+      "region_name": "장교동",
+      "parent_name": "서울중구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c7a5-cda9-b3d9",
+      "parent_region_id": "seoul-kr-c11c-c6b8-c911-ad6c",
+      "region_name": "장충동",
+      "parent_name": "서울중구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c800-b3d9",
+      "parent_region_id": "seoul-kr-c11c-c6b8-c911-ad6c",
+      "region_name": "저동",
+      "parent_name": "서울중구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c815-b3d9",
+      "parent_region_id": "seoul-kr-c11c-c6b8-c911-ad6c",
+      "region_name": "정동",
+      "parent_name": "서울중구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c8fc-ad50-b3d9",
+      "parent_region_id": "seoul-kr-c11c-c6b8-c911-ad6c",
+      "region_name": "주교동",
+      "parent_name": "서울중구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c8fc-c790-b3d9",
+      "parent_region_id": "seoul-kr-c11c-c6b8-c911-ad6c",
+      "region_name": "주자동",
+      "parent_name": "서울중구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c911-b9bc-b3d9",
+      "parent_region_id": "seoul-kr-c11c-c6b8-c911-ad6c",
+      "region_name": "중림동",
+      "parent_name": "서울중구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-cd08-b3d9",
+      "parent_region_id": "seoul-kr-c11c-c6b8-c911-ad6c",
+      "region_name": "초동",
+      "parent_name": "서울중구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-cda9-bb34-b85c-b3d9",
+      "parent_region_id": "seoul-kr-c11c-c6b8-c911-ad6c",
+      "region_name": "충무로동",
+      "parent_name": "서울중구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-d0dc-d3c9-b85c-b3d9",
+      "parent_region_id": "seoul-kr-c11c-c6b8-c911-ad6c",
+      "region_name": "태평로동",
+      "parent_name": "서울중구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-d544-b3d9",
+      "parent_region_id": "seoul-kr-c11c-c6b8-c911-ad6c",
+      "region_name": "필동",
+      "parent_name": "서울중구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-d669-d559-b3d9",
+      "parent_region_id": "seoul-kr-c11c-c6b8-c911-ad6c",
+      "region_name": "황학동",
+      "parent_name": "서울중구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-d68c-d604-b3d9",
+      "parent_region_id": "seoul-kr-c11c-c6b8-c911-ad6c",
+      "region_name": "회현동",
+      "parent_name": "서울중구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-b9dd-c6b0-b3d9",
+      "parent_region_id": "seoul-kr-c911-b791-ad6c",
+      "region_name": "망우동",
+      "parent_name": "중랑구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-ba74-baa9-b3d9",
+      "parent_region_id": "seoul-kr-c911-b791-ad6c",
+      "region_name": "면목동",
+      "parent_name": "중랑구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-bb35-b3d9",
+      "parent_region_id": "seoul-kr-c911-b791-ad6c",
+      "region_name": "묵동",
+      "parent_name": "중랑구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c0c1-bd09-b3d9",
+      "parent_region_id": "seoul-kr-c911-b791-ad6c",
+      "region_name": "상봉동",
+      "parent_name": "중랑구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c2e0-b0b4-b3d9",
+      "parent_region_id": "seoul-kr-c911-b791-ad6c",
+      "region_name": "신내동",
+      "parent_name": "중랑구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    },
+    {
+      "region_id": "seoul-kr-c911-b791-ad6c-kr-c911-d654-b3d9",
+      "parent_region_id": "seoul-kr-c911-b791-ad6c",
+      "region_name": "중화동",
+      "parent_name": "중랑구",
+      "evidence_status": "OFFICIAL_CONFIRMED"
+    }
+  ]
+}
