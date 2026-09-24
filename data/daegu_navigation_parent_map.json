@@ -1,0 +1,552 @@
+{
+  "version": 1,
+  "scope": "Daegu public READY navigation candidate; review only",
+  "entries": [
+    {
+      "region_id": "kr-b300-ad6c-kr-b2ec-c11c-ad6c",
+      "parent_region_id": "kr-b300-ad6c",
+      "region_name": "달서구",
+      "parent_name": "대구",
+      "evidence_status": "PUBLIC_READY_PARENT_CONFIRMED"
+    },
+    {
+      "region_id": "kr-b300-ad6c-kr-b2ec-c131-ad70",
+      "parent_region_id": "kr-b300-ad6c",
+      "region_name": "달성군",
+      "parent_name": "대구",
+      "evidence_status": "PUBLIC_READY_PARENT_CONFIRMED"
+    },
+    {
+      "region_id": "kr-b300-ad6c-kr-b300-ad6c-b0a8-ad6c",
+      "parent_region_id": "kr-b300-ad6c",
+      "region_name": "대구남구",
+      "parent_name": "대구",
+      "evidence_status": "PUBLIC_READY_PARENT_CONFIRMED"
+    },
+    {
+      "region_id": "kr-b300-ad6c-kr-b300-ad6c-b3d9-ad6c",
+      "parent_region_id": "kr-b300-ad6c",
+      "region_name": "대구동구",
+      "parent_name": "대구",
+      "evidence_status": "PUBLIC_READY_PARENT_CONFIRMED"
+    },
+    {
+      "region_id": "kr-b300-ad6c-kr-b300-ad6c-bd81-ad6c",
+      "parent_region_id": "kr-b300-ad6c",
+      "region_name": "대구북구",
+      "parent_name": "대구",
+      "evidence_status": "PUBLIC_READY_PARENT_CONFIRMED"
+    },
+    {
+      "region_id": "kr-b300-ad6c-kr-b300-ad6c-c11c-ad6c",
+      "parent_region_id": "kr-b300-ad6c",
+      "region_name": "대구서구",
+      "parent_name": "대구",
+      "evidence_status": "PUBLIC_READY_PARENT_CONFIRMED"
+    },
+    {
+      "region_id": "kr-b300-ad6c-kr-b300-ad6c-c911-ad6c",
+      "parent_region_id": "kr-b300-ad6c",
+      "region_name": "대구중구",
+      "parent_name": "대구",
+      "evidence_status": "PUBLIC_READY_PARENT_CONFIRMED"
+    },
+    {
+      "region_id": "kr-b300-ad6c-kr-c218-c131-ad6c",
+      "parent_region_id": "kr-b300-ad6c",
+      "region_name": "수성구",
+      "parent_name": "대구",
+      "evidence_status": "PUBLIC_READY_PARENT_CONFIRMED"
+    },
+    {
+      "region_id": "kr-b300-ad6c-kr-ad11-c8fc-c11c-ad6c-kr-c2e0-c6a9-b3d9",
+      "parent_region_id": "kr-b300-ad6c-kr-b300-ad6c-b3d9-ad6c",
+      "region_name": "신용동",
+      "parent_name": "대구동구",
+      "evidence_status": "PUBLIC_READY_PARENT_CONFIRMED"
+    },
+    {
+      "region_id": "kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-ac00-cc9c-b3d9",
+      "parent_region_id": "kr-b300-ad6c-kr-c218-c131-ad6c",
+      "region_name": "가천동",
+      "parent_name": "수성구",
+      "evidence_status": "PUBLIC_READY_PARENT_CONFIRMED"
+    },
+    {
+      "region_id": "kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-ac01-c0b0-b3d9",
+      "parent_region_id": "kr-b300-ad6c-kr-b300-ad6c-b3d9-ad6c",
+      "region_name": "각산동",
+      "parent_name": "대구동구",
+      "evidence_status": "PUBLIC_READY_PARENT_CONFIRMED"
+    },
+    {
+      "region_id": "kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-ac10-c0bc-b3d9",
+      "parent_region_id": "kr-b300-ad6c-kr-b2ec-c11c-ad6c",
+      "region_name": "감삼동",
+      "parent_name": "달서구",
+      "evidence_status": "PUBLIC_READY_PARENT_CONFIRMED"
+    },
+    {
+      "region_id": "kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-ac80-b2e8-b3d9",
+      "parent_region_id": "kr-b300-ad6c-kr-b300-ad6c-bd81-ad6c",
+      "region_name": "검단동",
+      "parent_name": "대구북구",
+      "evidence_status": "PUBLIC_READY_PARENT_CONFIRMED"
+    },
+    {
+      "region_id": "kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-ace0-baa8-b3d9",
+      "parent_region_id": "kr-b300-ad6c-kr-c218-c131-ad6c",
+      "region_name": "고모동",
+      "parent_name": "수성구",
+      "evidence_status": "PUBLIC_READY_PARENT_CONFIRMED"
+    },
+    {
+      "region_id": "kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-ace0-c131-b3d9",
+      "parent_region_id": "kr-b300-ad6c-kr-b300-ad6c-bd81-ad6c",
+      "region_name": "고성동",
+      "parent_name": "대구북구",
+      "evidence_status": "PUBLIC_READY_PARENT_CONFIRMED"
+    },
+    {
+      "region_id": "kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-ad34-c804-b3d9",
+      "parent_region_id": "kr-b300-ad6c-kr-b300-ad6c-b3d9-ad6c",
+      "region_name": "괴전동",
+      "parent_name": "대구동구",
+      "evidence_status": "PUBLIC_READY_PARENT_CONFIRMED"
+    },
+    {
+      "region_id": "kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-ad6c-c554-b3d9",
+      "parent_region_id": "kr-b300-ad6c-kr-b300-ad6c-bd81-ad6c",
+      "region_name": "구암동",
+      "parent_name": "대구북구",
+      "evidence_status": "PUBLIC_READY_PARENT_CONFIRMED"
+    },
+    {
+      "region_id": "kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-ad6d-c6b0-b3d9",
+      "parent_region_id": "kr-b300-ad6c-kr-b300-ad6c-bd81-ad6c",
+      "region_name": "국우동",
+      "parent_name": "대구북구",
+      "evidence_status": "PUBLIC_READY_PARENT_CONFIRMED"
+    },
+    {
+      "region_id": "kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-b178-bcc0-b3d9",
+      "parent_region_id": "kr-b300-ad6c-kr-c218-c131-ad6c",
+      "region_name": "노변동",
+      "parent_name": "수성구",
+      "evidence_status": "PUBLIC_READY_PARENT_CONFIRMED"
+    },
+    {
+      "region_id": "kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-b300-ace1-b3d9",
+      "parent_region_id": "kr-b300-ad6c-kr-b2ec-c11c-ad6c",
+      "region_name": "대곡동",
+      "parent_name": "달서구",
+      "evidence_status": "PUBLIC_READY_PARENT_CONFIRMED"
+    },
+    {
+      "region_id": "kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-b300-b9bc-b3d9",
+      "parent_region_id": "kr-b300-ad6c-kr-b300-ad6c-b3d9-ad6c",
+      "region_name": "대림동",
+      "parent_name": "대구동구",
+      "evidence_status": "PUBLIC_READY_PARENT_CONFIRMED"
+    },
+    {
+      "region_id": "kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-b300-ba85-b3d9",
+      "parent_region_id": "kr-b300-ad6c-kr-b300-ad6c-b0a8-ad6c",
+      "region_name": "대명동",
+      "parent_name": "대구남구",
+      "evidence_status": "PUBLIC_READY_PARENT_CONFIRMED"
+    },
+    {
+      "region_id": "kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-b300-bd09-b3d9",
+      "parent_region_id": "kr-b300-ad6c-kr-b300-ad6c-c911-ad6c",
+      "region_name": "대봉동",
+      "parent_name": "대구중구",
+      "evidence_status": "PUBLIC_READY_PARENT_CONFIRMED"
+    },
+    {
+      "region_id": "kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-b300-d604-b3d9",
+      "parent_region_id": "kr-b300-ad6c-kr-b300-ad6c-bd81-ad6c",
+      "region_name": "대현동",
+      "parent_name": "대구북구",
+      "evidence_status": "PUBLIC_READY_PARENT_CONFIRMED"
+    },
+    {
+      "region_id": "kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-b3c4-c6d0-b3d9",
+      "parent_region_id": "kr-b300-ad6c-kr-b2ec-c11c-ad6c",
+      "region_name": "도원동",
+      "parent_name": "달서구",
+      "evidence_status": "PUBLIC_READY_PARENT_CONFIRMED"
+    },
+    {
+      "region_id": "kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-b3d9-c778-b3d9",
+      "parent_region_id": "kr-b300-ad6c-kr-b300-ad6c-c911-ad6c",
+      "region_name": "동인동",
+      "parent_name": "대구중구",
+      "evidence_status": "PUBLIC_READY_PARENT_CONFIRMED"
+    },
+    {
+      "region_id": "kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-b450-b958-b3d9",
+      "parent_region_id": "kr-b300-ad6c-kr-b2ec-c11c-ad6c",
+      "region_name": "두류동",
+      "parent_name": "달서구",
+      "evidence_status": "PUBLIC_READY_PARENT_CONFIRMED"
+    },
+    {
+      "region_id": "kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-b450-c0b0-b3d9",
+      "parent_region_id": "kr-b300-ad6c-kr-c218-c131-ad6c",
+      "region_name": "두산동",
+      "parent_name": "수성구",
+      "evidence_status": "PUBLIC_READY_PARENT_CONFIRMED"
+    },
+    {
+      "region_id": "kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-b9cc-cd0c-b3d9",
+      "parent_region_id": "kr-b300-ad6c-kr-c218-c131-ad6c",
+      "region_name": "만촌동",
+      "parent_name": "수성구",
+      "evidence_status": "PUBLIC_READY_PARENT_CONFIRMED"
+    },
+    {
+      "region_id": "kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-b9e4-cc9c-b3d9",
+      "parent_region_id": "kr-b300-ad6c-kr-b300-ad6c-bd81-ad6c",
+      "region_name": "매천동",
+      "parent_name": "대구북구",
+      "evidence_status": "PUBLIC_READY_PARENT_CONFIRMED"
+    },
+    {
+      "region_id": "kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-b9e4-d638-b3d9",
+      "parent_region_id": "kr-b300-ad6c-kr-c218-c131-ad6c",
+      "region_name": "매호동",
+      "parent_name": "수성구",
+      "evidence_status": "PUBLIC_READY_PARENT_CONFIRMED"
+    },
+    {
+      "region_id": "kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-bc94-c5b4-b3d9",
+      "parent_region_id": "kr-b300-ad6c-kr-c218-c131-ad6c",
+      "region_name": "범어동",
+      "parent_name": "수성구",
+      "evidence_status": "PUBLIC_READY_PARENT_CONFIRMED"
+    },
+    {
+      "region_id": "kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-bcf5-d604-b3d9",
+      "parent_region_id": "kr-b300-ad6c-kr-b300-ad6c-bd81-ad6c",
+      "region_name": "복현동",
+      "parent_name": "대구북구",
+      "evidence_status": "PUBLIC_READY_PARENT_CONFIRMED"
+    },
+    {
+      "region_id": "kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-bcf8-b9ac-b3d9",
+      "parent_region_id": "kr-b300-ad6c-kr-b2ec-c11c-ad6c",
+      "region_name": "본리동",
+      "parent_name": "달서구",
+      "evidence_status": "PUBLIC_READY_PARENT_CONFIRMED"
+    },
+    {
+      "region_id": "kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-bd09-b355-b3d9",
+      "parent_region_id": "kr-b300-ad6c-kr-b300-ad6c-b0a8-ad6c",
+      "region_name": "봉덕동",
+      "parent_name": "대구남구",
+      "evidence_status": "PUBLIC_READY_PARENT_CONFIRMED"
+    },
+    {
+      "region_id": "kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-bd09-bb34-b3d9",
+      "parent_region_id": "kr-b300-ad6c-kr-b300-ad6c-b3d9-ad6c",
+      "region_name": "봉무동",
+      "parent_name": "대구동구",
+      "evidence_status": "PUBLIC_READY_PARENT_CONFIRMED"
+    },
+    {
+      "region_id": "kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-bd09-c0b0-b3d9",
+      "parent_region_id": "kr-b300-ad6c-kr-b300-ad6c-c911-ad6c",
+      "region_name": "봉산동",
+      "parent_name": "대구중구",
+      "evidence_status": "PUBLIC_READY_PARENT_CONFIRMED"
+    },
+    {
+      "region_id": "kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-c0b0-aca9-b3d9",
+      "parent_region_id": "kr-b300-ad6c-kr-b300-ad6c-bd81-ad6c",
+      "region_name": "산격동",
+      "parent_name": "대구북구",
+      "evidence_status": "PUBLIC_READY_PARENT_CONFIRMED"
+    },
+    {
+      "region_id": "kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-c0bc-b355-b3d9",
+      "parent_region_id": "kr-b300-ad6c-kr-c218-c131-ad6c",
+      "region_name": "삼덕동",
+      "parent_name": "수성구",
+      "evidence_status": "PUBLIC_READY_PARENT_CONFIRMED"
+    },
+    {
+      "region_id": "kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-c0c1-b3d9",
+      "parent_region_id": "kr-b300-ad6c-kr-c218-c131-ad6c",
+      "region_name": "상동",
+      "parent_name": "수성구",
+      "evidence_status": "PUBLIC_READY_PARENT_CONFIRMED"
+    },
+    {
+      "region_id": "kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-c0c1-c778-b3d9",
+      "parent_region_id": "kr-b300-ad6c-kr-b2ec-c11c-ad6c",
+      "region_name": "상인동",
+      "parent_name": "달서구",
+      "evidence_status": "PUBLIC_READY_PARENT_CONFIRMED"
+    },
+    {
+      "region_id": "kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-c131-b2f9-b3d9",
+      "parent_region_id": "kr-b300-ad6c-kr-b2ec-c11c-ad6c",
+      "region_name": "성당동",
+      "parent_name": "달서구",
+      "evidence_status": "PUBLIC_READY_PARENT_CONFIRMED"
+    },
+    {
+      "region_id": "kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-c1a1-d604-b3d9",
+      "parent_region_id": "kr-b300-ad6c-kr-b2ec-c11c-ad6c",
+      "region_name": "송현동",
+      "parent_name": "달서구",
+      "evidence_status": "PUBLIC_READY_PARENT_CONFIRMED"
+    },
+    {
+      "region_id": "kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-c218-c131-b3d9",
+      "parent_region_id": "kr-b300-ad6c-kr-c218-c131-ad6c",
+      "region_name": "수성동",
+      "parent_name": "수성구",
+      "evidence_status": "PUBLIC_READY_PARENT_CONFIRMED"
+    },
+    {
+      "region_id": "kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-c218-cc3d-b3d9",
+      "parent_region_id": "kr-b300-ad6c-kr-b300-ad6c-c911-ad6c",
+      "region_name": "수창동",
+      "parent_name": "대구중구",
+      "evidence_status": "PUBLIC_READY_PARENT_CONFIRMED"
+    },
+    {
+      "region_id": "kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-c2dc-c9c0-b3d9",
+      "parent_region_id": "kr-b300-ad6c-kr-c218-c131-ad6c",
+      "region_name": "시지동",
+      "parent_name": "수성구",
+      "evidence_status": "PUBLIC_READY_PARENT_CONFIRMED"
+    },
+    {
+      "region_id": "kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-c2e0-ae30-b3d9",
+      "parent_region_id": "kr-b300-ad6c-kr-b300-ad6c-b3d9-ad6c",
+      "region_name": "신기동",
+      "parent_name": "대구동구",
+      "evidence_status": "PUBLIC_READY_PARENT_CONFIRMED"
+    },
+    {
+      "region_id": "kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-c2e0-b2f9-b3d9",
+      "parent_region_id": "kr-b300-ad6c-kr-b2ec-c11c-ad6c",
+      "region_name": "신당동",
+      "parent_name": "달서구",
+      "evidence_status": "PUBLIC_READY_PARENT_CONFIRMED"
+    },
+    {
+      "region_id": "kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-c2e0-b9e4-b3d9",
+      "parent_region_id": "kr-b300-ad6c-kr-c218-c131-ad6c",
+      "region_name": "신매동",
+      "parent_name": "수성구",
+      "evidence_status": "PUBLIC_READY_PARENT_CONFIRMED"
+    },
+    {
+      "region_id": "kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-c2e0-c11c-b3d9",
+      "parent_region_id": "kr-b300-ad6c-kr-b300-ad6c-b3d9-ad6c",
+      "region_name": "신서동",
+      "parent_name": "대구동구",
+      "evidence_status": "PUBLIC_READY_PARENT_CONFIRMED"
+    },
+    {
+      "region_id": "kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-c2e0-c554-b3d9",
+      "parent_region_id": "kr-b300-ad6c-kr-b300-ad6c-b3d9-ad6c",
+      "region_name": "신암동",
+      "parent_name": "대구동구",
+      "evidence_status": "PUBLIC_READY_PARENT_CONFIRMED"
+    },
+    {
+      "region_id": "kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-c2e0-cc9c-b3d9",
+      "parent_region_id": "kr-b300-ad6c-kr-b300-ad6c-b3d9-ad6c",
+      "region_name": "신천동",
+      "parent_name": "대구동구",
+      "evidence_status": "PUBLIC_READY_PARENT_CONFIRMED"
+    },
+    {
+      "region_id": "kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-c6a9-c0b0-b3d9",
+      "parent_region_id": "kr-b300-ad6c-kr-b2ec-c11c-ad6c",
+      "region_name": "용산동",
+      "parent_name": "달서구",
+      "evidence_status": "PUBLIC_READY_PARENT_CONFIRMED"
+    },
+    {
+      "region_id": "kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-c6d0-b300-b3d9",
+      "parent_region_id": "kr-b300-ad6c-kr-b300-ad6c-c11c-ad6c",
+      "region_name": "원대동",
+      "parent_name": "대구서구",
+      "evidence_status": "PUBLIC_READY_PARENT_CONFIRMED"
+    },
+    {
+      "region_id": "kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-c6d4-c131-b3d9",
+      "parent_region_id": "kr-b300-ad6c-kr-b2ec-c11c-ad6c",
+      "region_name": "월성동",
+      "parent_name": "달서구",
+      "evidence_status": "PUBLIC_READY_PARENT_CONFIRMED"
+    },
+    {
+      "region_id": "kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-c720-cc9c-b3d9",
+      "parent_region_id": "kr-b300-ad6c-kr-b2ec-c11c-ad6c",
+      "region_name": "유천동",
+      "parent_name": "달서구",
+      "evidence_status": "PUBLIC_READY_PARENT_CONFIRMED"
+    },
+    {
+      "region_id": "kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-c728-c554-b3d9",
+      "parent_region_id": "kr-b300-ad6c-kr-b300-ad6c-b3d9-ad6c",
+      "region_name": "율암동",
+      "parent_name": "대구동구",
+      "evidence_status": "PUBLIC_READY_PARENT_CONFIRMED"
+    },
+    {
+      "region_id": "kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-c728-d558-b3d9",
+      "parent_region_id": "kr-b300-ad6c-kr-b300-ad6c-b3d9-ad6c",
+      "region_name": "율하동",
+      "parent_name": "대구동구",
+      "evidence_status": "PUBLIC_READY_PARENT_CONFIRMED"
+    },
+    {
+      "region_id": "kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-c774-ace1-b3d9",
+      "parent_region_id": "kr-b300-ad6c-kr-b2ec-c11c-ad6c",
+      "region_name": "이곡동",
+      "parent_name": "달서구",
+      "evidence_status": "PUBLIC_READY_PARENT_CONFIRMED"
+    },
+    {
+      "region_id": "kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-c774-cc9c-b3d9",
+      "parent_region_id": "kr-b300-ad6c-kr-c218-c131-ad6c",
+      "region_name": "이천동",
+      "parent_name": "수성구",
+      "evidence_status": "PUBLIC_READY_PARENT_CONFIRMED"
+    },
+    {
+      "region_id": "kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-c7a5-ae30-b3d9",
+      "parent_region_id": "kr-b300-ad6c-kr-b2ec-c11c-ad6c",
+      "region_name": "장기동",
+      "parent_name": "달서구",
+      "evidence_status": "PUBLIC_READY_PARENT_CONFIRMED"
+    },
+    {
+      "region_id": "kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-c8fd-c804-b3d9",
+      "parent_region_id": "kr-b300-ad6c-kr-b2ec-c11c-ad6c",
+      "region_name": "죽전동",
+      "parent_name": "달서구",
+      "evidence_status": "PUBLIC_READY_PARENT_CONFIRMED"
+    },
+    {
+      "region_id": "kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-c9c0-c0b0-b3d9",
+      "parent_region_id": "kr-b300-ad6c-kr-c218-c131-ad6c",
+      "region_name": "지산동",
+      "parent_name": "수성구",
+      "evidence_status": "PUBLIC_READY_PARENT_CONFIRMED"
+    },
+    {
+      "region_id": "kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-c9c4-cc9c-b3d9",
+      "parent_region_id": "kr-b300-ad6c-kr-b2ec-c11c-ad6c",
+      "region_name": "진천동",
+      "parent_name": "달서구",
+      "evidence_status": "PUBLIC_READY_PARENT_CONFIRMED"
+    },
+    {
+      "region_id": "kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-ce60-c131-b3d9",
+      "parent_region_id": "kr-b300-ad6c-kr-b300-ad6c-bd81-ad6c",
+      "region_name": "칠성동",
+      "parent_name": "대구북구",
+      "evidence_status": "PUBLIC_READY_PARENT_CONFIRMED"
+    },
+    {
+      "region_id": "kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-ce68-c0b0-b3d9",
+      "parent_region_id": "kr-b300-ad6c-kr-b300-ad6c-bd81-ad6c",
+      "region_name": "침산동",
+      "parent_name": "대구북구",
+      "evidence_status": "PUBLIC_READY_PARENT_CONFIRMED"
+    },
+    {
+      "region_id": "kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-d0dc-c804-b3d9",
+      "parent_region_id": "kr-b300-ad6c-kr-b300-ad6c-bd81-ad6c",
+      "region_name": "태전동",
+      "parent_name": "대구북구",
+      "evidence_status": "PUBLIC_READY_PARENT_CONFIRMED"
+    },
+    {
+      "region_id": "kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-d3c9-b9ac-b3d9",
+      "parent_region_id": "kr-b300-ad6c-kr-b300-ad6c-c11c-ad6c",
+      "region_name": "평리동",
+      "parent_name": "대구서구",
+      "evidence_status": "PUBLIC_READY_PARENT_CONFIRMED"
+    },
+    {
+      "region_id": "kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-d654-c6d0-c74d",
+      "parent_region_id": "kr-b300-ad6c-kr-b2ec-c131-ad70",
+      "region_name": "화원읍",
+      "parent_name": "달성군",
+      "evidence_status": "PUBLIC_READY_PARENT_CONFIRMED"
+    },
+    {
+      "region_id": "kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-d669-ae08-b3d9",
+      "parent_region_id": "kr-b300-ad6c-kr-c218-c131-ad6c",
+      "region_name": "황금동",
+      "parent_name": "수성구",
+      "evidence_status": "PUBLIC_READY_PARENT_CONFIRMED"
+    },
+    {
+      "region_id": "kr-b300-ad6c-kr-b300-ad6c-c911-ad6c-kr-d6a8-baa9-b3d9",
+      "parent_region_id": "kr-b300-ad6c-kr-b300-ad6c-b3d9-ad6c",
+      "region_name": "효목동",
+      "parent_name": "대구동구",
+      "evidence_status": "PUBLIC_READY_PARENT_CONFIRMED"
+    },
+    {
+      "region_id": "kr-b300-ad6c-kr-b300-c804-c911-ad6c-kr-b0b4-b3d9",
+      "parent_region_id": "kr-b300-ad6c-kr-b300-ad6c-b3d9-ad6c",
+      "region_name": "내동",
+      "parent_name": "대구동구",
+      "evidence_status": "PUBLIC_READY_PARENT_CONFIRMED"
+    },
+    {
+      "region_id": "kr-b300-ad6c-kr-b300-c804-c911-ad6c-kr-b454-c0b0-b3d9",
+      "parent_region_id": "kr-b300-ad6c-kr-b300-ad6c-b3d9-ad6c",
+      "region_name": "둔산동",
+      "parent_name": "대구동구",
+      "evidence_status": "PUBLIC_READY_PARENT_CONFIRMED"
+    },
+    {
+      "region_id": "kr-b300-ad6c-kr-b300-c804-c911-ad6c-kr-bb38-d654-b3d9",
+      "parent_region_id": "kr-b300-ad6c-kr-b300-ad6c-c911-ad6c",
+      "region_name": "문화동",
+      "parent_name": "대구중구",
+      "evidence_status": "PUBLIC_READY_PARENT_CONFIRMED"
+    },
+    {
+      "region_id": "kr-b300-ad6c-kr-c644-c0b0-ad6c-kr-c7a5-b3d9",
+      "parent_region_id": "kr-b300-ad6c-kr-b2ec-c11c-ad6c",
+      "region_name": "장동",
+      "parent_name": "달서구",
+      "evidence_status": "PUBLIC_READY_PARENT_CONFIRMED"
+    },
+    {
+      "region_id": "kr-b300-ad6c-kr-c778-cc9c-b3d9-ad6c-kr-ac08-c0b0-b3d9",
+      "parent_region_id": "kr-b300-ad6c-kr-b2ec-c11c-ad6c",
+      "region_name": "갈산동",
+      "parent_name": "달서구",
+      "evidence_status": "PUBLIC_READY_PARENT_CONFIRMED"
+    },
+    {
+      "region_id": "kr-b300-ad6c-kr-c9c0-c815-c9c0-ad6c-kr-ad50-b3d9",
+      "parent_region_id": "kr-b300-ad6c-kr-b300-ad6c-c911-ad6c",
+      "region_name": "교동",
+      "parent_name": "대구중구",
+      "evidence_status": "PUBLIC_READY_PARENT_CONFIRMED"
+    },
+    {
+      "region_id": "kr-b300-ad6c-kr-d574-c6b4-b300-ad6c-kr-c2e0-d3c9-b3d9",
+      "parent_region_id": "kr-b300-ad6c-kr-b300-ad6c-b3d9-ad6c",
+      "region_name": "신평동",
+      "parent_name": "대구동구",
+      "evidence_status": "PUBLIC_READY_PARENT_CONFIRMED"
+    }
+  ]
+}

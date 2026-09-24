@@ -14,6 +14,7 @@ ROOT = Path(__file__).parent
 ISOLATED = 'candidate:tutor:kr-b300-ad6c-kr-ad11-c0b0-ad6c:region_tutor'
 REVIEW_GROUP = '@review'
 SEOUL_PARENT_MAP = 'data/seoul_navigation_parent_map.json'
+DAEGU_PARENT_MAP = 'data/daegu_navigation_parent_map.json'
 RELATED = re.compile(r'(<h2>관련 지역 과외</h2>\s*<ul>)(.*?)(</ul>)', re.S)
 
 
@@ -32,6 +33,7 @@ class Navigation:
         self.out = self.root / 'output'
         self.regions = {r['region_id']: r for r in self.read('data/generated/regions.json')}
         self.seoul_parent_map = self.read_seoul_parent_map()
+        self.daegu_parent_map = self.read_daegu_parent_map()
         inventory = self.read('data/generated/nationwide_page_inventory_candidates.json')
         scope = csv_rows(self.root / 'review/general_tutor_k_proposed_final_scope_1945.csv')
         public_ids = {s['page_id'] for s in scope}
@@ -92,6 +94,11 @@ class Navigation:
                 record.update(status='SEOUL_OFFICIAL_PARENT', parent=parent, group=parent,
                               target_kind='CONTENT_PAGE' if parent in self.by_region else 'STRUCTURAL_GROUP')
                 record['evidence'].append(('SEOUL_OFFICIAL_PARENT', SEOUL_PARENT_MAP, parent))
+            elif region['region_id'] in self.daegu_parent_map:
+                parent = self.daegu_parent_map[region['region_id']]
+                record.update(status='DAEGU_OFFICIAL_PARENT', parent=parent, group=parent,
+                              target_kind='CONTENT_PAGE' if parent in self.by_region else 'STRUCTURAL_GROUP')
+                record['evidence'].append(('DAEGU_OFFICIAL_PARENT', DAEGU_PARENT_MAP, parent))
             elif region['region_level'] == 'sido':
                 record.update(status='STRUCTURAL_GROUP', group=REVIEW_GROUP)
             elif region['region_level'] == 'sigungu' and key[0] != '대구':
@@ -165,6 +172,33 @@ class Navigation:
                 raise ValueError('Seoul dong must have a Seoul district navigation parent')
         return result
 
+    def read_daegu_parent_map(self):
+        data = self.read(DAEGU_PARENT_MAP)
+        entries = data.get('entries', [])
+        result = {}
+        for entry in entries:
+            region_id = entry.get('region_id')
+            parent_region_id = entry.get('parent_region_id')
+            if (not region_id or not parent_region_id or
+                    entry.get('evidence_status') != 'PUBLIC_READY_PARENT_CONFIRMED'):
+                raise ValueError('Invalid Daegu public navigation parent map entry')
+            if region_id in result:
+                raise ValueError('Duplicate Daegu navigation parent map region_id: ' + region_id)
+            if region_id not in self.regions or parent_region_id not in self.regions:
+                raise ValueError('Unknown Daegu navigation parent map region')
+            result[region_id] = parent_region_id
+        if len(result) != 78:
+            raise ValueError('Daegu public navigation parent map must cover 8 sigungu and 70 public leaves')
+        for region_id, parent_region_id in result.items():
+            region = self.regions[region_id]
+            parent = self.regions[parent_region_id]
+            if region['region_level'] == 'sigungu':
+                if parent_region_id != 'kr-b300-ad6c':
+                    raise ValueError('Daegu sigungu must have Daegu navigation parent')
+            elif parent['region_level'] != 'sigungu':
+                raise ValueError('Daegu leaf must have a Daegu sigungu navigation parent')
+        return result
+
     def read(self, filename):
         return json.loads((self.root / filename).read_text(encoding='utf-8-sig'))
 
@@ -205,7 +239,16 @@ class Navigation:
         region = self.regions[region_id]
         if region_id == 'seoul':
             return [self.target(i) for i in self.groups['seoul']]
+        if region_id == 'kr-b300-ad6c':
+            return [self.target(i) for i in self.groups['kr-b300-ad6c']]
         if region_id in self.seoul_parent_map:
+            if region['region_level'] == 'sigungu':
+                return [self.target(i) for i in self.groups[region_id]]
+            parent = record['parent']
+            return [self.target(self.by_region[parent]['page_id'])] + [
+                self.target(i) for i in self.groups[parent] if i != pid
+            ]
+        if region_id in self.daegu_parent_map:
             if region['region_level'] == 'sigungu':
                 return [self.target(i) for i in self.groups[region_id]]
             parent = record['parent']
@@ -249,7 +292,7 @@ class Navigation:
                 targets.extend(
                     (r['display_name'] + ' 지역 탐색', self.directory(r['region_id']))
                     for r in self.sigungu[region['sido']]
-                    if self.groups.get(r['region_id']) and (not r['is_source_region'] or r['region_id'] in self.seoul_parent_map)
+                    if self.groups.get(r['region_id']) and (not r['is_source_region'] or r['region_id'] in self.seoul_parent_map or r['region_id'] in self.daegu_parent_map)
                 )
             targets.extend(self.target(pid) for pid in self.groups.get(group, []) if pid != (own or {}).get('page_id'))
         targets = list({href: (label, href) for label, href in targets}.values())
