@@ -8,13 +8,14 @@ import re
 from collections import defaultdict
 from pathlib import Path
 
-from openpyxl import load_workbook
-
 ROOT = Path(__file__).parent
 ISOLATED = 'candidate:tutor:kr-b300-ad6c-kr-ad11-c0b0-ad6c:region_tutor'
 REVIEW_GROUP = '@review'
 SEOUL_PARENT_MAP = 'data/seoul_navigation_parent_map.json'
 DAEGU_PARENT_MAP = 'data/daegu_navigation_parent_map.json'
+REGION_STATUS_SOURCE = 'data/region_hierarchy_status.json'
+RUNTIME_SNAPSHOT = 'data/general_tutor_navigation_runtime.json'
+RUNTIME_REQUIRED_FIELDS = {'page_id', 'page_type', 'region_id', 'route', 'title', 'content_source_sheet', 'content_source_row', 'source_keyword', 'K_present'}
 RELATED = re.compile(r'(<h2>관련 지역 과외</h2>\s*<ul>)(.*?)(</ul>)', re.S)
 
 
@@ -32,15 +33,15 @@ class Navigation:
         self.root = Path(root)
         self.out = self.root / 'output'
         self.regions = {r['region_id']: r for r in self.read('data/generated/regions.json')}
+        self.region_status = self.read_region_status()
         self.seoul_parent_map = self.read_seoul_parent_map()
         self.daegu_parent_map = self.read_daegu_parent_map()
-        inventory = self.read('data/generated/nationwide_page_inventory_candidates.json')
+        snapshot = self.read_runtime_snapshot()
         scope = csv_rows(self.root / 'review/general_tutor_k_proposed_final_scope_1945.csv')
-        public_ids = {s['page_id'] for s in scope}
         allowed = {s['page_id']: s for s in scope if s['generation_allowed'].lower() == 'true'}
-        self.pages = {p['page_id']: p for p in inventory if p['page_id'] in allowed}
+        self.pages = {p['page_id']: p for p in snapshot}
         if set(self.pages) != set(allowed):
-            raise ValueError('PUBLIC_SCOPE/inventory identity mismatch')
+            raise ValueError('PUBLIC_SCOPE/runtime snapshot identity mismatch')
         if any(s.get('scope_status') not in {'READY_AS_IS','READY_REMOVE_DUPLICATE_H1'} for s in allowed.values()):
             raise ValueError('GENERATION_ALLOWED contains non-ready scope status')
         self.by_region = {p['region_id']: p for p in self.pages.values()}
@@ -49,18 +50,7 @@ class Navigation:
         for r in self.regions.values():
             if r['region_level'] == 'sigungu' and r['region_id'] != self.pages[ISOLATED]['region_id']:
                 self.sigungu[r['sido']].append(r)
-        workbook = load_workbook(self.root / '과외.xlsx', read_only=True, data_only=True)
-        try:
-            source = {(ws.title, n): row for ws in workbook.worksheets
-                      for n, row in enumerate(ws.iter_rows(min_row=2, values_only=True), 2)}
-        finally:
-            workbook.close()
-        self.source = source
-        candidates = [p for p in inventory if p['page_type'] == 'region_tutor']
-        k_page_ids = {p['page_id'] for p in candidates if self.has_k(source.get((p['content_source_sheet'], int(p['content_source_row'])), ()))}
-        self.k_present = len(k_page_ids)
-        if len(candidates) != 3381 or k_page_ids != public_ids:
-            raise ValueError('CURRENT_EXCEL_K_INVENTORY/PUBLIC_SCOPE identity mismatch')
+        self.k_present = sum(p['K_present'] for p in snapshot)
         evidence = defaultdict(list)
         reviews = defaultdict(list)
         for filename in ('parent_resolution_confirmed.csv', 'parent_second_pass_confirmed.csv'):
@@ -80,9 +70,10 @@ class Navigation:
         for pid, page in self.pages.items():
             key = (page['content_source_sheet'], int(page['content_source_row']))
             s = allowed[pid]
-            if key != (s['source_sheet'], int(s['source_row'])) or not self.has_k(source.get(key, ())):
+            if (key != (s['source_sheet'], int(s['source_row'])) or
+                    page['source_keyword'] != norm(s['source_keyword']) or not page['K_present']):
                 raise ValueError('Source/scope mismatch: ' + pid)
-            keyword = norm(source[key][0])
+            keyword = page['source_keyword']
             region = self.regions[page['region_id']]
             record = {'status': 'UNRESOLVED', 'parent': None, 'group': None, 'target_kind': None, 'evidence': []}
             if pid == ISOLATED:
@@ -99,32 +90,21 @@ class Navigation:
                 record.update(status='DAEGU_OFFICIAL_PARENT', parent=parent, group=parent,
                               target_kind='CONTENT_PAGE' if parent in self.by_region else 'STRUCTURAL_GROUP')
                 record['evidence'].append(('DAEGU_OFFICIAL_PARENT', DAEGU_PARENT_MAP, parent))
-            elif region['region_level'] == 'sido':
-                record.update(status='STRUCTURAL_GROUP', group=REVIEW_GROUP)
-            elif region['region_level'] == 'sigungu' and key[0] != '대구':
-                # A source-sheet index, not an independently certified geographic assertion.
-                record.update(status='STRUCTURAL_GROUP', group=self.sidos[key[0]]['region_id'])
+            elif region['region_level'] in {'sido', 'sigungu'}:
+                structural_group = self.resolve_structural_group(region, key[0])
+                if (structural_group is not None and
+                        self.is_navigation_parent_eligible(region['region_id'])):
+                    record.update(status='STRUCTURAL_GROUP', group=structural_group)
             elif region['region_level'] == 'eupmyeondong':
-                parents = set()
-                for tier, row, filename in evidence.get(key, []):
-                    originals = [row['original_keyword']] if row.get('original_keyword') else [r['original_keyword'] for r in reviews[key] if r['candidate_parent'] == row['candidate_parent']]
-                    if not originals or any(norm(v) != keyword for v in originals):
-                        if s.get('scope_origin') == 'NEW_K_1051':
-                            continue
-                        raise ValueError('Evidence keyword mismatch: ' + pid + ' ' + filename)
-                    matches = [r for r in self.sigungu[key[0]] if r['display_name'] == row['candidate_parent']]
-                    if len(matches) == 1:
-                        parent = matches[0]['region_id']
-                        if row.get('parent_region_id') and row['parent_region_id'] != parent:
-                            raise ValueError('Evidence parent ID mismatch: ' + pid)
-                        parents.add(parent)
-                        record['evidence'].append((tier, filename, parent))
+                parents, evidence_rows = self.resolve_explicit_evidence(
+                    evidence, reviews, key, keyword, s, pid)
+                record['evidence'].extend(evidence_rows)
                 explicit = self.explicit_parent(keyword, key[0])
                 all_parents = parents | ({explicit} if explicit else set())
                 if len(all_parents) > 1:
                     self.conflicts.append(pid)
                     raise ValueError('Conflicting navigation evidence: ' + pid)
-                if parents or explicit:
+                if (parents or explicit) and self.is_navigation_parent_eligible(region['region_id']):
                     parent = next(iter(all_parents))
                     record.update(status='TIER1_TIER2_CONFIRMED' if parents else 'TIER4_EXPLICIT', parent=parent, group=parent,
                                   target_kind='CONTENT_PAGE' if parent in self.by_region else 'STRUCTURAL_GROUP')
@@ -132,9 +112,10 @@ class Navigation:
                         record['evidence'].append(('TIER4', keyword, explicit))
             if record['status'] == 'UNRESOLVED':
                 # Contaminated Daegu source is deliberately not labelled as geographic Daegu.
-                hub = REVIEW_GROUP if key[0] == '대구' else self.sidos[key[0]]['region_id']
-                record['group'] = hub
-                self.unresolved[hub].append(pid)
+                hub = self.resolve_unresolved_group(key[0])
+                if self.is_navigation_parent_eligible(region['region_id']):
+                    record['group'] = hub
+                    self.unresolved[hub].append(pid)
             elif record['status'] != 'SOURCE_IDENTITY_ERROR':
                 self.groups[record['group']].append(pid)
             self.records[pid] = record
@@ -144,6 +125,42 @@ class Navigation:
         self.name_sidos = defaultdict(set)
         for r in self.regions.values():
             self.name_sidos[r['display_name']].add(r.get('sido') or '')
+
+    def resolve_explicit_evidence(self, evidence, reviews, key, keyword, scope, page_id):
+        """Return explicit evidence candidates without mutating navigation records."""
+        parents = set()
+        evidence_rows = []
+        for tier, row, filename in evidence.get(key, []):
+            originals = ([row['original_keyword']] if row.get('original_keyword') else
+                         [review['original_keyword'] for review in reviews[key]
+                          if review['candidate_parent'] == row['candidate_parent']])
+            if not originals or any(norm(value) != keyword for value in originals):
+                if scope.get('scope_origin') == 'NEW_K_1051':
+                    continue
+                raise ValueError('Evidence keyword mismatch: ' + page_id + ' ' + filename)
+            matches = [region for region in self.sigungu[key[0]]
+                       if region['display_name'] == row['candidate_parent']]
+            if len(matches) == 1:
+                parent = matches[0]['region_id']
+                if row.get('parent_region_id') and row['parent_region_id'] != parent:
+                    raise ValueError('Evidence parent ID mismatch: ' + page_id)
+                parents.add(parent)
+                evidence_rows.append((tier, filename, parent))
+        return parents, evidence_rows
+
+    def resolve_structural_group(self, region, source_sheet):
+        """Return the structural group candidate without mutating navigation state."""
+        if region['region_level'] == 'sido':
+            return REVIEW_GROUP
+        if region['region_level'] == 'sigungu' and source_sheet != '\ub300\uad6c':
+            # A source-sheet index, not an independently certified geographic assertion.
+            return self.sidos[source_sheet]['region_id']
+        return None
+
+    def resolve_unresolved_group(self, source_sheet):
+        """Return the unresolved fallback hub without mutating navigation state."""
+        # Contaminated Daegu source is deliberately not labelled as geographic Daegu.
+        return REVIEW_GROUP if source_sheet == '\ub300\uad6c' else self.sidos[source_sheet]['region_id']
 
     def read_seoul_parent_map(self):
         """Load the content-agnostic, audited Seoul navigation hierarchy."""
@@ -202,9 +219,51 @@ class Navigation:
     def read(self, filename):
         return json.loads((self.root / filename).read_text(encoding='utf-8-sig'))
 
-    @staticmethod
-    def has_k(row):
-        return len(row) > 10 and row[10] is not None and str(row[10]).strip() != ''
+    def read_runtime_snapshot(self):
+        """Load the explicit, fail-closed public navigation runtime contract."""
+        try:
+            rows = json.loads((self.root / RUNTIME_SNAPSHOT).read_text(encoding='utf-8'))
+        except FileNotFoundError as exc:
+            raise RuntimeError('Missing navigation runtime contract: ' + RUNTIME_SNAPSHOT) from exc
+        except (OSError, json.JSONDecodeError) as exc:
+            raise ValueError('Malformed navigation runtime contract') from exc
+        if not isinstance(rows, list) or len(rows) != 1892:
+            raise ValueError('Navigation runtime contract must contain exactly 1892 rows')
+        page_ids, routes = set(), set()
+        for row in rows:
+            if not isinstance(row, dict) or set(row) != RUNTIME_REQUIRED_FIELDS:
+                raise ValueError('Invalid navigation runtime contract fields')
+            if row['page_type'] != 'region_tutor' or not row['region_id']:
+                raise ValueError('Invalid navigation runtime contract page type or region')
+            if not isinstance(row['content_source_row'], int) or row['content_source_row'] < 2:
+                raise ValueError('Invalid navigation runtime contract source row')
+            if not isinstance(row['K_present'], bool) or not row['K_present']:
+                raise ValueError('Invalid navigation runtime contract K status')
+            if any(not isinstance(row[field], str) or not row[field].strip() for field in RUNTIME_REQUIRED_FIELDS - {'content_source_row', 'K_present'}):
+                raise ValueError('Missing navigation runtime contract value')
+            if row['page_id'] in page_ids or row['route'] in routes:
+                raise ValueError('Duplicate navigation runtime contract identity')
+            page_ids.add(row['page_id']); routes.add(row['route'])
+        return rows
+
+    def read_region_status(self):
+        """Load complete status data; malformed or incomplete data fails ordinary relations closed."""
+        try:
+            result = {}
+            for row in self.read(REGION_STATUS_SOURCE):
+                region_id = row['region_id']
+                if region_id in result:
+                    raise ValueError('Duplicate region status')
+                result[region_id] = row['parent_relation_status']
+            if set(result) != set(self.regions):
+                raise ValueError('Region status coverage mismatch')
+            return result
+        except (KeyError, TypeError, ValueError, OSError, json.JSONDecodeError):
+            return {}
+
+    def is_navigation_parent_eligible(self, region_id):
+        """Ordinary navigation relations are fail-closed unless their parent relation is verified."""
+        return self.region_status.get(region_id) == 'VERIFIED_PARENT'
 
     def explicit_parent(self, keyword, sheet):
         name = re.sub(r'\s*과외$', '', keyword)
@@ -234,6 +293,8 @@ class Navigation:
     def related_targets(self, pid):
         record = self.records[pid]
         if record['status'] == 'SOURCE_IDENTITY_ERROR':
+            return []
+        if record['status'] == 'UNRESOLVED' and not record['group']:
             return []
         region_id = self.pages[pid]['region_id']
         region = self.regions[region_id]
