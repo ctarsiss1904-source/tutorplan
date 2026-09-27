@@ -265,6 +265,23 @@ class Navigation:
         """Ordinary navigation relations are fail-closed unless their parent relation is verified."""
         return self.region_status.get(region_id) == 'VERIFIED_PARENT'
 
+    def is_directory_relation_eligible(self, parent_region_id, child_region_id):
+        """Return whether one concrete directory parent-child relation may be linked."""
+        child = self.regions.get(child_region_id)
+        parent = self.regions.get(parent_region_id)
+        if not child or not parent:
+            return False
+        if self.region_status.get(child_region_id) == 'ISOLATED_SOURCE_IDENTITY_ERROR':
+            return False
+        if (self.seoul_parent_map.get(child_region_id) == parent_region_id or
+                self.daegu_parent_map.get(child_region_id) == parent_region_id):
+            return True
+        if child.get('parent_region_id') != parent_region_id:
+            return False
+        if child.get('region_level') == 'sido' and parent.get('region_level') == 'country':
+            return True
+        return self.is_navigation_parent_eligible(child_region_id)
+
     def explicit_parent(self, keyword, sheet):
         name = re.sub(r'\s*과외$', '', keyword)
         found = set()

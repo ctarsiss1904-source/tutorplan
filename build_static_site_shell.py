@@ -47,7 +47,7 @@ def main():
  directory_count=0
  for r in regions:
   route='/regions/'+r['region_id']+'/'; parent=byid.get(r.get('parent_region_id')); child=sorted(children.get(r['region_id'],[]),key=lambda x:x['display_name']);t=tutor.get(r['region_id'])
-  crumbs='<a href="/">홈</a><span>›</span><a href="/regions/">지역 찾기</a>'+(f'<span>›</span><a href="/regions/{parent["region_id"]}/">{parent["display_name"]}</a>' if parent and parent['region_level']!='country' else '')+f'<span>›</span>{r["display_name"]}'
+  crumbs='<a href="/">홈</a><span>›</span><a href="/regions/">지역 찾기</a>'+(f'<span>›</span><a href="/regions/{parent["region_id"]}/">{parent["display_name"]}</a>' if parent and navigation.is_directory_relation_eligible(parent['region_id'], r['region_id']) else '')+f'<span>›</span>{r["display_name"]}'
   target=f'<p><a href="{t["canonical_url"].replace(DOMAIN,"")}">{r["display_name"]}과외 보기</a></p>' if t else '<p>이 지역의 과외 상세 페이지는 현재 콘텐츠 준비 중입니다.</p>'
   listing=''.join(f'<li><a href="/regions/{c["region_id"]}/">{c["display_name"]}</a>'+ (f' · <a href="{tutor[c["region_id"]]["canonical_url"].replace(DOMAIN,"")}">과외</a>' if c['region_id'] in tutor else '')+'</li>' for c in child)
   body=f'<nav class="crumb">{crumbs}</nav><article class="card"><h1>{r["display_name"]} 지역 탐색</h1>{navigation.directory_body(r["region_id"])}</article>'
