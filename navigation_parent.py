@@ -10,6 +10,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).parent
 ISOLATED = 'candidate:tutor:kr-b300-ad6c-kr-ad11-c0b0-ad6c:region_tutor'
+SEJONG_SIDO_REGION_ID = 'kr-c138-c885'
 REVIEW_GROUP = '@review'
 SEOUL_PARENT_MAP = 'data/seoul_navigation_parent_map.json'
 DAEGU_PARENT_MAP = 'data/daegu_navigation_parent_map.json'
@@ -278,9 +279,16 @@ class Navigation:
             return True
         if child.get('parent_region_id') != parent_region_id:
             return False
-        if child.get('region_level') == 'sido' and parent.get('region_level') == 'country':
+        level_pair = (parent.get('region_level'), child.get('region_level'))
+        if level_pair == ('country', 'sido'):
             return True
-        return self.is_navigation_parent_eligible(child_region_id)
+        if (level_pair == ('sido', 'eupmyeondong') and
+                parent_region_id == SEJONG_SIDO_REGION_ID and
+                self.region_status.get(child_region_id) == 'UNVERIFIED_PARENT'):
+            return True
+        if level_pair not in {('sido', 'sigungu'), ('sigungu', 'eupmyeondong')}:
+            return False
+        return self.region_status.get(child_region_id) in {'VERIFIED_PARENT', 'UNVERIFIED_PARENT'}
 
     def explicit_parent(self, keyword, sheet):
         name = re.sub(r'\s*과외$', '', keyword)
