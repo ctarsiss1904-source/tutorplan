@@ -1,1 +1,133 @@
-<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>TutorPlan</title><meta name="description" content="지역별 학습관리와 과외 정보를 안내합니다."><link rel="canonical" href="https://tutorplan.co.kr/"><meta name="robots" content="index,follow"><style>body{margin:0;font-family:Arial,'Noto Sans KR',sans-serif;color:#152238;background:#f6f9fc;line-height:1.7}.wrap{max-width:1050px;margin:auto;padding:0 20px}header,footer{background:#fff;border-color:#dce4ec;border-style:solid}header{border-width:0 0 1px}footer{border-width:1px 0 0;margin-top:48px}.bar{display:flex;justify-content:space-between;gap:16px;padding:16px 0}.brand{font-weight:800;color:#10314b;font-size:1.25rem}a{color:#0d5f7a;text-decoration:none}a:hover{text-decoration:underline}nav a{margin-left:16px}main{min-height:68vh;padding:42px 0}.card{background:#fff;border:1px solid #dce4ec;border-radius:12px;padding:20px;margin:14px 0}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}.crumb{font-size:.9rem;color:#5b6878}.crumb span{margin:0 6px}.hero{background:#10314b;color:#fff;border-radius:16px;padding:42px}.hero a{color:#bfe9f5}h1{line-height:1.25}ul{padding-left:20px}@media(max-width:640px){.bar{flex-direction:column}nav a{margin:0 14px 0 0}}</style></head><body><header><div class="wrap bar"><a class="brand" href="/">TutorPlan</a><nav><a href="/regions/">지역 찾기</a><a href="/tutoring/">학습관리</a><a href="/contact/">문의</a></nav></div></header><main class="wrap"><section class="hero"><h1>지역의 학습 흐름을 살피는 과외</h1><p>현재 콘텐츠 준비가 완료된 지역별 일반 과외 페이지를 탐색할 수 있습니다.</p><a href="/regions/">지역별 과외 찾기</a></section><section aria-labelledby="home-regions-heading"><h2 id="home-regions-heading">지역별 과외 찾기</h2><div class="grid"><a class="card" href="/regions/seoul/">서울</a><a class="card" href="/regions/kr-bd80-c0b0/">부산</a><a class="card" href="/regions/kr-b300-ad6c/">대구</a><a class="card" href="/regions/kr-c778-cc9c/">인천</a><a class="card" href="/regions/kr-ad11-c8fc/">광주</a><a class="card" href="/regions/kr-b300-c804/">대전</a><a class="card" href="/regions/kr-c6b8-c0b0/">울산</a><a class="card" href="/regions/kr-c138-c885/">세종</a><a class="card" href="/regions/kr-acbd-ae30-b3c4/">경기도</a><a class="card" href="/regions/kr-ac15-c6d0-b3c4/">강원도</a><a class="card" href="/regions/anchor-sido-cda9bd81/">충북</a><a class="card" href="/regions/anchor-sido-cda9b0a8/">충남</a><a class="card" href="/regions/anchor-sido-c804bd81/">전북</a><a class="card" href="/regions/kr-c804-b0a8/">전남</a><a class="card" href="/regions/anchor-sido-acbdbd81/">경북</a><a class="card" href="/regions/anchor-sido-acbdb0a8/">경남</a><a class="card" href="/regions/kr-c81c-c8fc-b3c4/">제주도</a></div><p><a href="/regions/">전체 지역 보기</a></p></section><section><h2>안내</h2><div class="grid"><div class="card"><h3>지역별 탐색</h3><p>시도부터 생활권까지 현재 공개 가능한 지역을 확인합니다.</p><a href="/regions/">지역 찾기</a></div><div class="card"><h3>학습관리</h3><p>현재 상태와 실제 행동을 바탕으로 학습 흐름을 정리합니다.</p><a href="/tutoring/">학습관리 안내</a></div></div></section></main><footer><div class="wrap bar"><span>TutorPlan</span><span><a href="/privacy/">개인정보처리방침</a> · <a href="/terms/">이용약관</a></span></div></footer></body></html>
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TutorPlan</title>
+    <style>
+      :root { --ink:#172235; --muted:#69778a; --line:#eadfce; --paper:#fbf7ed; --card:#fffdf9; --accent:#176b87; --ready:#e6f4ef; --planned:#f1f4f7; }
+      * { box-sizing:border-box; }
+      body { margin:0; background:var(--paper); color:var(--ink); font-family:"Noto Sans KR", Arial, sans-serif; letter-spacing:-.02em; }
+      .shell { width:min(1080px, calc(100% - 40px)); margin:0 auto; }
+      header { background:var(--card); border-bottom:1px solid var(--line); }
+      header .shell { display:flex; justify-content:space-between; align-items:center; min-height:72px; }
+      .brand { font-weight:800; font-size:1.2rem; letter-spacing:-.04em; }
+      .state { position:relative; color:var(--muted); font-size:.875rem; }
+      .menu-toggle { border:0; background:transparent; color:inherit; cursor:pointer; font:inherit; padding:10px 0; }
+      .menu-toggle:hover { color:var(--accent); }
+      .menu-toggle span { display:inline-block; margin-left:5px; transition:transform .2s ease; }
+      .menu.open .menu-toggle span { transform:rotate(180deg); }
+      .submenu { display:none; position:absolute; z-index:1; top:100%; right:0; width:min(336px, calc(100vw - 40px)); overflow:hidden; border:1px solid var(--line); border-radius:10px; background:var(--card); box-shadow:0 10px 24px rgba(23,34,53,.12); }
+      .menu.open .submenu { display:flex; flex-direction:column; }
+      .submenu a { padding:11px 14px; color:var(--ink); text-decoration:none; white-space:nowrap; }
+      .submenu a:hover { background:#f0f9fb; color:var(--accent); }
+      .region-links { display:grid; grid-template-columns:repeat(2, 1fr); }
+      .region-links a { border-bottom:1px solid var(--line); }
+      .region-links a:nth-last-child(-n+1) { border-bottom:0; }
+      .category-links { display:flex; flex-direction:column; border-top:1px solid var(--line); }
+      .submenu-toggle { width:100%; border:0; background:transparent; color:var(--ink); cursor:pointer; font:inherit; padding:11px 14px; text-align:left; }
+      .submenu-toggle:hover { background:#f0f9fb; color:var(--accent); }
+      .submenu-toggle span { float:right; transition:transform .2s ease; }
+      .category-menu.open .submenu-toggle span { transform:rotate(180deg); }
+      .nested-menu { display:none; flex-direction:column; background:#f8fafc; }
+      .category-menu.open .nested-menu { display:flex; }
+      .nested-menu a { padding-left:28px; }
+      main { padding:58px 0 76px; }
+      .hero-image { display:block; width:100%; border:1px solid var(--line); border-radius:18px; }
+      .bottom-banner { margin-top:24px; }
+      .eyebrow { color:var(--accent); font-size:.85rem; font-weight:800; letter-spacing:.08em; text-transform:uppercase; }
+      h1 { margin:12px 0 0; font-size:clamp(2rem, 5vw, 3.8rem); line-height:1.14; letter-spacing:-.06em; }
+      .subhead { margin:18px 0 42px; color:var(--muted); font-size:1.06rem; }
+      .section { margin-top:24px; padding:28px; background:var(--card); border:1px solid var(--line); border-radius:18px; }
+      h2 { margin:0 0 20px; font-size:1.1rem; }
+      .path { display:flex; align-items:stretch; gap:10px; }
+      .path-item { flex:1 1 0; min-height:112px; min-width:145px; padding:18px; border:1px solid var(--line); border-radius:14px; display:flex; flex-direction:column; justify-content:space-between; gap:12px; }
+      .path-item.ready { background:var(--ready); border-color:#b9dfd0; }
+      .path-item.planned { background:var(--planned); }
+      .arrow { align-self:center; color:#9ba8b5; font-size:1.35rem; }
+      .item-name { font-weight:800; font-size:1.05rem; }
+      .badge { width:max-content; padding:4px 8px; border-radius:99px; color:var(--muted); background:#fff; font-size:.72rem; font-weight:700; }
+      .ready .badge { color:#237254; }
+      .slot-grid { display:grid; grid-template-columns:repeat(4, 1fr); gap:14px; }
+      .subject-grid { grid-template-columns:repeat(2, 1fr); }
+      .subject-grid .slot { color:#111; }
+      .grade-grid { grid-template-columns:repeat(2, 1fr); }
+      .grade-grid .slot { color:#111; }
+      .grade-grid .slot:first-child { grid-column:1 / -1; justify-self:center; width:calc(50% - 7px); }
+      .slot { padding:22px; border:1px solid var(--line); border-radius:14px; }
+      a.slot, a.region { text-decoration:none; }
+      a.slot:hover, a.region:hover { border-color:#85b9c9; box-shadow:0 4px 14px rgba(23,107,135,.1); }
+      .slot strong { display:block; font-size:1.06rem; }
+      .slot span { display:block; margin-top:8px; color:var(--muted); font-size:.9rem; }
+      .region-list { display:grid; grid-template-columns:repeat(6, 1fr); gap:10px; }
+      .region { padding:14px 10px; border:1px solid var(--line); border-radius:10px; background:#fff; text-align:center; color:var(--ink); font-weight:700; font-size:.92rem; }
+      .region:first-child { border-color:#85b9c9; color:var(--accent); background:#f0f9fb; }
+      footer { border-top:1px solid var(--line); background:var(--card); color:var(--muted); font-size:.84rem; padding:22px 0; }
+      @media (max-width:800px) { .path { flex-direction:column; } .arrow { transform:rotate(90deg); } .slot-grid { grid-template-columns:1fr; } .subject-grid, .grade-grid { grid-template-columns:repeat(2, 1fr); } .region-list { grid-template-columns:repeat(3, 1fr); } }
+      @media (max-width:480px) { .shell { width:min(100% - 28px, 1080px); } main { padding-top:38px; } .section { padding:20px; } .region-list { grid-template-columns:repeat(2, 1fr); } }
+    </style>
+  </head>
+  <body>
+    <header><div class="shell"><div class="brand">TutorPlan</div><nav class="state" aria-label="바로가기"><div class="menu" id="header-menu"><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="header-submenu">전국 <span aria-hidden="true">⌄</span></button><div class="submenu" id="header-submenu"><div class="category-links"><div class="category-menu" id="region-menu"><button class="submenu-toggle" type="button" aria-expanded="false" aria-controls="region-submenu">전국 지역별 과외 <span aria-hidden="true">⌄</span></button><div class="nested-menu region-links" id="region-submenu"><a href="/서울과외/">서울</a><a href="/부산과외/">부산</a><a href="/대구과외/">대구</a><a href="/인천과외/">인천</a><a href="/광주과외/">광주</a><a href="/대전과외/">대전</a><a href="/울산과외/">울산</a><a href="/세종과외/">세종</a><a href="/경기도과외/">경기도</a><a href="/강원도과외/">강원도</a><a href="/충북과외/">충북</a><a href="/충남과외/">충남</a><a href="/전북과외/">전북</a><a href="/전남과외/">전남</a><a href="/경북과외/">경북</a><a href="/경남과외/">경남</a><a href="/제주도과외/">제주도</a></div></div><div class="category-menu" id="subject-menu"><button class="submenu-toggle" type="button" aria-expanded="false" aria-controls="subject-submenu">과목별 과외 <span aria-hidden="true">⌄</span></button><div class="nested-menu" id="subject-submenu"><a href="/수학과외/">수학과외</a><a href="/영어과외/">영어과외</a><a href="/국어과외/">국어과외</a><a href="/과학과외/">과학과외</a></div></div><div class="category-menu" id="grade-menu"><button class="submenu-toggle" type="button" aria-expanded="false" aria-controls="grade-submenu">학년별 과외 <span aria-hidden="true">⌄</span></button><div class="nested-menu" id="grade-submenu"><a href="/초등과외/">초등과외</a><a href="/중등과외/">중등과외</a><a href="/고등과외/">고등과외</a></div></div></div></div></div></nav></div></header>
+    <main class="shell">
+      <img class="hero-image" src="/main-hero.png" alt="아이에게 필요한 맞춤 학습 안내" />
+
+      <section class="section" aria-labelledby="regions-title">
+        <h2 id="regions-title">전국 지역별 과외 찾기</h2>
+        <div class="region-list">
+          <a class="region" href="/서울과외/">서울</a><a class="region" href="/부산과외/">부산</a><a class="region" href="/대구과외/">대구</a><a class="region" href="/인천과외/">인천</a><a class="region" href="/광주과외/">광주</a><a class="region" href="/대전과외/">대전</a>
+          <a class="region" href="/울산과외/">울산</a><a class="region" href="/세종과외/">세종</a><a class="region" href="/경기도과외/">경기도</a><a class="region" href="/강원도과외/">강원도</a><a class="region" href="/충북과외/">충북</a><a class="region" href="/충남과외/">충남</a>
+          <a class="region" href="/전북과외/">전북</a><a class="region" href="/전남과외/">전남</a><a class="region" href="/경북과외/">경북</a><a class="region" href="/경남과외/">경남</a><a class="region" href="/제주도과외/">제주도</a>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="slots-title">
+        <h2 id="slots-title">과목별 과외</h2>
+        <div class="slot-grid subject-grid">
+          <a class="slot" href="/수학과외/"><strong>수학과외</strong></a>
+          <a class="slot" href="/영어과외/"><strong>영어과외</strong></a>
+          <a class="slot" href="/국어과외/"><strong>국어과외</strong></a>
+          <a class="slot" href="/과학과외/"><strong>과학과외</strong></a>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="grade-title">
+        <h2 id="grade-title">학년별 과외</h2>
+        <div class="slot-grid grade-grid">
+          <a class="slot" href="/초등과외/"><strong>초등과외</strong></a>
+          <a class="slot" href="/중등과외/"><strong>중등과외</strong></a>
+          <a class="slot" href="/고등과외/"><strong>고등과외</strong></a>
+        </div>
+      </section>
+
+      <img class="hero-image bottom-banner" src="/bottom-banner.png" alt="아이와 선생님의 따뜻한 첫 수업 안내" />
+    </main>
+    <footer><div class="shell">TutorPlan · 콘텐츠 준비 중</div></footer>
+    <script>
+      const menu = document.getElementById("header-menu");
+      const toggle = menu.querySelector("button");
+      toggle.addEventListener("click", () => {
+        const open = menu.classList.toggle("open");
+        toggle.setAttribute("aria-expanded", String(open));
+      });
+      const subjectMenu = document.getElementById("subject-menu");
+      const subjectToggle = subjectMenu.querySelector("button");
+      subjectToggle.addEventListener("click", () => {
+        const open = subjectMenu.classList.toggle("open");
+        subjectToggle.setAttribute("aria-expanded", String(open));
+      });
+      const regionMenu = document.getElementById("region-menu");
+      const regionToggle = regionMenu.querySelector("button");
+      regionToggle.addEventListener("click", () => {
+        const open = regionMenu.classList.toggle("open");
+        regionToggle.setAttribute("aria-expanded", String(open));
+      });
+      const gradeMenu = document.getElementById("grade-menu");
+      const gradeToggle = gradeMenu.querySelector("button");
+      gradeToggle.addEventListener("click", () => {
+        const open = gradeMenu.classList.toggle("open");
+        gradeToggle.setAttribute("aria-expanded", String(open));
+      });
+    </script>
+  </body>
+</html>
