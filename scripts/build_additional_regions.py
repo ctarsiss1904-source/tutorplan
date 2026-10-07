@@ -16,6 +16,7 @@ ROOT = Path(__file__).resolve().parents[1]
 WORKBOOK = ROOT / "과외.xlsx"
 OUTPUT = ROOT / "output"
 INCHEON_GUIDE_IMAGE = ROOT / "assets" / "incheon-tutor-guide.jpg"
+START_STEPS_IMAGE = ROOT / "assets" / "tutoring-start-steps.png"
 
 # Each worksheet lists its city/county rows first and then the local-area rows
 # grouped beneath them.  A missing parent is kept as a directory page so no
@@ -57,6 +58,7 @@ def stylesheet() -> str:
       .brand { color:var(--ink); text-decoration:none; font-size:1.25rem; font-weight:900; letter-spacing:-.05em; } .home { color:var(--muted); text-decoration:none; font-size:.9rem; }
       main { padding:48px 0 76px; } .crumb { margin:0 0 18px; color:var(--muted); font-size:.9rem; } .crumb a { color:inherit; text-decoration:none; } h1 { margin:0; font-size:clamp(2rem,5vw,3.25rem); letter-spacing:-.06em; }
       .guide-image { display:block; width:min(100%,724px); height:auto; margin:24px auto 0; }
+      .start-steps-image { display:block; width:100%; height:auto; margin:48px auto 0; border-radius:18px; }
       .page-thumbnail { margin:32px auto 0; } .page-thumbnail img { display:block; width:100%; height:auto; border-radius:18px; }
       .article, .directory, .faq, .native-faq { margin-top:24px; padding:30px; border:1px solid var(--line); border-radius:18px; background:var(--card); } .article h2, .native-faq h2 { line-height:1.35; letter-spacing:-.035em; } .native-faq { border-color:#d9c7a2; background:#fffaf0; }
       .faq h2 { margin:0 0 18px; font-size:1.25rem; } .faq article + article { margin-top:22px; padding-top:22px; border-top:1px solid var(--line); } .faq h3 { margin:0 0 8px; font-size:1.05rem; line-height:1.5; } .faq p { margin:0; color:#3c4a5c; }
@@ -84,23 +86,28 @@ def publish_static_assets() -> None:
     target = OUTPUT / "assets" / INCHEON_GUIDE_IMAGE.name
     target.parent.mkdir(parents=True, exist_ok=True)
     copy2(INCHEON_GUIDE_IMAGE, target)
+    copy2(START_STEPS_IMAGE, OUTPUT / "assets" / START_STEPS_IMAGE.name)
 
 
 def guide_image() -> str:
     return '<img class="guide-image" src="/assets/incheon-tutor-guide.jpg" alt="과외 학습 안내">'
 
 
-def article(content: str) -> str:
+def start_steps_image() -> str:
+    return '<img class="start-steps-image" src="/assets/tutoring-start-steps.png" alt="과외 시작을 위한 네 단계 안내">'
+
+
+def article(content: str, after_article: str = "") -> str:
     if not content:
-        return ""
+        return after_article
     faq_start = re.search(r"(<h2>[^<]*</h2>)(?=\s*<h3>)", content)
     if not faq_start:
         faq_start = re.search(r"<h3>자주 묻는 질문</h3>|<h3>[^<]*(?:\?|나요|인가요|되나요|있나요|할까요)[^<]*</h3>", content)
     if not faq_start:
-        return f'<section class="article">{content}</section>'
+        return f'<section class="article">{content}</section>{after_article}'
     before = content[:faq_start.start()]
     faq_content = content[faq_start.start():]
-    return f'<section class="article">{before}</section><section class="native-faq">{faq_content}</section>'
+    return f'<section class="article">{before}</section>{after_article}<section class="native-faq">{faq_content}</section>'
 
 
 def build_region(sheet, name: str, config: dict, start_index: int) -> tuple[int, int]:
@@ -115,20 +122,20 @@ def build_region(sheet, name: str, config: dict, start_index: int) -> tuple[int,
         parents.append((label(source["keyword"]), source, children))
     cards = "".join(f'<a class="card" href="{url_path(root_label, parent_label)}">{escape(parent_label)}</a>' for parent_label, _, _ in parents)
     page_index = start_index
-    root_body = f'<h1>{escape(root_label)}</h1>{guide_image()}{article(root_source["content"])}<section class="directory"><h2>{escape(name)} 시군구별 과외</h2><div class="grid">{cards}</div></section>{image_markup(page_index, root_label)}'
+    root_body = f'<h1>{escape(root_label)}</h1>{guide_image()}{article(root_source["content"], start_steps_image())}<section class="directory"><h2>{escape(name)} 시군구별 과외</h2><div class="grid">{cards}</div></section>{image_markup(page_index, root_label)}'
     root_path = url_path(root_label)
     write_page([root_label], document(root_label, [("홈", "/"), (root_label, None)], root_body, root_path, page_index))
     page_index += 1
     child_count = 0
     for parent_label, parent_record, children in parents:
         child_cards = "".join(f'<a class="card" href="{url_path(root_label, parent_label, label(child["keyword"]))}">{escape(label(child["keyword"]))}</a>' for child in children)
-        parent_body = f'<h1>{escape(parent_label)}</h1>{guide_image()}{article(parent_record["content"])}<section class="directory"><h2>{escape(parent_label.removesuffix("과외"))} 지역별 과외</h2><div class="grid">{child_cards}</div></section>{image_markup(page_index, parent_label)}'
+        parent_body = f'<h1>{escape(parent_label)}</h1>{guide_image()}{article(parent_record["content"], start_steps_image())}<section class="directory"><h2>{escape(parent_label.removesuffix("과외"))} 지역별 과외</h2><div class="grid">{child_cards}</div></section>{image_markup(page_index, parent_label)}'
         parent_path = url_path(root_label, parent_label)
         write_page([root_label, parent_label], document(parent_label, [("홈", "/"), (root_label, url_path(root_label)), (parent_label, None)], parent_body, parent_path, page_index))
         page_index += 1
         for child in children:
             child_label = label(child["keyword"])
-            child_body = f'<h1>{escape(child_label)}</h1>{guide_image()}{article(child["content"])}{image_markup(page_index, child_label)}'
+            child_body = f'<h1>{escape(child_label)}</h1>{guide_image()}{article(child["content"], start_steps_image())}{image_markup(page_index, child_label)}'
             child_path = url_path(root_label, parent_label, child_label)
             write_page([root_label, parent_label, child_label], document(child_label, [("홈", "/"), (root_label, url_path(root_label)), (parent_label, url_path(root_label, parent_label)), (child_label, None)], child_body, child_path, page_index))
             page_index += 1
@@ -143,12 +150,12 @@ def build_sejong(sheet, start_index: int) -> int:
     root_record = dict(rows[0], keyword=root_label)
     page_index = start_index
     root_path = url_path(root_label)
-    write_page([root_label], document(root_label, [("홈", "/"), (root_label, None)], f'<h1>{root_label}</h1>{guide_image()}<section class="directory"><h2>세종 지역별 과외</h2><div class="grid">{cards}</div></section>{image_markup(page_index, root_label)}', root_path, page_index))
+    write_page([root_label], document(root_label, [("홈", "/"), (root_label, None)], f'<h1>{root_label}</h1>{guide_image()}{start_steps_image()}<section class="directory"><h2>세종 지역별 과외</h2><div class="grid">{cards}</div></section>{image_markup(page_index, root_label)}', root_path, page_index))
     page_index += 1
     for row in rows:
         child_label = label(row["keyword"])
         child_path = url_path(root_label, child_label)
-        write_page([root_label, child_label], document(child_label, [("홈", "/"), (root_label, url_path(root_label)), (child_label, None)], f'<h1>{escape(child_label)}</h1>{guide_image()}{article(row["content"])}{image_markup(page_index, child_label)}', child_path, page_index))
+        write_page([root_label, child_label], document(child_label, [("홈", "/"), (root_label, url_path(root_label)), (child_label, None)], f'<h1>{escape(child_label)}</h1>{guide_image()}{article(row["content"], start_steps_image())}{image_markup(page_index, child_label)}', child_path, page_index))
         page_index += 1
     return len(rows)
 

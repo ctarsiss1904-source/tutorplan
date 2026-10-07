@@ -16,6 +16,7 @@ ROOT = Path(__file__).resolve().parents[1]
 WORKBOOK = ROOT / "과외.xlsx"
 OUTPUT = ROOT / "output"
 GUIDE_IMAGE = ROOT / "assets" / "incheon-tutor-guide.jpg"
+START_STEPS_IMAGE = ROOT / "assets" / "tutoring-start-steps.png"
 
 # The Seoul worksheet is grouped by district immediately after its 25 district rows.
 DISTRICTS = [
@@ -68,6 +69,7 @@ def stylesheet() -> str:
       .brand { color:var(--ink); text-decoration:none; font-size:1.25rem; font-weight:900; letter-spacing:-.05em; } .home { color:var(--muted); text-decoration:none; font-size:.9rem; }
       main { padding:48px 0 76px; } .crumb { margin:0 0 18px; color:var(--muted); font-size:.9rem; } .crumb a { color:inherit; text-decoration:none; } h1 { margin:0; font-size:clamp(2rem,5vw,3.25rem); letter-spacing:-.06em; }
       .guide-image { display:block; width:min(100%,724px); height:auto; margin:24px auto 0; }
+      .start-steps-image { display:block; width:100%; height:auto; margin:48px auto 0; border-radius:18px; }
       .page-thumbnail { margin:32px auto 0; } .page-thumbnail img { display:block; width:100%; height:auto; border-radius:18px; }
       .intro { margin:12px 0 28px; color:var(--muted); } .article, .directory, .faq, .native-faq { margin-top:24px; padding:30px; border:1px solid var(--line); border-radius:18px; background:var(--card); } .article h2, .native-faq h2 { line-height:1.35; letter-spacing:-.035em; } .native-faq { border-color:#d9c7a2; background:#fffaf0; }
       .faq h2 { margin:0 0 18px; font-size:1.25rem; } .faq article + article { margin-top:22px; padding-top:22px; border-top:1px solid var(--line); } .faq h3 { margin:0 0 8px; font-size:1.05rem; line-height:1.5; } .faq p { margin:0; color:#3c4a5c; }
@@ -106,21 +108,28 @@ def guide_image() -> str:
     return '<img class="guide-image" src="/assets/incheon-tutor-guide.jpg" alt="과외 학습 안내">'
 
 
+def start_steps_image() -> str:
+    return '<img class="start-steps-image" src="/assets/tutoring-start-steps.png" alt="과외 시작을 위한 네 단계 안내">'
+
+
 def publish_static_assets() -> None:
     target = OUTPUT / "assets" / GUIDE_IMAGE.name
     target.parent.mkdir(parents=True, exist_ok=True)
     copy2(GUIDE_IMAGE, target)
+    copy2(START_STEPS_IMAGE, OUTPUT / "assets" / START_STEPS_IMAGE.name)
 
 
-def article(content: str) -> str:
+def article(content: str, after_article: str = "") -> str:
+    if not content:
+        return after_article
     faq_start = re.search(r"(<h2>[^<]*</h2>)(?=\s*<h3>)", content)
     if not faq_start:
         faq_start = re.search(r"<h3>자주 묻는 질문</h3>|<h3>[^<]*(?:\?|나요|인가요|되나요|있나요|할까요)[^<]*</h3>", content)
     if not faq_start:
-        return f'<section class="article">{content}</section>'
+        return f'<section class="article">{content}</section>{after_article}'
     before = content[:faq_start.start()]
     faq_content = content[faq_start.start():]
-    return f'<section class="article">{before}</section><section class="native-faq">{faq_content}</section>'
+    return f'<section class="article">{before}</section>{after_article}<section class="native-faq">{faq_content}</section>'
 
 
 def main() -> None:
@@ -145,7 +154,7 @@ def main() -> None:
     seoul_body = f"""
       <h1>{escape(seoul_keyword)}</h1>
       {guide_image()}
-      {article(rows[2]['content'])}
+      {article(rows[2]['content'], start_steps_image())}
       <section class="directory"><h2>서울 구별 과외</h2><div class="grid">{district_cards}</div></section>
       {image_markup(page_index, seoul_keyword)}
     """
@@ -164,7 +173,7 @@ def main() -> None:
         district_body = f"""
           <h1>{escape(district_label)}</h1>
           {guide_image()}
-          {article(district_content)}
+          {article(district_content, start_steps_image())}
           <section class="directory"><h2>{escape(district_label.removesuffix('과외'))} 동별 과외</h2><div class="grid">{child_cards}</div></section>
           {image_markup(page_index, district_label)}
         """
@@ -178,7 +187,7 @@ def main() -> None:
             child_body = f"""
               <h1>{escape(child_label)}</h1>
               {guide_image()}
-              {article(child['content'])}
+              {article(child['content'], start_steps_image())}
               {image_markup(page_index, child_label)}
             """
             child_crumb = [("홈", "/"), (seoul_keyword, url_path(seoul_keyword)), (district_label, url_path(seoul_keyword, district_label)), (child_label, None)]
