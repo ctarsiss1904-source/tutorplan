@@ -9,6 +9,7 @@ from urllib.parse import quote
 from openpyxl import load_workbook
 
 from qa_generator import source_record
+from thumbnail_rotation import SITE_URL, image_markup, image_url, publish_images
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -67,6 +68,7 @@ def stylesheet() -> str:
       .brand { color:var(--ink); text-decoration:none; font-size:1.25rem; font-weight:900; letter-spacing:-.05em; } .home { color:var(--muted); text-decoration:none; font-size:.9rem; }
       main { padding:48px 0 76px; } .crumb { margin:0 0 18px; color:var(--muted); font-size:.9rem; } .crumb a { color:inherit; text-decoration:none; } h1 { margin:0; font-size:clamp(2rem,5vw,3.25rem); letter-spacing:-.06em; }
       .guide-image { display:block; width:min(100%,724px); height:auto; margin:24px auto 0; }
+      .page-thumbnail { margin:32px auto 0; } .page-thumbnail img { display:block; width:100%; height:auto; border-radius:18px; }
       .intro { margin:12px 0 28px; color:var(--muted); } .article, .directory, .faq, .native-faq { margin-top:24px; padding:30px; border:1px solid var(--line); border-radius:18px; background:var(--card); } .article h2, .native-faq h2 { line-height:1.35; letter-spacing:-.035em; } .native-faq { border-color:#d9c7a2; background:#fffaf0; }
       .faq h2 { margin:0 0 18px; font-size:1.25rem; } .faq article + article { margin-top:22px; padding-top:22px; border-top:1px solid var(--line); } .faq h3 { margin:0 0 8px; font-size:1.05rem; line-height:1.5; } .faq p { margin:0; color:#3c4a5c; }
       .directory h2 { margin:0 0 18px; font-size:1.25rem; } .grid { display:grid; grid-template-columns:repeat(4,1fr); gap:12px; } .card { display:flex; min-height:76px; align-items:center; justify-content:center; padding:16px; border:1px solid var(--line); border-radius:14px; color:var(--ink); background:#fff; font-weight:800; text-align:center; text-decoration:none; }
@@ -76,14 +78,16 @@ def stylesheet() -> str:
     """
 
 
-def document(title: str, breadcrumb: list[tuple[str, str | None]], body: str) -> str:
+def document(title: str, breadcrumb: list[tuple[str, str | None]], body: str, path: str, thumbnail_index: int) -> str:
     crumb = " / ".join(
         f'<a href="{href}">{escape(label)}</a>' if href else escape(label)
         for label, href in breadcrumb
     )
+    canonical_url = f"{SITE_URL}{path}"
+    description = f"{title} 과외 학습 정보와 지역별 안내를 확인하세요."
     return f"""<!doctype html>
 <html lang="ko">
-  <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>{escape(title)} | TutorPlan</title>{stylesheet()}</head>
+  <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>{escape(title)} | TutorPlan</title><link rel="canonical" href="{canonical_url}"><meta name="description" content="{escape(description)}"><meta property="og:type" content="website"><meta property="og:locale" content="ko_KR"><meta property="og:title" content="{escape(title)} | TutorPlan"><meta property="og:description" content="{escape(description)}"><meta property="og:url" content="{canonical_url}"><meta property="og:image" content="{image_url(thumbnail_index)}">{stylesheet()}</head>
   <body>
     <header><div class="shell"><a class="brand" href="/">TutorPlan</a><a class="home" href="/">홈으로</a></div></header>
     <main class="shell"><nav class="crumb">{crumb}</nav>{body}</main>
@@ -121,6 +125,7 @@ def article(content: str) -> str:
 
 def main() -> None:
     publish_static_assets()
+    publish_images()
     workbook = load_workbook(WORKBOOK, read_only=True, data_only=True)
     sheet = workbook["서울"]
     rows = {
@@ -136,13 +141,17 @@ def main() -> None:
         f'<a class="card" href="{url_path(seoul_keyword, clean_label(keyword))}">{escape(clean_label(keyword))}</a>'
         for keyword, _, _ in DISTRICTS
     )
+    page_index = 0
     seoul_body = f"""
       <h1>{escape(seoul_keyword)}</h1>
       {guide_image()}
       {article(rows[2]['content'])}
       <section class="directory"><h2>서울 구별 과외</h2><div class="grid">{district_cards}</div></section>
+      {image_markup(page_index, seoul_keyword)}
     """
-    write_page([seoul_keyword], document(seoul_keyword, [("홈", "/"), ("서울", None), (seoul_keyword, None)], seoul_body))
+    seoul_path = url_path(seoul_keyword)
+    write_page([seoul_keyword], document(seoul_keyword, [("홈", "/"), ("서울", None), (seoul_keyword, None)], seoul_body, seoul_path, page_index))
+    page_index += 1
 
     for district_keyword, start, end in DISTRICTS:
         district_label = clean_label(district_keyword)
@@ -157,9 +166,12 @@ def main() -> None:
           {guide_image()}
           {article(district_content)}
           <section class="directory"><h2>{escape(district_label.removesuffix('과외'))} 동별 과외</h2><div class="grid">{child_cards}</div></section>
+          {image_markup(page_index, district_label)}
         """
         district_crumb = [("홈", "/"), (seoul_keyword, url_path(seoul_keyword)), (district_label, None)]
-        write_page([seoul_keyword, district_label], document(district_label, district_crumb, district_body))
+        district_path = url_path(seoul_keyword, district_label)
+        write_page([seoul_keyword, district_label], document(district_label, district_crumb, district_body, district_path, page_index))
+        page_index += 1
 
         for child in children:
             child_label = clean_label(child["keyword"], district_keyword)
@@ -167,9 +179,12 @@ def main() -> None:
               <h1>{escape(child_label)}</h1>
               {guide_image()}
               {article(child['content'])}
+              {image_markup(page_index, child_label)}
             """
             child_crumb = [("홈", "/"), (seoul_keyword, url_path(seoul_keyword)), (district_label, url_path(seoul_keyword, district_label)), (child_label, None)]
-            write_page([seoul_keyword, district_label, child_label], document(child_label, child_crumb, child_body))
+            child_path = url_path(seoul_keyword, district_label, child_label)
+            write_page([seoul_keyword, district_label, child_label], document(child_label, child_crumb, child_body, child_path, page_index))
+            page_index += 1
 
     print(f"Built Seoul hierarchy: 1 city page, {len(DISTRICTS)} district pages, {sum(end - start + 1 for _, start, end in DISTRICTS)} dong pages.")
 
