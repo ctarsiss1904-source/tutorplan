@@ -8,7 +8,7 @@ from urllib.parse import quote
 
 from openpyxl import load_workbook
 
-from qa_generator import source_record
+from qa_generator import faq_section, source_record
 from thumbnail_rotation import SITE_URL, image_markup, image_url, publish_images
 
 
@@ -110,6 +110,13 @@ def article(content: str, after_article: str = "") -> str:
     return f'<section class="article">{before}</section>{after_article}<section class="native-faq">{faq_content}</section>'
 
 
+def generated_faq(content: str, record: dict[str, str], page_title: str) -> str:
+    """Only supply new Q&A when the source body has no existing Q&A block."""
+    if re.search(r"(<h2>[^<]*</h2>)(?=\s*<h3>)", content) or re.search(r"<h3>자주 묻는 질문</h3>|<h3>[^<]*(?:\?|나요|인가요|되나요|있나요|할까요)[^<]*</h3>", content):
+        return ""
+    return faq_section(record, context=page_title)
+
+
 def build_region(sheet, name: str, config: dict, start_index: int) -> tuple[int, int]:
     rows = {row: source_record(sheet, row) for row in range(2, sheet.max_row + 1) if sheet.cell(row, 1).value}
     root_source = rows[2]
@@ -122,20 +129,20 @@ def build_region(sheet, name: str, config: dict, start_index: int) -> tuple[int,
         parents.append((label(source["keyword"]), source, children))
     cards = "".join(f'<a class="card" href="{url_path(root_label, parent_label)}">{escape(parent_label)}</a>' for parent_label, _, _ in parents)
     page_index = start_index
-    root_body = f'<h1>{escape(root_label)}</h1>{guide_image()}{article(root_source["content"], start_steps_image())}<section class="directory"><h2>{escape(name)} 시군구별 과외</h2><div class="grid">{cards}</div></section>{image_markup(page_index, root_label)}'
+    root_body = f'<h1>{escape(root_label)}</h1>{guide_image()}{article(root_source["content"], start_steps_image())}{generated_faq(root_source["content"], root_source, root_label)}<section class="directory"><h2>{escape(name)} 시군구별 과외</h2><div class="grid">{cards}</div></section>{image_markup(page_index, root_label)}'
     root_path = url_path(root_label)
     write_page([root_label], document(root_label, [("홈", "/"), (root_label, None)], root_body, root_path, page_index))
     page_index += 1
     child_count = 0
     for parent_label, parent_record, children in parents:
         child_cards = "".join(f'<a class="card" href="{url_path(root_label, parent_label, label(child["keyword"]))}">{escape(label(child["keyword"]))}</a>' for child in children)
-        parent_body = f'<h1>{escape(parent_label)}</h1>{guide_image()}{article(parent_record["content"], start_steps_image())}<section class="directory"><h2>{escape(parent_label.removesuffix("과외"))} 지역별 과외</h2><div class="grid">{child_cards}</div></section>{image_markup(page_index, parent_label)}'
+        parent_body = f'<h1>{escape(parent_label)}</h1>{guide_image()}{article(parent_record["content"], start_steps_image())}{generated_faq(parent_record["content"], parent_record, parent_label)}<section class="directory"><h2>{escape(parent_label.removesuffix("과외"))} 지역별 과외</h2><div class="grid">{child_cards}</div></section>{image_markup(page_index, parent_label)}'
         parent_path = url_path(root_label, parent_label)
         write_page([root_label, parent_label], document(parent_label, [("홈", "/"), (root_label, url_path(root_label)), (parent_label, None)], parent_body, parent_path, page_index))
         page_index += 1
         for child in children:
             child_label = label(child["keyword"])
-            child_body = f'<h1>{escape(child_label)}</h1>{guide_image()}{article(child["content"], start_steps_image())}{image_markup(page_index, child_label)}'
+            child_body = f'<h1>{escape(child_label)}</h1>{guide_image()}{article(child["content"], start_steps_image())}{generated_faq(child["content"], child, child_label)}{image_markup(page_index, child_label)}'
             child_path = url_path(root_label, parent_label, child_label)
             write_page([root_label, parent_label, child_label], document(child_label, [("홈", "/"), (root_label, url_path(root_label)), (parent_label, url_path(root_label, parent_label)), (child_label, None)], child_body, child_path, page_index))
             page_index += 1
@@ -150,12 +157,12 @@ def build_sejong(sheet, start_index: int) -> int:
     root_record = dict(rows[0], keyword=root_label)
     page_index = start_index
     root_path = url_path(root_label)
-    write_page([root_label], document(root_label, [("홈", "/"), (root_label, None)], f'<h1>{root_label}</h1>{guide_image()}{start_steps_image()}<section class="directory"><h2>세종 지역별 과외</h2><div class="grid">{cards}</div></section>{image_markup(page_index, root_label)}', root_path, page_index))
+    write_page([root_label], document(root_label, [("홈", "/"), (root_label, None)], f'<h1>{root_label}</h1>{guide_image()}{start_steps_image()}{faq_section(root_record, context=root_label)}<section class="directory"><h2>세종 지역별 과외</h2><div class="grid">{cards}</div></section>{image_markup(page_index, root_label)}', root_path, page_index))
     page_index += 1
     for row in rows:
         child_label = label(row["keyword"])
         child_path = url_path(root_label, child_label)
-        write_page([root_label, child_label], document(child_label, [("홈", "/"), (root_label, url_path(root_label)), (child_label, None)], f'<h1>{escape(child_label)}</h1>{guide_image()}{article(row["content"], start_steps_image())}{image_markup(page_index, child_label)}', child_path, page_index))
+        write_page([root_label, child_label], document(child_label, [("홈", "/"), (root_label, url_path(root_label)), (child_label, None)], f'<h1>{escape(child_label)}</h1>{guide_image()}{article(row["content"], start_steps_image())}{generated_faq(row["content"], row, child_label)}{image_markup(page_index, child_label)}', child_path, page_index))
         page_index += 1
     return len(rows)
 

@@ -8,7 +8,7 @@ from urllib.parse import quote
 
 from openpyxl import load_workbook
 
-from qa_generator import source_record
+from qa_generator import faq_section, source_record
 from thumbnail_rotation import SITE_URL, image_markup, image_url, publish_images
 
 
@@ -132,6 +132,12 @@ def article(content: str, after_article: str = "") -> str:
     return f'<section class="article">{before}</section>{after_article}<section class="native-faq">{faq_content}</section>'
 
 
+def generated_faq(content: str, record: dict[str, str], page_title: str) -> str:
+    if re.search(r"(<h2>[^<]*</h2>)(?=\s*<h3>)", content) or re.search(r"<h3>자주 묻는 질문</h3>|<h3>[^<]*(?:\?|나요|인가요|되나요|있나요|할까요)[^<]*</h3>", content):
+        return ""
+    return faq_section(record, context=page_title)
+
+
 def main() -> None:
     publish_static_assets()
     publish_images()
@@ -154,7 +160,7 @@ def main() -> None:
     seoul_body = f"""
       <h1>{escape(seoul_keyword)}</h1>
       {guide_image()}
-      {article(rows[2]['content'], start_steps_image())}
+      {article(rows[2]['content'], start_steps_image())}{generated_faq(rows[2]['content'], rows[2], seoul_keyword)}
       <section class="directory"><h2>서울 구별 과외</h2><div class="grid">{district_cards}</div></section>
       {image_markup(page_index, seoul_keyword)}
     """
@@ -173,7 +179,7 @@ def main() -> None:
         district_body = f"""
           <h1>{escape(district_label)}</h1>
           {guide_image()}
-          {article(district_content, start_steps_image())}
+          {article(district_content, start_steps_image())}{generated_faq(district_content, district_rows[district_keyword], district_label)}
           <section class="directory"><h2>{escape(district_label.removesuffix('과외'))} 동별 과외</h2><div class="grid">{child_cards}</div></section>
           {image_markup(page_index, district_label)}
         """
@@ -187,7 +193,7 @@ def main() -> None:
             child_body = f"""
               <h1>{escape(child_label)}</h1>
               {guide_image()}
-              {article(child['content'], start_steps_image())}
+              {article(child['content'], start_steps_image())}{generated_faq(child['content'], child, child_label)}
               {image_markup(page_index, child_label)}
             """
             child_crumb = [("홈", "/"), (seoul_keyword, url_path(seoul_keyword)), (district_label, url_path(seoul_keyword, district_label)), (child_label, None)]

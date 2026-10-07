@@ -144,6 +144,7 @@ def faq_section(
     return "".join(
         [
             '<section class="faq">',
+            '<h2>자주 묻는 질문</h2>',
             f'<article><h3>{escape(q1)}</h3><p>{escape(a1)}</p></article>',
             f'<article><h3>{escape(q2)}</h3><p>{escape(a2)}</p></article>',
             f'<article><h3>{escape(q3)}</h3><p>{escape(a3)}</p></article>',
