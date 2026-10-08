@@ -107,6 +107,11 @@ def article(content: str, after_article: str = "") -> str:
         return f'<section class="article">{content}</section>{after_article}'
     before = content[:faq_start.start()]
     faq_content = content[faq_start.start():]
+    # One legacy source FAQ uses paragraph tags for its questions.  Normalize
+    # that format only when the FAQ heading is the sole existing h3 tag.
+    if faq_content.startswith('<h3>자주 묻는 질문</h3>') and '<h3>' not in faq_content[len('<h3>자주 묻는 질문</h3>'):]:
+        faq_content = faq_content.replace('<h3>자주 묻는 질문</h3>', '<h2>자주 묻는 질문</h2>', 1)
+        faq_content = re.sub(r'<p>([^<]*\?)</p>', r'<h3>\1</h3>', faq_content)
     return f'<section class="article">{before}</section>{after_article}<section class="native-faq">{faq_content}</section>'
 
 
