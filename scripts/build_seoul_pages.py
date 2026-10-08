@@ -105,7 +105,7 @@ def write_page(parts: list[str], html: str) -> None:
 
 
 def guide_image() -> str:
-    return '<img class="guide-image" src="/assets/incheon-tutor-guide.jpg" alt="과외 학습 안내">'
+    return '''<div style="position:relative;width:min(100%,724px);margin:24px auto 0;line-height:0;"><img class="guide-image" style="width:100%;margin:0;" src="/assets/incheon-tutor-guide.jpg" alt="과외 학습 안내"><span style="position:absolute;left:38%;top:20.6%;padding:6px 8px;background:#fff;color:#111;font:900 clamp(22px,6.5vw,54px)/1 Arial,sans-serif;letter-spacing:-.06em;white-space:nowrap;">010-2942-1904</span><span style="position:absolute;left:38%;top:27.3%;padding:6px 8px;background:#fff;color:#111;font:900 clamp(22px,6.5vw,54px)/1 Arial,sans-serif;letter-spacing:-.06em;white-space:nowrap;">010-2942-1904</span><span style="position:absolute;left:38%;top:47.5%;padding:6px 8px;background:#fff;color:#111;font:900 clamp(22px,6.5vw,54px)/1 Arial,sans-serif;letter-spacing:-.06em;white-space:nowrap;">010-2942-1904</span><span style="position:absolute;left:38%;top:54.3%;padding:6px 8px;background:#fff;color:#111;font:900 clamp(22px,6.5vw,54px)/1 Arial,sans-serif;letter-spacing:-.06em;white-space:nowrap;">010-2942-1904</span></div>'''
 
 
 def start_steps_image() -> str:
