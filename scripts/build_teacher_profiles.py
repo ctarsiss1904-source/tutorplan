@@ -146,7 +146,7 @@ def main() -> None:
         target.write_text(page(f'{name or teacher_id} 선생님', body, f'{name or teacher_id} 선생님 프로필과 수업 가능 지역 정보를 확인하세요.'), encoding="utf-8")
         cards.append(f'<a class="profile-card" href="{route}"><strong>{escape(name or teacher_id)} 선생님</strong><span>{escape(subject or "과목 정보 없음")} · {escape(" · ".join(regions[:2]) or "지역 정보 없음")}</span></a>')
 
-    listing = f'<h1>선생님 프로필</h1><p class="intro">등록된 선생님 프로필을 확인하세요.</p><p style="margin:20px 0 24px"><a href="/학습점검/" style="display:inline-block;padding:12px 16px;border-radius:10px;background:#142846;color:#fff;font-weight:800;text-decoration:none">학습 점검 예시 먼저 보기 →</a></p><div class="profile-grid">{"".join(cards)}</div>'
+    listing = f'<h1>선생님 프로필</h1><p class="intro">등록된 선생님 프로필을 확인하세요.</p><p style="margin:20px 0 24px"><a href="/학습점검/" style="display:inline-block;padding:12px 16px;border-radius:10px;background:#142846;color:#fff;font-weight:800;text-decoration:none">내 학습 상태 확인하기 →</a></p><div class="profile-grid">{"".join(cards)}</div>'
     (OUTPUT / "index.html").write_text(page("선생님 프로필", listing, "TutorPlan 선생님 프로필 목록입니다."), encoding="utf-8")
     print(f"Created {len(base)} teacher profile pages.")
 
